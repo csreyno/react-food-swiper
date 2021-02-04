@@ -22,7 +22,7 @@ export default [
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1584287981937-67ab60932edf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+      "https://spoonacular.com/recipeImages/631762-556x370.jpg"
     ],
     name: "Savannah",
     age: 18,
