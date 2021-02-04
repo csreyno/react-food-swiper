@@ -2,8 +2,8 @@ import React from 'react'
 
 const Demo = () => {
     return (
-        <div>
-            Demo
+        <div id="deckroot">
+            <Deck />
         </div>
     )
 };
