@@ -80,10 +80,25 @@ const logout = (req, res) => {
     })
 }
 
+const loginStatus = (req, res) => {
+    console.log("API: checking login status");
+    if (req.session.user) {
+      res.status(200).json({
+        status: "OK"
+      });
+    } else {
+      res.status(400).json({
+        status: "no active session"
+      });
+    }
+  
+  };
+
 module.exports = {
     newUser,
     processNewUser,
     login,
     processLogin,
-    logout
+    logout,
+    loginStatus
 }
