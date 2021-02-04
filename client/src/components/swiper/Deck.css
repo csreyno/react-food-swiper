@@ -77,7 +77,7 @@ h2:nth-of-type(2) {
 h5 {
   margin-top: -15px;
   margin-left: 2px;
-  color: lightgray;
+  color: black;
 }
 h5:last-of-type {
   color: darkgray;
