@@ -1,4 +1,5 @@
 import React from 'react'
+import Deck from '../swiper/Deck'
 
 const Demo = () => {
     return (

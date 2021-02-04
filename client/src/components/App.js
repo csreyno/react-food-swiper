@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import Home from "./pages/Home";
@@ -7,6 +7,7 @@ import KeyFeature from "./pages/KeyFeature";
 import Pricing from "./pages/Pricing";
 import Testimonials from "./pages/Testimonials";
 import Login from "./Login"
+import axios from "axios"
 import "./App.css";
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
 
   return (
     <div className="container">
-    { isLoggedIn ?
+    {/* { isLoggedIn ? */}
       <Router>
         <Navbar />
         <Switch>
@@ -48,9 +49,9 @@ function App() {
           <Route path="/demo" exact component={Demo} />
         </Switch>
       </Router>
-      :
+      {/* : */}
       <Login doLogin={doLogin} />
-    }
+    {/* } */}
     </div>
 
   );
