@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import Home from "./pages/Home";
@@ -7,6 +7,7 @@ import KeyFeature from "./pages/KeyFeature";
 import Pricing from "./pages/Pricing";
 import Testimonials from "./pages/Testimonials";
 import Login from "./Login"
+import axios from 'axios'
 import "./App.css";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
   useEffect(() => {
     async function checkLogin() {
       try {
-        const resp = await axios.get('/users/login-status')
+        const resp = await axios.get('/api/users/login-status')
         console.log('you are already logged in');
         setIsLoggedIn(true);
       } catch (e) {
