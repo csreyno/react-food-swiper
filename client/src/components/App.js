@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
 import Home from "./pages/Home";
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="container">
-    { isLoggedIn ?
+    {/* { isLoggedIn ? */}
       <Router>
         <Navbar />
         <Switch>
@@ -49,9 +49,9 @@ function App() {
           <Route path="/demo" exact component={Demo} />
         </Switch>
       </Router>
-      :
+      {/* : */}
       <Login doLogin={doLogin} />
-    }
+    {/* } */}
     </div>
 
   );

@@ -1,9 +1,10 @@
 import React from 'react'
+import Deck from '../swiper/Deck'
 
 const Demo = () => {
     return (
-        <div>
-            Demo
+        <div id="deckroot">
+            <Deck />
         </div>
     )
 };
