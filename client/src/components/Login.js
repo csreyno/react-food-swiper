@@ -10,7 +10,7 @@ function Login(props){
     const onSubmit = async (e) => {
         e.preventDefault();
         try {
-            const resp = await axios.post('/users/login', {
+            const resp = await axios.post('/api/users/login', {
                 username,
                 password
             });
