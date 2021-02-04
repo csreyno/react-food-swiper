@@ -16,7 +16,9 @@ const processNewUser = async (req, res) => {
     const {username, password} = req.body
     if (username === '' || password === '') {
         console.log('username or password is blank!', req.baseUrl)
-        res.redirect(`${req.baseUrl}/new`)
+        res.status(400).json({
+            message: "Username or password is blank"
+        });
     } else {
         const salt = bcrypt.genSaltSync(10)
         const hash = bcrypt.hashSync(password, salt)
@@ -25,16 +27,21 @@ const processNewUser = async (req, res) => {
                 username,
                 hash
             });
-            res.redirect(`${req.baseUrl}/login`)
+            res.status(200).json({
+                message: "Success"
+            });
         } catch (e) {
             if (e.name === "SequelizeUniqueConstraintError") {
                 console.log('That username is taken!');
                 return res.status(500).send({ success: false, message: 'User already exists!' });
             }
-            res.redirect(`${req.baseUrl}/new`)
+            console.log("API: username already taken");
+            res.status(400).json({
+                message: "Username is already taken"
+            });      
         }
     }
-}
+};
 
 const login = (req, res) => {
     res.render('login-form', {
@@ -61,22 +68,38 @@ const processLogin = async (req, res) => {
                 id: user.id
             };
             req.session.save(() => {
-                res.redirect('/members-only')
+                console.log("API: login successful");
+                res.status(200).json({
+                    message: "Login successful",
+                    id: user.id,
+                });
+                return;
             });    
         } else {
-            console.log('password is incorrect')
-            res.redirect(`${req.baseUrl}/login`)
+            console.log('password is incorrect');
+            res.status(400).json({
+                message: "Invalid username or password",
+              });
+              return;
         }
     } else {
         console.log('not a valid user')
-        res.redirect(`${req.baseUrl}/login`)
+        console.log("API: invalid username");
+        res.status(400).json({
+            message: "Invalid username or password",
+        });
+        return;
     }
 }
 
 const logout = (req, res) => {
     console.log('logging out...')
     req.session.destroy(() => {
-        res.redirect('/')
+        console.log("API: invalid username");
+        res.status(200).json({
+            message: "Logout successful",
+        });
+        return;
     })
 }
 

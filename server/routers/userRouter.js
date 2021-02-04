@@ -10,6 +10,7 @@ router
   .get("/login", userController.login)
   .post("/login", userController.processLogin);
 
-router.get("/logout", userController.logout);
+router.get('/login-status', userController.loginStatus)
+router.post("/logout", userController.logout);
 
 module.exports = router;
