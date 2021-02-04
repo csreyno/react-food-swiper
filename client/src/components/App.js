@@ -42,7 +42,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={Login} />
           <Route path="/features" exact component={KeyFeature} />
           <Route path="/pricing" exact component={Pricing} />
           <Route path="/testimonials" exact component={Testimonials} />

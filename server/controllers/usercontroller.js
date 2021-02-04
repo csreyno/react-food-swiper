@@ -33,7 +33,6 @@ const processNewUser = async (req, res) => {
         } catch (e) {
             if (e.name === "SequelizeUniqueConstraintError") {
                 console.log('That username is taken!');
-                return res.status(500).send({ success: false, message: 'User already exists!' });
             }
             console.log("API: username already taken");
             res.status(400).json({
