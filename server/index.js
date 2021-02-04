@@ -54,7 +54,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 
 app.get("/", homeController.home);
-app.use("/users", userRouter);
+app.use("/api/users", userRouter);
 
 app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
 app.post("/members-only/addlike", memberController.addLike)
