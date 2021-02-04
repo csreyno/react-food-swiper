@@ -58,8 +58,8 @@ body {
 
 img {
   height: 380px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 button[aria-label="previous"],
@@ -120,7 +120,7 @@ h5:last-of-type {
 }
 
 #deckroot > div > div {
-  padding: 5px;
+  padding: 10px;
   background-color: white;
   background-size: auto 85%;
   background-repeat: no-repeat;
