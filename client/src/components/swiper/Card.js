@@ -5,7 +5,7 @@ import Carousel from "nuka-carousel";
 
 
 const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
-  const { name, age, distance, text, pics } = data[i];
+  const { name, age, distance, text, image } = data[i];
 
   return (
     <animated.div
@@ -22,11 +22,11 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
       >
         <div className="card">
           <Carousel>
-            {pics.map((pic, index) => (
-              <img src={pic} key={index} alt="profilePicture" />
-            ))}
+            {/* {pics.map((pic, index) => ( */}
+              <img src={image} alt="profilePicture" />
+            {/* ))} */}
           </Carousel>
-          <h2>{name},</h2>
+          <h2>{name}</h2>
           <h2>{age}</h2>
           <h5>{distance}</h5>
           <h5>{text}</h5>
