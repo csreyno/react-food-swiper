@@ -7,24 +7,22 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      likes.belongsTo(models.User, {
-        foreignKey: "user_id",
-      });
-      likes.belongsTo(models.posts, {
-        foreignKey: "post_id",
-      });
-
-      models.User.belongsToMany(models.posts, {
-        through: like,
-        foreignKey: "user_id",
-      });
-
-      models.recipes.belongsToMany(models.User, {
-        through: like,
-        foreignKey: "post_id",
-      });
-    }
+    // static associate(models) {
+    //   like.belongsTo(models.User, {
+    //     foreignKey: "user_id",
+    //   });
+    //   like.belongsTo(models.posts, {
+    //     foreignKey: "post_id",
+    //   });
+    //   models.User.belongsToMany(models.posts, {
+    //     through: like,
+    //     foreignKey: "user_id",
+    //   });
+    //   models.recipes.belongsToMany(models.User, {
+    //     through: like,
+    //     foreignKey: "post_id",
+    //   });
+    // }
   }
   Like.init(
     {
