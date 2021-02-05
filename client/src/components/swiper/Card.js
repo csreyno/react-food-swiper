@@ -3,33 +3,34 @@ import { string, number, array } from "prop-types";
 import { animated, interpolate } from "react-spring/hooks";
 import Carousel from "nuka-carousel";
 
-
 const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
-  const { name, age, distance, text, image } = data[i];
+  const { title, readyInMinutes, cuisines, image } = data[i];
 
   return (
     <animated.div
       key={i}
       style={{
-        transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`)
+        transform: interpolate(
+          [x, y],
+          (x, y) => `translate3d(${x}px,${y}px,0)`
+        ),
       }}
     >
       <animated.div
         {...bind(i)}
         style={{
-          transform: interpolate([rot, scale], trans)
+          transform: interpolate([rot, scale], trans),
         }}
       >
         <div className="card">
           <Carousel>
             {/* {pics.map((pic, index) => ( */}
-              <img src={image} alt="profilePicture" />
+            <img src={image} alt="profilePicture" />
             {/* ))} */}
           </Carousel>
-          <h2>{name}</h2>
-          <h2>{age}</h2>
-          <h5>{distance}</h5>
-          <h5>{text}</h5>
+          <h3>{title}</h3>
+          <h4>Preparation time: {readyInMinutes} minutes</h4>
+          <h4>{cuisines}</h4>
         </div>
       </animated.div>
     </animated.div>
@@ -37,11 +38,10 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
 };
 
 Card.propTypes = {
-  name: string,
-  age: number,
-  distance: string,
-  text: string,
-  pics: array
+  title: string,
+  readyInMinutes: number,
+  cuisines: array,
+  image: array,
 };
 
 export default Card;

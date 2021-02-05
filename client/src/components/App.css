@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background:url('./images/bg.jpg');
+  background: url("./images/bg.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -58,8 +58,8 @@ body {
 
 img {
   height: 380px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 button[aria-label="previous"],
@@ -72,8 +72,8 @@ button[aria-label="next"] {
   font-size: 5rem;
   color: #fff;
   font-weight: 300;
-  background-color: rgba(0,0,0,0.5);
-  padding:0px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0px 20px;
   border-radius: 2px;
 }
 
@@ -120,7 +120,7 @@ h5:last-of-type {
 }
 
 #deckroot > div > div {
-  padding: 5px;
+  padding: 10px;
   background-color: white;
   background-size: auto 85%;
   background-repeat: no-repeat;
@@ -133,4 +133,7 @@ h5:last-of-type {
   border-radius: 10px;
   box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
     0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+circle {
+  visibility: hidden;
 }

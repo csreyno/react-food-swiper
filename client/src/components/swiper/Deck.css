@@ -42,16 +42,19 @@ body {
   background-size: auto 85%;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 300px;
-  max-width: 300px;
+  width: 320px;
+  max-width: 320px;
   height: 550px;
   max-height: 570px;
   will-change: transform;
-  border-radius: 10px;
+  border-radius: 40px;
   box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
     0 10px 10px -10px rgba(50, 50, 73, 0.3);
 }
 
+.deckroot > div > div:hover {
+  z-index: 10px;
+}
 img {
   height: 380px;
   border-top-left-radius: 10px;
@@ -77,7 +80,7 @@ h2:nth-of-type(2) {
 h5 {
   margin-top: -15px;
   margin-left: 2px;
-  color: lightgray;
+  color: black;
 }
 h5:last-of-type {
   color: darkgray;
