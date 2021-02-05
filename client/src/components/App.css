@@ -5,6 +5,10 @@
   font-family: "RaleWay", "sans-serif";
 }
 
+element.style {
+  opacity: 0.0;
+}
+
 body {
   margin: 0;
 }
@@ -79,6 +83,12 @@ button[aria-label="next"] {
 
 h2 {
   display: inline-block;
+  margin-right: 10px !important;
+}
+
+.cardtitle {
+  /* display: inline-block; */
+  text-align: center;
   margin-right: 10px !important;
 }
 

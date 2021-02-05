@@ -28,8 +28,8 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
             <img src={image} alt="profilePicture" />
             {/* ))} */}
           </Carousel>
-          <h3>{title}</h3>
-          <h4>Preparation time: {readyInMinutes} minutes</h4>
+          <h3 className="cardtitle">{title}</h3>
+          <h5><i class="far fa-clock"></i> {readyInMinutes} minutes</h5>
           <h4>{cuisines}</h4>
         </div>
       </animated.div>
