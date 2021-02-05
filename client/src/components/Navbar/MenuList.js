@@ -13,8 +13,8 @@ export const MenuList = [
         url: "/pricing"
     },
     {
-        title: "Testimonials",
-        url: "/testimonials"
+        title: "Log out",
+        url: "/logout"
     },
     {
         title: "Try It",

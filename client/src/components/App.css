@@ -156,7 +156,7 @@ circle {
 .login-div {
   display: flex;
   justify-content: center;
-  margin-top: 25%
+  margin-top: 15%
 }
 
 .login-card {
@@ -164,6 +164,7 @@ circle {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
+  opacity: 75%;
 }
 
 .username-label {
