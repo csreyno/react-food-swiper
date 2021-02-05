@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 
-.container {
+.container1 {
   background: url("./images/bg.jpg");
   background-position: center;
   background-size: cover;
@@ -21,6 +21,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
+  margin: 0px;
 }
 
 /* .container::after {
@@ -146,4 +147,29 @@ h5:last-of-type {
 }
 circle {
   visibility: hidden;
+}
+
+.login-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%
+}
+
+.login-card {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.username-label {
+  display: block;
+}
+
+.password-label {
+  display: block
+}
+
+.username-input {
+  padding: 15px, 10px, 15px, 10px
 }
