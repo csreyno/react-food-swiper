@@ -50,7 +50,7 @@ function App() {
           <Route path="/" exact component={Login} children={ <Login doLogin={doLogin} />}/>
           <Route path="/favoriterecipes" exact component={Favorites} />
           <Route path="/pricing" exact component={Pricing} />
-          <Route path="/testimonials" exact component={Logout} children={ <Logout doLogout={doLogout} />}
+          <Route path="/logout" exact component={Logout} children={ <Logout doLogout={doLogout} />}
           /> 
           <Route path="/demo" exact component={Demo} />
       
