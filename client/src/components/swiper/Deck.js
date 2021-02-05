@@ -24,7 +24,7 @@ const trans = (r, s) =>
 function Deck() {
   const [gone] = useState(() => new Set());
 
-  const [props, set] = useSprings(data.length, (i) => ({
+  const [props, set] = useSprings(3, (i) => ({ //data.length first arg
     ...to(i),
     from: from(i),
   }));
@@ -62,7 +62,7 @@ function Deck() {
         };
       });
 
-      if (!down && gone.size === data.length)
+      if (!down && gone.size === 3)  //=== data.length
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
     }
   );
