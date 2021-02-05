@@ -1,13 +1,12 @@
-import React from 'react'
 
 export const MenuList = [
     {
-        title: "Home",
+        title: "Login",
         url: "/"
     },
     {
-        title: "Key Features",
-        url: "/features"
+        title: "Favorites",
+        url: "/favoriterecipes"
     },
     {
         title: "Pricing",

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Demo from "./pages/Demo";
-import KeyFeature from "./pages/KeyFeature";
+import Favorites from "./pages/Favorites";
 import Pricing from "./pages/Pricing";
 import Testimonials from "./pages/Testimonials";
 import Login from "./Login"
@@ -46,7 +46,7 @@ function App() {
         <div className="container1">
         <Switch>
           <Route path="/" exact component={Login} children={ <Login doLogin={doLogin} />}/>
-          <Route path="/features" exact component={KeyFeature} />
+          <Route path="/favoriterecipes" exact component={Favorites} />
           <Route path="/pricing" exact component={Pricing} />
           <Route path="/testimonials" exact component={Logout} children={ <Logout doLogout={doLogout} />}
           />
@@ -58,8 +58,6 @@ function App() {
         </Switch>
         </div>
       </Router>
-       
-    
     </div>
 
   );
