@@ -25,7 +25,7 @@ const { memberLayout } = require('./utils')
 const app = express();
 const server = http.createServer(app);
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const HOST = "0.0.0.0";
 
 const logger = morgan("tiny");

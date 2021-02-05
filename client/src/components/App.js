@@ -9,6 +9,7 @@ import Testimonials from "./pages/Testimonials";
 import Login from "./Login"
 import axios from 'axios'
 import "./App.css";
+import Logout from "./Logout";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -19,7 +20,8 @@ function App() {
   }
 
   const doLogout = () => {
-    console.log('Logging out...')
+    console.log('Logging out...');
+    setIsLoggedIn(false)
   }
 
   useEffect(() => {
@@ -37,21 +39,25 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-    {/* { isLoggedIn ? */}
+      <div className="app1">
+    
       <Router>
         <Navbar />
+        <div className="container1">
         <Switch>
-          <Route path="/" exact component={Login} />
+          <Route path="/" exact component={Login} children={ <Login doLogin={doLogin} />}/>
           <Route path="/favoriterecipes" exact component={Favorites} />
           <Route path="/pricing" exact component={Pricing} />
-          <Route path="/testimonials" exact component={Testimonials} />
+          <Route path="/testimonials" exact component={Logout} children={ <Logout doLogout={doLogout} />}
+          />
+        { isLoggedIn ? 
           <Route path="/demo" exact component={Demo} />
+          : 
+      <Login doLogin={doLogin} />
+    } 
         </Switch>
+        </div>
       </Router>
-      {/* : */}
-      {/* <Login doLogin={doLogin} /> */}
-    {/* } */}
     </div>
 
   );
