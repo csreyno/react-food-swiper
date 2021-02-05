@@ -40,25 +40,30 @@ function App() {
 
   return (
       <div className="app1">
-    
+      
       <Router>
         <Navbar />
+        { isLoggedIn ? 
+        <>
         <div className="container1">
         <Switch>
-          <Route path="/" exact component={Login} children={ <Login doLogin={doLogin} />}/>
+          <Route path="/" exact component={Demo} />
           <Route path="/features" exact component={KeyFeature} />
           <Route path="/pricing" exact component={Pricing} />
           <Route path="/testimonials" exact component={Logout} children={ <Logout doLogout={doLogout} />}
-          />
-        { isLoggedIn ? 
+          /> 
           <Route path="/demo" exact component={Demo} />
-          : 
-      <Login doLogin={doLogin} />
-    } 
+      
+        
         </Switch>
+        
         </div>
+        </>
+        :
+        <Login doLogin={doLogin} />
+      } 
       </Router>
-       
+      
     
     </div>
 
