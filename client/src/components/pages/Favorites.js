@@ -1,11 +1,11 @@
 import React from 'react'
 
-const KeyFeature = () => {
+const Favorites = () => {
     return (
         <div className="page-heading">
-            <h1>Key Features</h1>
+            <h1>Favorite Recipes</h1>
         </div>
     )
 };
 
-export default KeyFeature;
+export default Favorites;

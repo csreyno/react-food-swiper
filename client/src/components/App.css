@@ -2,7 +2,7 @@
   /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
-  font-family: "RaleWay", "sans-serif";
+  font-family: Raleway, sans-serif;
 }
 
 element.style {
@@ -12,6 +12,10 @@ element.style {
 body {
   margin: 0;
 }
+
+/* html {
+  font: "Raleway", "san-serif";
+} */
 
 .container1 {
   background: url("./images/bg.jpg");
@@ -116,7 +120,7 @@ h5:last-of-type {
   width: 100%;
   height: 100%;
   /* cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
-      39 39,
+      30 30,
     auto; */
 }
 
