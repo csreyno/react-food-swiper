@@ -4,36 +4,38 @@ import Navbar from "./Navbar/Navbar";
 // import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import Favorites from "./pages/Favorites";
+
 // import Pricing from "./pages/Pricing";
 // import Testimonials from "./pages/Testimonials";
 // import Home from "./pages/Home"
 import Login from "./Login"
 import axios from 'axios'
+
 import "./App.css";
 import Logout from "./Logout";
-import Registration from "./Registration"
+import Registration from "./Registration";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  
+
   const doLogin = () => {
-    console.log("You are now logged in")
-    setIsLoggedIn(true)
-  }
+    console.log("You are now logged in");
+    setIsLoggedIn(true);
+  };
 
   const doLogout = () => {
-    console.log('Logging out...');
-    setIsLoggedIn(false)
-  }
+    console.log("Logging out...");
+    setIsLoggedIn(false);
+  };
 
   useEffect(() => {
     async function checkLogin() {
       try {
-        const resp = await axios.get('/api/users/login-status')
-        console.log('you are already logged in');
+        const resp = await axios.get("/api/users/login-status");
+        console.log("you are already logged in");
         setIsLoggedIn(true);
       } catch (e) {
-        console.log('error, not logged in');
+        console.log("error, not logged in");
         setIsLoggedIn(false);
       }
     }
@@ -41,9 +43,9 @@ function App() {
   }, []);
 
   return (
-      <div className="app1">
-      
+    <div className="app1">
       <Router>
+
       <div className="container1">
       { isLoggedIn ? 
         <>
@@ -72,11 +74,9 @@ function App() {
         
         
       
-      </Router>
-      
-    
-    </div>
 
+      </Router>
+    </div>
   );
 }
 

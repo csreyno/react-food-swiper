@@ -1,5 +1,5 @@
-
 export const MenuList = [
+
     {
         title: "Login",
         url: "/"
@@ -20,4 +20,5 @@ export const MenuList = [
         title: "Try It",
         url: "/demo"
     }
+
 ];
