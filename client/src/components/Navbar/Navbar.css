@@ -28,7 +28,7 @@ nav {
     transition: all .2s ease-in-out;
 }
 
-.logo {
+.logo a {
     font-weight: 600;
     font-size: 25px;
     color: tomato;
@@ -76,7 +76,7 @@ nav {
 }
 
 @media screen and (max-width:800px) {
-    .logo{
+    .logo a{
         font-size: 20px;
     }
     .menu-list li a {
