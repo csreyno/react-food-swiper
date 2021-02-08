@@ -22,9 +22,15 @@ const trans = (r, s) =>
   }deg) rotateZ(${r}deg) scale(${s})`;
 
 function Deck() {
+  let stack = 0;
+  let perStack = 10;
   const [gone] = useState(() => new Set());
-
-  const [props, set] = useSprings(3, (i) => ({ //data.length first arg
+  let stackRecipes = [];
+  for (let i=0; i<perStack; i++) {
+     stackRecipes.push(data[stack+i])
+  }
+  const [currentRecipes, setCurrentRecipes] = useState([data[stack*perStack],data[stack*perStack+1],data[stack*perStack+2],data[stack*perStack+3],data[stack*perStack+4],data[stack*perStack+5],data[stack*perStack+6],data[stack*perStack+7],data[stack*perStack+8],data[stack*perStack+9]]);
+  const [props, set] = useSprings(perStack, (i) => ({ //data.length first arg
     ...to(i),
     from: from(i),
   }));
@@ -41,18 +47,19 @@ function Deck() {
       const trigger = velocity > 0.2;
 
       const dir = xDir < 0 ? -1 : 1;
-
+      // console.log(dir)
       if (!down && trigger) gone.add(index);
-
+      // console.log(down)
       set((i) => {
         if (index !== i) return;
         const isGone = gone.has(index);
-
+       
         const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0;
-
+        
         const rot = xDelta / 100 + (isGone ? dir * 10 * velocity : 0);
-
+        
         const scale = down ? 1.1 : 1;
+        console.log(down, dir)
         return {
           x,
           rot,
@@ -61,13 +68,34 @@ function Deck() {
           config: { friction: 20, tension: down ? 800 : isGone ? 200 : 500 },
         };
       });
-
-      if (!down && gone.size === 3)  //=== data.length
+      // function deleteStackRecipes(){
+      //   for (let i=0; i<perStack; i++) {
+      //     stackRecipes.pop(i)
+      //     }
+      //     console.log(stackRecipes);
+      //     console.log(stack);
+      // }
+      // function newStackRecipes(){
+      //   for (let i=0; i<perStack; i++) {
+      //     stackRecipes.push(data[stack*perStack+i])
+      //     console.log(stack*perStack+i)}
+      //     console.log(stackRecipes ,"new");
+      //     console.log(stack);
+      //     setCurrentRecipes(stackRecipes);
+      // }
+      if (!down && gone.size === perStack){  //=== data.length
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
+        // deleteStackRecipes();
+        stack++;
+        // newStackRecipes();
+        setCurrentRecipes([data[stack*perStack],data[stack*perStack+1],data[stack*perStack+2],data[stack*perStack+3],data[stack*perStack+4],data[stack*perStack+5],data[stack*perStack+6],data[stack*perStack+7],data[stack*perStack+8],data[stack*perStack+9]]);}
     }
   );
 
-  return props.map(({ x, y, rot, scale }, i) => (
+  return props.map(({ x, y, rot, scale }, i) =>{
+    console.log(i)
+    console.log(currentRecipes);
+   return (
     <Card
       key={i}
       i={i}
@@ -76,10 +104,10 @@ function Deck() {
       rot={rot}
       scale={scale}
       trans={trans}
-      data={data}
+      data={currentRecipes}
       bind={bind}
     />
-  ));
+  )});
 }
 
 export default Deck;
