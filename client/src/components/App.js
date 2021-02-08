@@ -4,14 +4,14 @@ import Navbar from "./Navbar/Navbar";
 // import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import Favorites from "./pages/Favorites";
-import Pricing from "./pages/Pricing";
-import Testimonials from "./pages/Testimonials";
+// import Pricing from "./pages/Pricing";
+// import Testimonials from "./pages/Testimonials";
+// import Home from "./pages/Home"
 import Login from "./Login"
 import axios from 'axios'
 import "./App.css";
 import Logout from "./Logout";
 import Registration from "./Registration"
-import Home from "./pages/Home"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
