@@ -44,7 +44,6 @@ function App() {
       
       <Router>
         <Navbar />
-        <Registration />
         { isLoggedIn ? 
         <>
         <div className="container1">
