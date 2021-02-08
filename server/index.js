@@ -13,7 +13,8 @@ const FileStore = require("session-file-store")(session);
 const { requireLogin } = require("./auth");
 
 const {
-  userRouter
+  userRouter,
+  memberRouter
 } = require("./routers");
 
 const { memberController, homeController, unauthorized } = require("./controllers");
@@ -55,9 +56,10 @@ app.use(express.json())
 
 app.get("/", homeController.home);
 app.use("/api/users", userRouter);
+app.use("/api/members-only", memberRouter)
 
-app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
-app.post("/members-only/addlike", memberController.addLike)
+// app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
+// app.post("/members-only/addlike", memberController.addLike)
 app.get("/list", async (req, res) => {
   const { username } = req.session.user
   const { id } = req.session.user;
