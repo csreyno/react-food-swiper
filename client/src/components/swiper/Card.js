@@ -25,7 +25,7 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
         <div className="card">
           <Carousel>
             {/* {pics.map((pic, index) => ( */}
-            <img src={image} alt="profilePicture" />
+            <img src={image} alt="foodPicture" />
             {/* ))} */}
           </Carousel>
           <h3 className="cardtitle">{title}</h3>
