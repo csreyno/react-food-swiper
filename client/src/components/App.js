@@ -10,6 +10,7 @@ import Login from "./Login"
 import axios from 'axios'
 import "./App.css";
 import Logout from "./Logout";
+import Registration from "./Registration"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -43,6 +44,7 @@ function App() {
       
       <Router>
         <Navbar />
+        <Registration />
         { isLoggedIn ? 
         <>
         <div className="container1">
