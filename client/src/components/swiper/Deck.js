@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { useSprings } from "react-spring/hooks";
 import { useGesture } from "react-with-gesture";
+import axios from 'axios'
 
 import Card from "./Card";
 import data from "../recipes";
 
 import "../App.css";
+
+const newLike = (recipeid) => {
+  const resp = axios.post('/api/members-only/addlike', { 
+  body: JSON.stringify({recipeid})
+  })
+  .then(data => console.log(data))
+}
 
 const to = (i) => ({
   x: 0,
@@ -68,6 +76,10 @@ function Deck() {
           console.log("swiped right");
           console.log(stackRecipes[i]);
           console.log(stackRecipes[i].id);
+          const id = stackRecipes[i].id;
+          newLike(id)
+
+
         }
         if (!down && dir === -1) {
           console.log(i);
