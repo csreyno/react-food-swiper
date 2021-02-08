@@ -4,10 +4,13 @@ import Navbar from "./Navbar/Navbar";
 // import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import Favorites from "./pages/Favorites";
-import Pricing from "./pages/Pricing";
-import Testimonials from "./pages/Testimonials";
-import Login from "./Login";
-import axios from "axios";
+
+// import Pricing from "./pages/Pricing";
+// import Testimonials from "./pages/Testimonials";
+// import Home from "./pages/Home"
+import Login from "./Login"
+import axios from 'axios'
+
 import "./App.css";
 import Logout from "./Logout";
 import Registration from "./Registration";
@@ -42,32 +45,36 @@ function App() {
   return (
     <div className="app1">
       <Router>
+
+      <div className="container1">
+      { isLoggedIn ? 
+        <>
         <Navbar />
-        {isLoggedIn ? (
-          <>
-            <div className="container1">
-              <Switch>
-                <Route
-                  path="/"
-                  exact
-                  component={Login}
-                  children={<Login doLogin={doLogin} />}
-                />
-                <Route path="/favoriterecipes" exact component={Favorites} />
-                <Route path="/pricing" exact component={Pricing} />
-                <Route
-                  path="/logout"
-                  exact
-                  component={Logout}
-                  children={<Logout doLogout={doLogout} />}
-                />
-                <Route path="/demo" exact component={Demo} />
-              </Switch>
-            </div>
-          </>
-        ) : (
-          <Login doLogin={doLogin} />
-        )}
+        
+        
+        <Switch>
+          <Route path="/" exact component={Login} children={ <Login doLogin={doLogin} />}/>
+          <Route path="/favoriterecipes" exact component={Favorites} />
+          <Route path="/register" exact component={Registration} />
+          <Route path="/logout" exact component={Logout} children={ <Logout doLogout={doLogout} />}
+          /> 
+          <Route path="/demo" exact component={Demo} />
+      
+        
+        </Switch>
+        
+       
+        </>
+        :
+        
+        <Login doLogin={doLogin} />
+      }
+
+        </div>
+        
+        
+      
+
       </Router>
     </div>
   );
