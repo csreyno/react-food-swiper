@@ -4,7 +4,6 @@ const router = express.Router();
 const cardController = require("../controllers/cardController");
 
 router
-  .get("/card", cardController.generateList)
-  .post("/card", cardController.generateCard);
+  .get("/", cardController.generateCard);
 
 module.exports = router;
