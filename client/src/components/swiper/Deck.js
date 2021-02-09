@@ -10,7 +10,7 @@ import "../App.css";
 
 const newLike = async (recipeid) => {
   const resp = await axios.post('/api/members-only/addlike', { 
-  recipeid //ask Chris why this works
+  recipe_id: recipeid
   });
   console.log(resp.data)
   console.log({recipeid})
