@@ -61,6 +61,7 @@ img {
 
 button[aria-label="previous"],
 button[aria-label="next"] {
+  visibility: hidden;
   background: salmon !important;
   color: black !important;
 }
