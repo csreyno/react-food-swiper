@@ -8,11 +8,12 @@ import data from "../recipes";
 
 import "../App.css";
 
-const newLike = (recipeid) => {
-  const resp = axios.post('/api/members-only/addlike', { 
-  body: JSON.stringify({recipeid})
-  })
-  .then(data => console.log(data))
+const newLike = async (recipeid) => {
+  const resp = await axios.post('/api/members-only/addlike', { 
+  recipeid //ask Chris why this works
+  });
+  console.log(resp.data)
+  console.log({recipeid})
 }
 
 const to = (i) => ({

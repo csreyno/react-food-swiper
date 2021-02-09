@@ -23,12 +23,11 @@ const addLike = async (req, res) => {
         recipe_id: recipeid,
         user_id: id,
         like_count: 0
-    });
+    })
         return res.status(200).json({
         message: "Success"
     });
-    //console.log(newLike)
-    // res.redirect('/members-only')
+    
     res.json({status: 'ok'})
 }
 
