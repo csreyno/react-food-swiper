@@ -1,13 +1,12 @@
 nav {
     background: rgba(0,0,0,0.9);
     padding:20px;
-    display:flex;
-    justify-content: space-between;
+    display: block;
+    /* justify-content: space-between; */
     color: #fff;
     position: absolute;
     width: 100%;
     z-index: 99;
-    display: block;
 }
 
 .menu-icon {

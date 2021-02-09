@@ -15,20 +15,17 @@ const Navbar = () => {
         setClicked(!clicked);
     };
     return (
-        <div className="navDiv">
+        // <div className="navDiv">
         <nav>
             <div className="logo">
                 <a href="/demo">Food<font>Finder</font></a>
-
-            <div className="menu-icon" onClick={handleClick}>
-                <i className={ clicked ? "fas fa-times" : "fas fa-bars"}></i>
+                <div className="menu-icon" onClick={handleClick}>
+                    <i className={ clicked ? "fas fa-times" : "fas fa-bars"}></i>
+                </div>
             </div>
-            </div>
-            <ul className={clicked ? "menu-list" : "menu-list close"}>{menuList}</ul>
-            
-            
+            <ul className={clicked ? "menu-list" : "menu-list close"}>{menuList}</ul>    
         </nav>
-        </div>
+        // </div>
     );
 };
 
