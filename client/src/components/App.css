@@ -13,12 +13,8 @@ body {
   margin: 0;
 }
 
-/* html {
-  font: "Raleway", "san-serif";
-} */
-
 .container1 {
-  background: url("./images/bg.jpg");
+  background: url("./images/spread.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -26,6 +22,9 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0px;
+}
+.container1 background {
+  opacity: 1;
 }
 
 .page-heading {

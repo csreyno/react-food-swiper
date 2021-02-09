@@ -1,17 +1,16 @@
 nav {
     background: rgba(0,0,0,0.9);
     padding:20px;
-    display:flex;
-    justify-content: space-between;
+    display: block;
+    /* justify-content: space-between; */
     color: #fff;
     position: absolute;
     width: 100%;
     z-index: 99;
-    display: block;
 }
 
 .menu-icon {
-    display: none;
+    display: inline !important;
 }
 
 .fas {
@@ -21,11 +20,17 @@ nav {
 .menu-icon .fa-times {
     transform: rotate(360deg);
     transition: all .2s ease-in-out;
+    display:none;
 }
 
 .menu-icon .fa-bars {
     transform: rotate(180deg);
     transition: all .2s ease-in-out;
+    display:none;
+}
+
+.logo {
+    display: inline !important;
 }
 
 .logo a {
@@ -44,7 +49,7 @@ nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     margin-bottom: 0px;
 }
 
@@ -75,20 +80,30 @@ nav {
     transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width:800px) {
-    .logo a{
+@media screen and (max-width:800px) and (min-width: 613px) {
+    /* .logo a{
         font-size: 20px;
-    }
+    } */
     .menu-list li a {
         font-size: 14px;
         margin-left: 10px;
+    }
+    .menu-icon .fa-times {
+        transform: rotate(360deg);
+        transition: all .2s ease-in-out;
+        display: none;
+    }
+    .menu-icon .fa-bars {
+        transform: rotate(180deg);
+        transition: all .2s ease-in-out;
+        display: none;
     }
 }
 
 @media screen and (max-width:612px) {
     .menu-icon {
-        display: block;
-        text-align: right;
+        display: inline !important;
+        text-align: right !important;
     }
     .menu-list {
         flex-direction: column;
@@ -98,7 +113,7 @@ nav {
         background-color: rgba(0,0,0,0.7);
         padding: 20px;
         right: 0;
-        top: 86px;
+        top: 64px;
         transition: all 0.5s ease-in-out;
     }
     .menu-list li {
@@ -118,5 +133,17 @@ nav {
     .menu-list.close {
         transition: all 0.5s ease-in-out;
         visibility: hidden;
+    }
+    .menu-icon .fa-times {
+        transform: rotate(360deg);
+        transition: all .2s ease-in-out;
+        float: right;
+        display: inline !important;
+    }
+    .menu-icon .fa-bars {
+        transform: rotate(180deg);
+        transition: all .2s ease-in-out;
+        float: right;
+        display: inline !important;
     }
 }
