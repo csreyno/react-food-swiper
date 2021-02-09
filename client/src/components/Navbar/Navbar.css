@@ -1,11 +1,14 @@
-nav {
-  background: rgba(0, 0, 0, 0.9);
-  padding: 25px;
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  position: relative;
-  z-index: 99;
+
+    background: rgba(0,0,0,0.9);
+    padding:20px;
+    display:flex;
+    justify-content: space-between;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    display: block;
+
 }
 
 .menu-icon {
@@ -26,11 +29,13 @@ nav {
   transition: all 0.2s ease-in-out;
 }
 
-.logo {
-  font-weight: 600;
-  font-size: 25px;
-  color: tomato;
-  line-height: 1rem;
+
+.logo a {
+    font-weight: 600;
+    font-size: 25px;
+    color: tomato;
+    line-height: 1rem;
+
 }
 
 .logo font {
@@ -47,12 +52,15 @@ nav {
 }
 
 .menu-list li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 300;
-  padding: 0px 5px;
-  margin-left: 20px;
-  position: relative;
+
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    padding: 0px 5px;
+    margin-left: 20px;
+    /* position: relative; */
+    /* display: inline-block; */
+
 }
 
 .menu-list li:last-child a {
@@ -70,50 +78,50 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 800px) {
-  .logo {
-    font-size: 30px;
-    top: 100px;
-  }
-  .menu-list li a {
-    font-size: 14px;
-    margin-left: 10px;
-  }
+
+@media screen and (max-width:800px) {
+    .logo a{
+        font-size: 20px;
+    }
+    .menu-list li a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
 }
 
-@media screen and (max-width: 612px) {
-  .menu-icon {
-    display: block;
-    text-align: right;
-  }
-  .menu-list {
-    flex-direction: column;
-    display: block;
-    width: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    right: 0;
-    top: 86px;
-    transition: all 0.5s ease-in-out;
-  }
-  .menu-list li {
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-  }
-  .menu-list li:last-child {
-    margin-bottom: 0px;
-  }
-  .menu-list li a,
-  .menu-list li:last-child {
-    width: m 100px;
-    display: block;
-    margin: auto;
-    text-align: top !important;
-  }
-  .menu-list.close {
-    transition: all 0.5s ease-in-out;
-    visibility: hidden;
-  }
+@media screen and (max-width:612px) {
+    .menu-icon {
+        display: block;
+        text-align: right;
+    }
+    .menu-list {
+        flex-direction: column;
+        /* display: block; */
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        padding: 20px;
+        right: 0;
+        top: 86px;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-list li {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    .menu-list li:last-child {
+        margin-bottom: 0px;
+        
+    }
+    .menu-list li a, .menu-list li:last-child {
+        width:m 100px;
+        display: block;
+        margin: auto;
+    }
+    .menu-list.close {
+        transition: all 0.5s ease-in-out;
+        visibility: hidden;
+    }
 }
+

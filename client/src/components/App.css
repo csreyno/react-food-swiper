@@ -28,18 +28,6 @@ body {
   margin: 0px;
 }
 
-/* .container::after {
-  background: rgba(0,0,0,0.6);
-  content:"";
-  width:100%;
-  height:100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-} */
-
 .page-heading {
   display: flex;
   justify-content: center;
@@ -153,11 +141,24 @@ circle {
   visibility: hidden;
 }
 
+.login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  top: 50%;
+}
+
 .login-div {
   display: flex;
   justify-content: center;
-  margin-top: 15%
+  align-content: center;
+  /* margin-top: 15%; */
+  position: relative;
+  top: 25%
+  
 }
+
 
 .login-card {
   text-align: center;
@@ -165,16 +166,6 @@ circle {
   padding: 10px;
   border-radius: 5px;
   opacity: 75%;
+  position: absolute;
 }
 
-.username-label {
-  display: block;
-}
-
-.password-label {
-  display: block
-}
-
-.username-input {
-  padding: 15px, 10px, 15px, 10px
-}
