@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "./Navbar.css";
 import { MenuList } from "./MenuList";
 import {NavLink} from "react-router-dom";
-
 const Navbar = () => {
         const [clicked, setClicked] = useState(false);
     const menuList = MenuList.map(({ url, title }, index) => {
@@ -20,7 +19,7 @@ const Navbar = () => {
         <nav>
             <div className="logo">
                 <a href="/demo">Food<font>Finder</font></a>
-            
+
             <div className="menu-icon" onClick={handleClick}>
                 <i className={ clicked ? "fas fa-times" : "fas fa-bars"}></i>
             </div>
