@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useSprings } from "react-spring/hooks";
 import { useGesture } from "react-with-gesture";
-import axios from 'axios'
+import axios from "axios";
 
 import Card from "./Card";
 import data from "../recipes";
 
 import "../App.css";
-
 
 
 // const newLike = async (recipeid) => {
@@ -17,6 +16,7 @@ import "../App.css";
 //   console.log(resp.data)
 //   console.log({recipeid})
 // }
+
 
 const to = (i) => ({
   x: 0,
@@ -37,12 +37,14 @@ function Deck() {
   let stack = 0;
   let perStack = 10;
   const [gone] = useState(() => new Set());
+
   // let oldStackRecipes = [];
   
   const [likedRecipes, setLikedRecipes] = useState([{}])
   const [cards, setCards] = useState([{}])
   const [currentRecipes, setCurrentRecipes] = useState([cards[stack*perStack],data[stack*perStack+1],data[stack*perStack+2],data[stack*perStack+3],data[stack*perStack+4],data[stack*perStack+5],data[stack*perStack+6],data[stack*perStack+7],data[stack*perStack+8],data[stack*perStack+9]]);
   const [props, set] = useSprings(perStack, (i) => ({ //data.length first arg
+
     ...to(i),
     from: from(i),
   }));
@@ -85,7 +87,7 @@ function Deck() {
       velocity,
     }) => {
       const trigger = velocity > 0.2;
-      
+
       const dir = xDir < 0 ? -1 : 1;
       // console.log(down, dir)
       // if (!down && dir === 1) {
@@ -97,9 +99,9 @@ function Deck() {
       //   console.log("swiped left");
       //   // console.log(stackRecipes[i]);
       // }
-      
+
       if (!down && trigger) gone.add(index);
-      
+
       set((i) => {
         if (index !== i) return;
         //swipe left or right fn that identifies direction
@@ -107,24 +109,26 @@ function Deck() {
           let i = 0
           // console.log(i);
           console.log("swiped right");
+
           console.log(cards[i].id);
           // console.log(stackRecipes[i].id);
           // const id = stackRecipes[i].id;
           // newLike(id)
+
         }
         if (!down && dir === -1) {
           console.log(i);
           console.log("swiped left");
         }
-        
+
         const isGone = gone.has(index);
-        
+
         const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0;
-        
+
         const rot = xDelta / 100 + (isGone ? dir * 10 * velocity : 0);
-        
+
         const scale = down ? 1.1 : 1;
-        
+
         return {
           x,
           rot,
@@ -148,15 +152,19 @@ function Deck() {
       //     console.log(stack);
       //     setCurrentRecipes(stackRecipes);
       // }
-      if (!down && gone.size === perStack){  //=== data.length
+      if (!down && gone.size === perStack) {
+        //=== data.length
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
         // deleteStackRecipes();
         stack++;
         // newStackRecipes();
+
         setCurrentRecipes([cards[stack*perStack],data[stack*perStack+1],data[stack*perStack+2],data[stack*perStack+3],data[stack*perStack+4],data[stack*perStack+5],data[stack*perStack+6],data[stack*perStack+7],data[stack*perStack+8],data[stack*perStack+9]]);
+
       }
     }
   );
+
 
   return props.map(({ x, y, rot, scale }, i) =>{
     // console.log(i)
