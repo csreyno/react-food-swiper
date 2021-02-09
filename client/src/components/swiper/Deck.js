@@ -78,8 +78,6 @@ function Deck() {
           console.log(stackRecipes[i].id);
           const id = stackRecipes[i].id;
           newLike(id)
-
-
         }
         if (!down && dir === -1) {
           console.log(i);
