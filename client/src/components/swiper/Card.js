@@ -39,7 +39,6 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
 Card.propTypes = {
   title: string,
   readyInMinutes: number,
-  cuisines: array,
   image: array,
 };
 

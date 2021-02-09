@@ -18,7 +18,6 @@ function Register(props){
             });
             console.log(resp);
 
-            props.doLogin();
             setMessage('Logging in...');
         } catch (e) {
             setMessage('Invalid username or password');
@@ -52,6 +51,15 @@ function Register(props){
                         value={passwordReg} 
                         placeholder="Password" 
                         onChange={e => setPasswordReg(e.target.value)}
+                        />
+                </Form.Group>
+                <Form.Group controlId="formBasicPassword">
+                    <Form.Label>Re-enter Password</Form.Label>
+                    <Form.Control
+                        type="password" 
+                        value={passwordReg} 
+                        placeholder="Password" 
+                        // onChange={e => setPasswordReg(e.target.value)}
                         />
                 </Form.Group>
                 <Form.Group controlId="formBasicCheckbox">

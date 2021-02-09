@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSprings } from "react-spring/hooks";
 import { useGesture } from "react-with-gesture";
 import axios from 'axios'
@@ -8,9 +8,11 @@ import data from "../recipes";
 
 import "../App.css";
 
+
+
 const newLike = async (recipeid) => {
   const resp = await axios.post('/api/members-only/addlike', { 
-  recipe_id: recipeid
+  recipe_id: {recipeid}
   });
   console.log(resp.data)
   console.log({recipeid})
@@ -30,6 +32,7 @@ const trans = (r, s) =>
     r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 
+
 function Deck() {
   let stack = 0;
   let perStack = 10;
@@ -38,11 +41,21 @@ function Deck() {
   for (let i=0; i<perStack; i++) {
      stackRecipes.push(data[stack+i])
   }
+  const [cards, setCards] = useState([{}])
   const [currentRecipes, setCurrentRecipes] = useState([data[stack*perStack],data[stack*perStack+1],data[stack*perStack+2],data[stack*perStack+3],data[stack*perStack+4],data[stack*perStack+5],data[stack*perStack+6],data[stack*perStack+7],data[stack*perStack+8],data[stack*perStack+9]]);
   const [props, set] = useSprings(perStack, (i) => ({ //data.length first arg
     ...to(i),
     from: from(i),
   }));
+  
+  const importCard = async () => {
+    const resp = await axios.get('/api/recipe-card')
+    console.log(resp.data)
+  }
+
+  useEffect(() => {
+    importCard();
+  }, []);
 
   const bind = useGesture(
     ({
