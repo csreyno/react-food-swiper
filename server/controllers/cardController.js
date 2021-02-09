@@ -1,10 +1,13 @@
-const { memberLayout } = require("../utils");
+const {Recipe} = require('../models')
 
-const generateCard = (req, res) => {
-  res.render("card", {
-    ...memberLayout,
-  });
-};
+const generateCard = async (req, res) => {
+  // const { id } = req.session.user;
+  // const { recipeid } = req.body
+
+  const cards = await Recipe.findAll( {limit: 10} )
+  return res.status(200).json(cards);
+  
+}
 
 module.exports = {
   generateCard,

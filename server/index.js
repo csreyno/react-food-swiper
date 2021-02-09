@@ -14,7 +14,8 @@ const { requireLogin } = require("./auth");
 
 const {
   userRouter,
-  memberRouter
+  memberRouter,
+  cardRouter
 } = require("./routers");
 
 const { memberController, homeController, unauthorized } = require("./controllers");
@@ -56,7 +57,8 @@ app.use(express.json())
 
 app.get("/", homeController.home);
 app.use("/api/users", userRouter);
-app.use("/api/members-only", memberRouter)
+app.use("/api/members-only", memberRouter);
+app.use("/api/recipe-card", cardRouter);
 
 // app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
 // app.post("/members-only/addlike", memberController.addLike)

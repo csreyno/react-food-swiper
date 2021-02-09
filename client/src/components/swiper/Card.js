@@ -30,7 +30,7 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
           </Carousel>
           <h3 className="cardtitle">{title}</h3>
           <h5><i className="far fa-clock"></i> {readyInMinutes} minutes</h5>
-          <h4>{cuisines}</h4>
+          
         </div>
       </animated.div>
     </animated.div>
@@ -40,7 +40,6 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
 Card.propTypes = {
   title: string,
   readyInMinutes: number,
-  cuisines: array,
   image: array,
 };
 

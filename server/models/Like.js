@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       models.User.belongsToMany(models.Recipe, {
         through: Like,
         foreignKey: "user_id",
-      });
+      }); //^^ Is this needed?
       models.Recipe.belongsToMany(models.User, {
         through: Like,
         foreignKey: "recipe_id",
