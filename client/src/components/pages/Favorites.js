@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { newLike } from '../swiper/Deck';
+// import { newLike } from '../swiper/Deck';
 
 const Favorites = () => {
     return (
         <div className="fav-list">
-            console.log(newLike);
-            {/* <h1 class="fav-recipes">Your Favorite Recipes</h1>
+            
+            {/* <h1 class="fav-recipes">My Favorite Recipes</h1>
             <ul>
             ${myRecipes.map(r => `
             <li><a href="/favoriterecipes/${r.id}">${r.title}</a></li>
