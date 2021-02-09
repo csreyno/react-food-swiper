@@ -27,7 +27,7 @@ function Login(props){
 
     return (
     <div className="login-div">
-        <section className="login-card">
+        <div className="login-card">
             <h1>Login</h1>
 
             {message && <h2>{message}</h2>}
@@ -61,7 +61,7 @@ function Login(props){
                     Submit
                 </Button>
                 </Form>
-        </section>
+        </div>
     </div>
     
     );

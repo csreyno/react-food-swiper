@@ -1,11 +1,13 @@
 nav {
     background: rgba(0,0,0,0.9);
-    padding:25px;
+    padding:20px;
     display:flex;
     justify-content: space-between;
     color: #fff;
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: 99;
+    display: block;
 }
 
 .menu-icon {
@@ -26,7 +28,7 @@ nav {
     transition: all .2s ease-in-out;
 }
 
-.logo {
+.logo a {
     font-weight: 600;
     font-size: 25px;
     color: tomato;
@@ -52,7 +54,7 @@ nav {
     font-weight: 300;
     padding: 0px 5px;
     margin-left: 20px;
-    position: relative;
+    /* position: relative; */
     /* display: inline-block; */
 }
 
@@ -74,7 +76,7 @@ nav {
 }
 
 @media screen and (max-width:800px) {
-    .logo{
+    .logo a{
         font-size: 20px;
     }
     .menu-list li a {
@@ -90,7 +92,7 @@ nav {
     }
     .menu-list {
         flex-direction: column;
-        display: block;
+        /* display: block; */
         width: 100%;
         position: absolute;
         background-color: rgba(0,0,0,0.7);

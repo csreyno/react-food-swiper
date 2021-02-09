@@ -1,10 +1,10 @@
 const {memberLayout} = require('../utils')
-const {likes} = require('../models')
-const {recipes} = require('../models')
+const {Like} = require('../models/')
+const {recipe} = require('../models')
 
 const membersOnly = async (req, res) => {
     const { username } = req.session.user;
-    const allRecipes = await recipes.findAll()
+    const allRecipes = await recipe.findAll()
 
     res.render('members-only', {
         locals: {
@@ -19,9 +19,13 @@ const addLike = async (req, res) => {
     const { id } = req.session.user
     const { recipeid } = req.body;
 
-    const newLike = await likes.create({
+    const newLike = await Like.create({
         recipe_id: recipeid,
         user_id: id,
+        like_count: 0
+    });
+        return res.status(200).json({
+        message: "Success"
     });
     //console.log(newLike)
     // res.redirect('/members-only')

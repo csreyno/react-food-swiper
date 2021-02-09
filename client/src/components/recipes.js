@@ -281,7 +281,7 @@ const recipes = [
       },
     ],
     id: 635058,
-    title: "Black Bean and Peppers Taco Filling",
+    title: "Black Bean and Peppers Taco",
     readyInMinutes: 45,
     servings: 8,
     sourceUrl:
@@ -1760,7 +1760,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'Dried Fruit and Ginger Scones might be just the morn meal you are searching for. For <b>50 cents per serving</b>, this recipe <b>covers 6%</b> of your daily requirements of vitamins and minerals. One serving contains <b>274 calories</b>, <b>4g of protein</b>, and <b>11g of fat</b>. A few people made this recipe, and 55 would say it hit the spot. If you have apples, butter, milk, and a few other ingredients on hand, you can make it. From preparation to the plate, this recipe takes roughly <b>45 minutes</b>. This recipe is typical of Scottish cuisine. All things considered, we decided this recipe <b>deserves a spoonacular score of 29%</b>. This score is not so tremendous. Try <a href="https://spoonacular.com/recipes/low-fat-dried-fruit-scones-128926">Low Fat Dried Fruit Scones</a>, <a href="https://spoonacular.com/recipes/gluten-free-ginger-cream-scones-with-homemade-candied-ginger-525984">Gluten Free Ginger Cream Scones with Homemade Candied Ginger</a>, and <a href="https://spoonacular.com/recipes/chicken-with-passion-fruit-sauce-over-dried-fruit-and-nuts-orzo-227172">Chicken with Passion Fruit Sauce over Dried Fruit and Nuts Orzo</a> for similar recipes.',
-    cuisines: ["English", "Scottish", "British", "European"],
+    cuisines: ["British"],
     dishTypes: ["side dish"],
     diets: [],
     occasions: [],
@@ -3184,7 +3184,7 @@ const recipes = [
       },
     ],
     id: 715491,
-    title: "Sugared Pecans Gift Idea & Silhouette America Promotion",
+    title: "Sugared Pecans Gift & Silhouette",
     readyInMinutes: 65,
     servings: 6,
     sourceUrl: "http://www.pinkwhen.com/sugared-pecans-silhouette-america/",
@@ -3791,7 +3791,7 @@ const recipes = [
       },
     ],
     id: 715420,
-    title: "Barbecue Chicken Cauliflower Couscous Bowls",
+    title: "Bbq Chicken Cauliflower Bowl",
     readyInMinutes: 45,
     servings: 4,
     sourceUrl:
@@ -3800,7 +3800,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'Barbecue Chicken Cauliflower Couscous Bowls might be just the main course you are searching for. This recipe makes 4 servings with <b>440 calories</b>, <b>23g of protein</b>, and <b>25g of fat</b> each. For <b>$2.4 per serving</b>, this recipe <b>covers 32%</b> of your daily requirements of vitamins and minerals. If you have olive oil, chicken breasts, cauliflower, and a few other ingredients on hand, you can make it. To use up the sea-salt you could follow this main course with the <a href="https://spoonacular.com/recipes/raspberry-sea-salt-brownies-494161">Raspberry Sea Salt Brownies</a> as a dessert. It will be a hit at your <b>Father\'s Day</b> event. This recipe from Pink When has 398 fans. It is a good option if you\'re following a <b>gluten free</b> diet. This recipe is typical of American cuisine. From preparation to the plate, this recipe takes about <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 95%</b>. This score is excellent. Try <a href="https://spoonacular.com/recipes/couscous-bowls-with-zaatar-chickpeas-and-roasted-cauliflower-612788">Couscous Bowls with Za’atar Chickpeas and Roasted Cauliflower</a>, <a href="https://spoonacular.com/recipes/barbecue-chicken-and-veggie-rice-bowls-for-lunchboxes-534542">Barbecue Chicken and Veggie Rice Bowls for Lunchboxes</a>, and <a href="https://spoonacular.com/recipes/shredded-chicken-cauliflower-rice-burrito-bowls-609374">Shredded Chicken Cauliflower Rice Burrito Bowls</a> for similar recipes.',
-    cuisines: ["bbq", "Barbecue"],
+    cuisines: ["Barbecue"],
     dishTypes: ["lunch", "main course", "main dish", "dinner"],
     diets: ["gluten free"],
     occasions: ["father's day"],
@@ -4888,7 +4888,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'The recipe Easy Lemon Feta Greek Yogurt Dip is ready <b>in approximately 15 minutes</b> and is definitely an excellent <b>gluten free, primal, and vegetarian</b> option for lovers of Mediterranean food. This recipe serves 4 and costs $1.48 per serving. This hor d\'oeuvre has <b>249 calories</b>, <b>8g of protein</b>, and <b>23g of fat</b> per serving. It is perfect for <b>The Super Bowl</b>. This recipe is liked by 252 foodies and cooks. A mixture of greek yogurt, lemon zest, pepper flakes, and a handful of other ingredients are all it takes to make this recipe so delicious. All things considered, we decided this recipe <b>deserves a spoonacular score of 54%</b>. This score is solid. Try <a href="https://spoonacular.com/recipes/yogurt-and-feta-dip-922123">Yogurt and Feta Dip</a>, <a href="https://spoonacular.com/recipes/meyer-lemon-greek-yogurt-pound-cake-with-white-chocolate-greek-yogurt-topping-530873">Meyer Lemon-Greek Yogurt Pound Cake with White Chocolate-Greek Yogurt Topping</a>, and <a href="https://spoonacular.com/recipes/greek-yogurt-and-feta-dip-168280">Greek Yogurt and Feta Dip</a> for similar recipes.',
-    cuisines: ["Mediterranean", "European", "Greek"],
+    cuisines: ["Mediterranean"],
     dishTypes: ["condiment", "dip", "spread"],
     diets: ["gluten free", "lacto ovo vegetarian", "primal"],
     occasions: ["super bowl"],
@@ -6251,7 +6251,7 @@ const recipes = [
       },
     ],
     id: 716427,
-    title: "Roasted Butterflied Chicken w. Onions & Carrots",
+    title: "Roasted Butterflied Chicken",
     readyInMinutes: 45,
     servings: 4,
     sourceUrl:
@@ -8207,7 +8207,7 @@ const recipes = [
       },
     ],
     id: 756814,
-    title: "Powerhouse Almond Matcha Superfood Smoothie",
+    title: "Powerhouse Almond Matcha Smoothie",
     readyInMinutes: 10,
     servings: 2,
     sourceUrl:
@@ -9522,7 +9522,7 @@ const recipes = [
       },
     ],
     id: 636601,
-    title: "Butternut Squash Risotto With Pancetta and Sage Oil",
+    title: "Butternut Squash Risotto",
     readyInMinutes: 45,
     servings: 1,
     sourceUrl:
@@ -9531,7 +9531,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'Butternut Squash Risotto With Pancettan and Sage Oil is a main course that serves 1. Watching your figure? This gluten free recipe has <b>3006 calories</b>, <b>66g of protein</b>, and <b>119g of fat</b> per serving. For <b>$13.18 per serving</b>, this recipe <b>covers 68%</b> of your daily requirements of vitamins and minerals. This recipe is typical of Mediterranean cuisine. 15 people were impressed by this recipe. From preparation to the plate, this recipe takes approximately <b>approximately 45 minutes</b>. If you have vegetable stock, sage leaves, wine, and a few other ingredients on hand, you can make it. It is brought to you by Foodista. With a spoonacular <b>score of 88%</b>, this dish is tremendous. If you like this recipe, you might also like recipes such as <a href="https://spoonacular.com/recipes/butternut-squash-ravioli-with-pancetta-and-sage-77388">Butternut Squash Ravioli with Pancettan and Sage</a>, <a href="https://spoonacular.com/recipes/roast-squash-risotto-recipe-with-sage-chestnut-pancetta-25351">Roast Squash Risotto Recipe (with Sage, Chestnut & Pancetta)</a>, and <a href="https://spoonacular.com/recipes/butternut-squash-risotto-with-pancetta-and-pecorino-36184">Butternut Squash Risotto With Pancettan And Pecorino</a>.',
-    cuisines: ["Mediterranean", "Italian", "European"],
+    cuisines: ["Mediterranean"],
     dishTypes: ["side dish", "lunch", "main course", "main dish", "dinner"],
     diets: ["gluten free"],
     occasions: [],
@@ -10686,7 +10686,7 @@ const recipes = [
       },
     ],
     id: 637593,
-    title: "Cheese Tortellini With Shrimp In Tomato Cream Sauce",
+    title: "Cheese Tortellini",
     readyInMinutes: 45,
     servings: 4,
     sourceUrl:
@@ -11588,7 +11588,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'Dutch Oven Paella might be just the <b>European</b> recipe you are searching for. This recipe makes 6 servings with <b>689 calories</b>, <b>49g of protein</b>, and <b>22g of fat</b> each. For <b>$4.65 per serving</b>, this recipe <b>covers 37%</b> of your daily requirements of vitamins and minerals. 6 people were impressed by this recipe. Not a lot of people really liked this main course. It is a good option if you\'re following a <b>gluten free and dairy free</b> diet. It is brought to you by Foodista. A mixture of bell pepper, flat-leaf parsely, chicken thighs, and a handful of other ingredients are all it takes to make this recipe so scrumptious. From preparation to the plate, this recipe takes about <b>about 45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 77%</b>. This score is pretty good. Try <a href="https://spoonacular.com/recipes/dutch-oven-beef-100680">Dutch Oven Beef</a>, <a href="https://spoonacular.com/recipes/dutch-oven-cobbler-423365">Dutch Oven Cobbler</a>, and <a href="https://spoonacular.com/recipes/the-dutch-oven-from-the-hawthorne-205550">The Dutch Oven from The Hawthorne</a> for similar recipes.',
-    cuisines: ["Spanish", "European"],
+    cuisines: ["Spanish"],
     dishTypes: ["lunch", "main course", "main dish", "dinner"],
     diets: ["gluten free", "dairy free"],
     occasions: [],
@@ -12335,7 +12335,7 @@ const recipes = [
       },
     ],
     id: 643241,
-    title: "Four-Berry Blast Fruit Smoothie",
+    title: "Four-Berry Fruit Smoothie",
     readyInMinutes: 10,
     servings: 4,
     sourceUrl:
@@ -12673,7 +12673,7 @@ const recipes = [
       },
     ],
     id: 638338,
-    title: "Chicken Spaghettini With Fried Capers",
+    title: "Chicken Spaghettini",
     readyInMinutes: 45,
     servings: 2,
     sourceUrl:
@@ -13193,7 +13193,7 @@ const recipes = [
       },
     ],
     id: 664708,
-    title: "Vegetarian Spring Rolls With Garlic Lime Sauce",
+    title: "Vegetarian Spring Rolls",
     readyInMinutes: 45,
     servings: 10,
     sourceUrl:
@@ -13202,7 +13202,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'The recipe Vegetarian Spring Rolls With Garlic Lime Sauce is ready <b>in about 45 minutes</b> and is definitely a spectacular <b>gluten free, dairy free, and fodmap friendly</b> option for lovers of Vietnamese food. This hor d\'oeuvre has <b>133 calories</b>, <b>3g of protein</b>, and <b>1g of fat</b> per serving. This recipe serves 10 and costs 71 cents per serving. 10 people were impressed by this recipe. It is perfect for <b>Spring</b>. Head to the store and pick up butter leaf lettuce, vegetarian spring roll, saracha, and a few other things to make it today. All things considered, we decided this recipe <b>deserves a spoonacular score of 75%</b>. This score is solid. Try <a href="https://spoonacular.com/recipes/gluten-free-vegetarian-spring-rolls-with-thai-style-peanut-sauce-644859">Gluten Free Vegetarian Spring Rolls With Thai-Style Peanut Sauce</a>, <a href="https://spoonacular.com/recipes/tuna-spring-rolls-with-lime-soy-sauce-89688">Tuna Spring Rolls With Lime/soy Sauce</a>, and <a href="https://spoonacular.com/recipes/shrimp-spring-rolls-with-peanut-lime-dipping-sauce-5-points-548665">Shrimp Spring Rolls with Peanut Lime Dipping Sauce – 5 Points</a> for similar recipes.',
-    cuisines: ["Vietnamese", "Asian"],
+    cuisines: ["Vietnamese"],
     dishTypes: ["side dish"],
     diets: ["gluten free", "dairy free", "fodmap friendly"],
     occasions: ["spring", "easter"],
@@ -15409,7 +15409,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'The recipe Slow Cooker Lamb Curry is ready <b>in about 45 minutes</b> and is definitely a super <b>gluten free</b> option for lovers of Indian food. For <b>$3.57 per serving</b>, this recipe <b>covers 42%</b> of your daily requirements of vitamins and minerals. This recipe makes 8 servings with <b>568 calories</b>, <b>67g of protein</b>, and <b>24g of fat</b> each. Head to the store and pick up baking potatoes, rosemary, ginger, and a few other things to make it today. To use up the curry paste you could follow this main course with the <a href="https://spoonacular.com/recipes/chocolate-hazelnut-decadence-cake-pop-738246">Chocolate Hazelnut Decadence Cake Pop</a> as a dessert. 19 people have made this recipe and would make it again. A couple people really liked this main course. All things considered, we decided this recipe <b>deserves a spoonacular score of 93%</b>. This score is spectacular. Try <a href="https://spoonacular.com/recipes/leg-of-lamb-for-the-slow-cooker-crock-pot-96966">Leg of Lamb for the Slow Cooker / Crock Pot</a>, <a href="https://spoonacular.com/recipes/slow-cooker-lamb-shanks-484177">Slow Cooker Lamb Shanks</a>, and <a href="https://spoonacular.com/recipes/slow-cooker-lamb-stroganoff-517174">Slow Cooker Lamb Stroganoff</a> for similar recipes.',
-    cuisines: ["Indian", "Asian"],
+    cuisines: ["Indian"],
     dishTypes: ["lunch", "main course", "main dish", "dinner"],
     diets: ["gluten free"],
     occasions: [],
@@ -15818,7 +15818,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'If you want to add more <b>Chinese</b> recipes to your collection, Asian Dumplings might be a recipe you should try. This recipe serves 1. Watching your figure? This dairy free recipe has <b>4275 calories</b>, <b>192g of protein</b>, and <b>114g of fat</b> per serving. For <b>$18.55 per serving</b>, this recipe <b>covers 82%</b> of your daily requirements of vitamins and minerals. 6 people have tried and liked this recipe. From preparation to the plate, this recipe takes approximately <b>approximately 45 minutes</b>. It is brought to you by Foodista. It works well as a hor d\'oeuvre. If you have sugar, water, scallions, and a few other ingredients on hand, you can make it. With a spoonacular <b>score of 88%</b>, this dish is outstanding. If you like this recipe, you might also like recipes such as <a href="https://spoonacular.com/recipes/seriously-asian-all-about-dumplings-10036">Seriously Asian: All About Dumplings</a>, <a href="https://spoonacular.com/recipes/asian-dumplings-558806">Asian Dumplings</a>, and <a href="https://spoonacular.com/recipes/asian-shrimp-dumplings-45968">Asian Shrimp Dumplings</a>.',
-    cuisines: ["Chinese", "Asian"],
+    cuisines: ["Chinese"],
     dishTypes: [
       "antipasti",
       "starter",
@@ -16354,7 +16354,7 @@ const recipes = [
       },
     ],
     id: 645714,
-    title: "Grilled Fish With Sun Dried Tomato Relish",
+    title: "Grilled Fish",
     readyInMinutes: 45,
     servings: 2,
     sourceUrl:
@@ -19651,7 +19651,7 @@ const recipes = [
     imageType: "jpg",
     summary:
       'Roasted Pumpkin and Barley Risotto takes about <b>1 hour and 15 minutes</b> from beginning to end. This main course has <b>419 calories</b>, <b>18g of protein</b>, and <b>9g of fat</b> per serving. For <b>$2.05 per serving</b>, this recipe <b>covers 28%</b> of your daily requirements of vitamins and minerals. This recipe serves 3. A mixture of ginger, garlic, oregano, and a handful of other ingredients are all it takes to make this recipe so tasty. 7 people have made this recipe and would make it again. This recipe is typical of Mediterranean cuisine. It is brought to you by Foodista. Taking all factors into account, this recipe <b>earns a spoonacular score of 82%</b>, which is excellent. Users who liked this recipe also liked <a href="https://spoonacular.com/recipes/barley-risotto-with-roasted-winter-vegetables-250205">Barley Risotto with Roasted Winter Vegetables</a>, <a href="https://spoonacular.com/recipes/barley-risotto-with-roasted-winter-vegetables-545512">Barley Risotto with Roasted Winter Vegetables</a>, and <a href="https://spoonacular.com/recipes/barley-risotto-with-roasted-winter-vegetables-942844">Barley Risotto with Roasted Winter Vegetables</a>.',
-    cuisines: ["Mediterranean", "Italian", "European"],
+    cuisines: ["Italian"],
     dishTypes: ["lunch", "main course", "main dish", "dinner"],
     diets: [],
     occasions: [],
@@ -20233,7 +20233,7 @@ const recipes = [
       },
     ],
     id: 662363,
-    title: "Super Speedy Spicy Sweet and Sour Shrimp",
+    title: "Super Speedy Spicy Sweet & Sour Shrimp",
     readyInMinutes: 45,
     servings: 4,
     sourceUrl:
@@ -21739,8 +21739,8 @@ const recipes = [
       },
     ],
     id: 631874,
-    title: "5 Minute Gluten Free Wonder Buns",
-    readyInMinutes: 45,
+    title: "Gluten Free Wonder Buns",
+    readyInMinutes: 5,
     servings: 1,
     sourceUrl:
       "http://www.foodista.com/recipe/BLVF5K5Y/5-minute-gluten-free-wonder-buns",
@@ -22366,8 +22366,7 @@ const recipes = [
       },
     ],
     id: 633160,
-    title:
-      "Avocado Toast With Caramelized Sweet Onion, Grape Tomatoes, Fresh Garden Chives and Chive Blossoms",
+    title: "Avocado Toast",
     readyInMinutes: 45,
     servings: 2,
     sourceUrl:
@@ -24766,7 +24765,7 @@ const recipes = [
       },
     ],
     id: 652240,
-    title: "Moist Zucchini Pineapple Sweetbread",
+    title: "Zucchini Pineapple Sweetbread",
     readyInMinutes: 45,
     servings: 12,
     sourceUrl:

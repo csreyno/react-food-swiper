@@ -9,8 +9,8 @@ export const MenuList = [
         url: "/favoriterecipes"
     },
     {
-        title: "Pricing",
-        url: "/pricing"
+        title: "Register",
+        url: "/register"
     },
     {
         title: "Log out",
