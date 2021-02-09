@@ -81,9 +81,9 @@ nav {
 }
 
 @media screen and (max-width:800px) and (min-width: 613px) {
-    .logo a{
+    /* .logo a{
         font-size: 20px;
-    }
+    } */
     .menu-list li a {
         font-size: 14px;
         margin-left: 10px;
@@ -113,7 +113,7 @@ nav {
         background-color: rgba(0,0,0,0.7);
         padding: 20px;
         right: 0;
-        top: 86px;
+        top: 64px;
         transition: all 0.5s ease-in-out;
     }
     .menu-list li {
