@@ -10,7 +10,7 @@ nav {
 }
 
 .menu-icon {
-    display: none;
+    display: inline !important;
 }
 
 .fas {
@@ -20,11 +20,17 @@ nav {
 .menu-icon .fa-times {
     transform: rotate(360deg);
     transition: all .2s ease-in-out;
+    display:none;
 }
 
 .menu-icon .fa-bars {
     transform: rotate(180deg);
     transition: all .2s ease-in-out;
+    display:none;
+}
+
+.logo {
+    display: inline !important;
 }
 
 .logo a {
@@ -43,7 +49,7 @@ nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     margin-bottom: 0px;
 }
 
@@ -74,7 +80,7 @@ nav {
     transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:800px) and (min-width: 613px) {
     .logo a{
         font-size: 20px;
     }
@@ -82,12 +88,22 @@ nav {
         font-size: 14px;
         margin-left: 10px;
     }
+    .menu-icon .fa-times {
+        transform: rotate(360deg);
+        transition: all .2s ease-in-out;
+        display: none;
+    }
+    .menu-icon .fa-bars {
+        transform: rotate(180deg);
+        transition: all .2s ease-in-out;
+        display: none;
+    }
 }
 
 @media screen and (max-width:612px) {
     .menu-icon {
-        display: block;
-        text-align: right;
+        display: inline !important;
+        text-align: right !important;
     }
     .menu-list {
         flex-direction: column;
@@ -117,5 +133,17 @@ nav {
     .menu-list.close {
         transition: all 0.5s ease-in-out;
         visibility: hidden;
+    }
+    .menu-icon .fa-times {
+        transform: rotate(360deg);
+        transition: all .2s ease-in-out;
+        float: right;
+        display: inline !important;
+    }
+    .menu-icon .fa-bars {
+        transform: rotate(180deg);
+        transition: all .2s ease-in-out;
+        float: right;
+        display: inline !important;
     }
 }
