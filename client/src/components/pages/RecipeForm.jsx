@@ -30,6 +30,10 @@ export default function RecipeForm(props) {
           <input required type="text" />
           <br />
           <br />
+          {inputingredients.map((inputingredients, index) => (
+            <div></div>
+          ))}
+
           <label>Ingredients:</label>
           <br />
           <input required type="text" />
