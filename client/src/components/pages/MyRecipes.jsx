@@ -1,11 +1,16 @@
 import React from "react";
+import RecipeForm from "./RecipeForm";
 
 export default function MyRecipes(props) {
   return (
     <div>
-      <div className="fav-list">
-        <h2>My Recipes</h2>
+      <br />
+      <br />
 
+      <div className="myrecipes">
+        <br />
+        <h3 className="PageTitle">My Recipes</h3>
+        <RecipeForm />
         {/* <ul>
           {props.recipes.map((recipes) => (
             <li
@@ -17,8 +22,9 @@ export default function MyRecipes(props) {
             </li>
           ))}
         </ul> */}
+        <br />
+        <br />
       </div>
-      <button>Add new recipe</button>
     </div>
   );
 }

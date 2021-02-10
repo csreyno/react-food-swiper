@@ -1,12 +1,11 @@
 * {
-  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
   font-family: Raleway, sans-serif;
 }
 
 element.style {
-  opacity: 0.0;
+  opacity: 0;
 }
 
 body {
@@ -77,6 +76,7 @@ button[aria-label="next"] {
 h2 {
   display: inline-block;
   margin-right: 10px !important;
+  text-align: center !important;
 }
 
 .cardtitle {
@@ -88,6 +88,7 @@ h2 {
 h2:nth-of-type(2) {
   opacity: 0.7;
   font-size: 1.35rem;
+  text-align: center !important;
 }
 
 h5 {
@@ -155,10 +156,8 @@ circle {
   align-content: center;
   /* margin-top: 15%; */
   position: relative;
-  top: 25%
-  
+  top: 25%;
 }
-
 
 .login-card {
   text-align: center;
@@ -169,3 +168,16 @@ circle {
   position: absolute;
 }
 
+.PageTitle {
+  text-align: center !important;
+}
+form {
+  flex: auto;
+  background: none !important;
+  text-align: center !important;
+}
+
+.myrecipes {
+  margin-top: 1rem;
+  background-color: salmon;
+}
