@@ -49,20 +49,20 @@ function Deck() {
     console.log(resp.data)
     setNewRecipes(resp.data);
     console.log("recipes gathered")
-  }
+  };
     
-    const createStack = () => {
-    const cards = newRecipes.slice(stack*perStack, perStack*(stack+1)).map(r => {
-      let cardFormat = {
-        title: r.title,
-        readyInMinutes: r.readyInMinutes,
-        image: r.image
-      }
-      
-      return cardFormat
-    });
-    setCurrentRecipes(cards)
-    console.log("Current recipes updated", cards.length)
+  const createStack = () => {
+  const cards = newRecipes.slice(stack*perStack, perStack*(stack+1)).map(r => {
+    let cardFormat = {
+      title: r.title,
+      readyInMinutes: r.readyInMinutes,
+      image: r.image
+    }
+    return cardFormat
+  });
+  setCurrentRecipes(cards)
+  console.log(cards)
+  console.log("Current recipes updated", cards.length)
   };
   
   const nextStack = (s) => {
@@ -165,13 +165,7 @@ function Deck() {
           config: { friction: 20, tension: down ? 800 : isGone ? 200 : 500 },
         };
       });
-      // function deleteStackRecipes(){
-      //   for (let i=0; i<perStack; i++) {
-      //     stackRecipes.pop(i)
-      //     }
-      //     console.log(stackRecipes);
-      //     console.log(stack);
-      // }
+
       // function newStackRecipes(){
       //   for (let i=0; i<perStack; i++) {
       //     stackRecipes.push(data[stack*perStack+i])
@@ -183,9 +177,8 @@ function Deck() {
       
       if (!down && gone.size === perStack) {  //=== data.length
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
-        // deleteStackRecipes();
-        setTimestamp((new Date()).getTime());
         
+        setTimestamp((new Date()).getTime());
         
       }
     }

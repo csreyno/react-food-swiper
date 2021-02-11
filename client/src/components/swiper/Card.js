@@ -4,7 +4,7 @@ import { animated, interpolate } from "react-spring/hooks";
 import Carousel from "nuka-carousel";
 
 const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
-  if (data && data.length) {
+  if (data && data.length && data[i]) {
     console.log(data[i])
     const { title, readyInMinutes, image } = data[i];
   
