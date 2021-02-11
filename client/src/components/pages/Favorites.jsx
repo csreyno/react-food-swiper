@@ -1,9 +1,18 @@
 import React from "react";
-
+import FavCard from "./FavCard";
 export default function Favorites() {
   return (
     <div>
-      <p>My Favorites</p>
+      <br />
+      <br />
+
+      <div className="myrecipes">
+        <br />
+        <h1 className="PageTitle">My Favorites</h1>
+        <br />
+        <br />
+        <FavCard />
+      </div>
     </div>
   );
 }

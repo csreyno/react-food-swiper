@@ -1,6 +1,6 @@
 import React from "react";
 import RecipeForm from "./RecipeForm";
-
+import RecipeForm2 from "./RecipeForm2";
 export default function MyRecipes(props) {
   return (
     <div>
@@ -9,8 +9,7 @@ export default function MyRecipes(props) {
 
       <div className="myrecipes">
         <br />
-        <h3 className="PageTitle">My Recipes</h3>
-        <RecipeForm />
+        <h1 className="PageTitle">My Recipes</h1>
         {/* <ul>
           {props.recipes.map((recipes) => (
             <li
@@ -22,6 +21,10 @@ export default function MyRecipes(props) {
             </li>
           ))}
         </ul> */}
+        <br />
+        <RecipeForm2 />
+        {/* <RecipeForm /> */}
+
         <br />
         <br />
       </div>
