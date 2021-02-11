@@ -126,12 +126,12 @@ nav {
         
     }
     .menu-list li a, .menu-list li:last-child {
-        width:m 100px;
+        width: 100px;
         display: block;
         margin: auto;
     }
     .menu-list.close {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
         visibility: hidden;
     }
     .menu-icon .fa-times {

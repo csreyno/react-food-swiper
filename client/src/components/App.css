@@ -12,6 +12,55 @@ body {
   margin: 0;
 }
 
+.comments-component {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(234, 236, 236, 0.863);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: auto;
+  max-width: 850px;
+}
+
+@media screen and (max-width:850px) {
+  .comments-component {
+    margin: 10px;
+  }
+}
+
+.comments-body {
+  text-align: center;
+}
+
+.comment-card2 {
+  max-width: 830px;
+  border: 1px solid gray;
+  background-color: rgba(221, 224, 224, 0.781);
+  padding: 5px;
+  margin: 5px;
+}
+
+.form-control {
+  min-width: 325px;
+  min-height: 70px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.comments-button {
+  transition-duration: 0.4s;
+  background-color: rgb(255, 99, 71);
+  padding: 4px;
+  border: 1px solid gray;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.comments-button:hover {
+  background-color: rgb(219, 88, 65);
+  color: white;
+}
+
 .container1 {
   background: url("./images/spread.jpg");
   background-position: center;
