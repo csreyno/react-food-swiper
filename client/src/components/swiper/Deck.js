@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useSprings } from "react-spring/hooks";
 import { useGesture } from "react-with-gesture";
-import axios from "axios";
+import axios from 'axios'
 
 import Card from "./Card";
-import data from "../recipes";
 
 import "../App.css";
-
 
 // const newLike = async (recipeid) => {
 //   const resp = await axios.post('/api/members-only/addlike', { 
@@ -16,7 +14,6 @@ import "../App.css";
 //   console.log(resp.data)
 //   console.log({recipeid})
 // }
-
 
 const to = (i) => ({
   x: 0,
@@ -32,42 +29,69 @@ const trans = (r, s) =>
     r / 10
   }deg) rotateZ(${r}deg) scale(${s})`;
 
-
 function Deck() {
-  let stack = 0;
-  let perStack = 10;
-  const [gone] = useState(() => new Set());
-
-  // let oldStackRecipes = [];
-  
-  const [likedRecipes, setLikedRecipes] = useState([{}])
-  const [cards, setCards] = useState([{}])
-  const [currentRecipes, setCurrentRecipes] = useState([cards[stack*perStack],data[stack*perStack+1],data[stack*perStack+2],data[stack*perStack+3],data[stack*perStack+4],data[stack*perStack+5],data[stack*perStack+6],data[stack*perStack+7],data[stack*perStack+8],data[stack*perStack+9]]);
+  const [stack, setStack] = useState(0)
+  const perStack = 10;
+  const [gone] = useState(() => new Set());  
+  // const [likedRecipes, setLikedRecipes] = useState([{}])
+  const [newRecipes, setNewRecipes] = useState([{}])
+  const [currentRecipes, setCurrentRecipes] = useState([]);
+  const [timestamp, setTimestamp] = useState(0);
   const [props, set] = useSprings(perStack, (i) => ({ //data.length first arg
-
     ...to(i),
     from: from(i),
   }));
+
+  console.log(stack)
   
-  const importCard = async () => {
+  const importRecipes = async () => {
     const resp = await axios.get('/api/recipe-card')
     console.log(resp.data)
-    setCards(resp.data);
+    setNewRecipes(resp.data);
+    console.log("recipes gathered")
+  }
+    
+    const createStack = () => {
+    const cards = newRecipes.slice(stack*perStack, perStack*(stack+1)).map(r => {
+      let cardFormat = {
+        title: r.title,
+        readyInMinutes: r.readyInMinutes,
+        image: r.image
+      }
+      
+      return cardFormat
+    });
+    setCurrentRecipes(cards)
+    console.log("Current recipes updated", cards.length)
+  };
+  
+  const nextStack = (s) => {
+    setStack(s+1);
+  }
+
+  const prevStack = () => {
+    stack <= 0 ? setStack(stack-1) : setStack(stack)// set to not go lower than 0
   }
 
   useEffect(() => {
-    importCard();
+    importRecipes();
   }, []);
 
-  cards.map(card => {
-    let cardFormat = {
-      title: card.title,
-      readyInMinutes: card.readyInMinutes,
-      image: card.image
-    }
-    // return setLikedRecipes(cardFormat)
-  })
+  useEffect(() => {
+    createStack();
+  }, [newRecipes]);
 
+  useEffect(() => {
+    nextStack(stack);
+    createStack();
+    console.log("Next stack", stack)
+  }, [timestamp])
+
+  // useEffect(() => {
+    // nextStack();
+  //   createStack();
+  //   console.log("Next stack is loaded")
+  // }, [gone]);
 
   // for (let i=0; i<perStack; i++) {
   //   console.log(cards[i].title)
@@ -87,7 +111,7 @@ function Deck() {
       velocity,
     }) => {
       const trigger = velocity > 0.2;
-
+      
       const dir = xDir < 0 ? -1 : 1;
       // console.log(down, dir)
       // if (!down && dir === 1) {
@@ -99,36 +123,40 @@ function Deck() {
       //   console.log("swiped left");
       //   // console.log(stackRecipes[i]);
       // }
-
+      
       if (!down && trigger) gone.add(index);
-
+      
       set((i) => {
+
+
+
+
+
+
+
         if (index !== i) return;
         //swipe left or right fn that identifies direction
         if (!down && dir === 1) {
-          let i = 0
           // console.log(i);
           console.log("swiped right");
-
-          console.log(cards[i].id);
+          // console.log(cards[i].id);
           // console.log(stackRecipes[i].id);
           // const id = stackRecipes[i].id;
           // newLike(id)
-
         }
         if (!down && dir === -1) {
           console.log(i);
           console.log("swiped left");
         }
-
+        
         const isGone = gone.has(index);
-
+        
         const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0;
-
+        
         const rot = xDelta / 100 + (isGone ? dir * 10 * velocity : 0);
-
+        
         const scale = down ? 1.1 : 1;
-
+        
         return {
           x,
           rot,
@@ -152,23 +180,18 @@ function Deck() {
       //     console.log(stack);
       //     setCurrentRecipes(stackRecipes);
       // }
-      if (!down && gone.size === perStack) {
-        //=== data.length
+      
+      if (!down && gone.size === perStack) {  //=== data.length
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
         // deleteStackRecipes();
-        stack++;
-        // newStackRecipes();
-
-        setCurrentRecipes([cards[stack*perStack],data[stack*perStack+1],data[stack*perStack+2],data[stack*perStack+3],data[stack*perStack+4],data[stack*perStack+5],data[stack*perStack+6],data[stack*perStack+7],data[stack*perStack+8],data[stack*perStack+9]]);
-
+        setTimestamp((new Date()).getTime());
+        
+        
       }
     }
   );
 
-
   return props.map(({ x, y, rot, scale }, i) =>{
-    // console.log(i)
-    // console.log(currentRecipes);
    return (
     <Card
       key={i}
