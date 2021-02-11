@@ -61,7 +61,6 @@ function Deck() {
     return cardFormat
   });
   setCurrentRecipes(cards)
-  console.log(cards)
   console.log("Current recipes updated", cards.length)
   };
   
@@ -79,12 +78,13 @@ function Deck() {
 
   useEffect(() => {
     createStack();
-  }, [newRecipes]);
+  }, [newRecipes, stack]);
 
   useEffect(() => {
-    nextStack(stack);
-    createStack();
-    console.log("Next stack", stack)
+    if (timestamp !== 0) {
+      nextStack(stack);
+      console.log("Next stack", stack)
+    }
   }, [timestamp])
 
   // useEffect(() => {
@@ -177,7 +177,6 @@ function Deck() {
       
       if (!down && gone.size === perStack) {  //=== data.length
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
-        
         setTimestamp((new Date()).getTime());
         
       }
