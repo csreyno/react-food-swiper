@@ -6,7 +6,7 @@ const Navbar = () => {
         const [clicked, setClicked] = useState(false);
     const menuList = MenuList.map(({ url, title }, index) => {
         return (
-            <li key={index}>
+            <li key={index} onClick={() => setClicked(false)}>
                 <NavLink exact to={url} activeClassName="active">{title}</NavLink>
             </li>
         );

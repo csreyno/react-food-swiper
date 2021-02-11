@@ -8,7 +8,7 @@ export const MenuList = [
     url: "/favoriterecipes",
   },
   {
-    title: "My Recipies",
+    title: "My Recipes",
     url: "/myrecipes",
   },
   {
