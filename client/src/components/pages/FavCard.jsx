@@ -19,7 +19,8 @@ import MoreVertIcon from "@material-ui/icons/MoreVert";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      maxWidth: 345,
+      maxWidth: 400,
+      alignContent: "center",
     },
     media: {
       height: 0,
@@ -54,7 +55,7 @@ export default function FavCard() {
       <CardHeader
         avatar={
           <Avatar aria-label="recipe" className={classes.avatar}>
-            R
+            Food
           </Avatar>
         }
         action={
