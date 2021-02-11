@@ -19,7 +19,7 @@ const Navbar = () => {
         <nav>
             <div className="logo">
                 <a href="/demo">Food<font>Finder</font></a>
-                </div>
+            </div>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={ clicked ? "fas fa-times" : "fas fa-bars"}></i>
                 </div>
