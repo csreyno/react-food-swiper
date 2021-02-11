@@ -23,8 +23,6 @@ export default function MyRecipes(props) {
         </ul> */}
         <br />
         <RecipeForm2 />
-        {/* <RecipeForm /> */}
-
         <br />
         <br />
       </div>

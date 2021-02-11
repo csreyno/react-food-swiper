@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function RecipeForm2() {
   const [show, setShow] = useState(false);
+  const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
+  // const [title, setTitle] = useState("");
   const classes = useStyles();
   const [inputFields, setInputFields] = useState([
     { id: uuidv4(), Ingredients: "" },
@@ -36,7 +39,7 @@ export default function RecipeForm2() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("InputFields", inputFields);
+    console.log(title);
   };
 
   const handleChangeInput = (id, event) => {
@@ -72,6 +75,10 @@ export default function RecipeForm2() {
           <div>
             <TextField
               id="filled-basic"
+              value={title}
+              onChange={(e) => {
+                setTitle(e.target.value);
+              }}
               label="Recipe Name"
               fullWidth
               variant="filled"
@@ -112,7 +119,6 @@ export default function RecipeForm2() {
               fullWidth
               rows={6}
               length={10}
-              // defaultValue="Default Value"
               variant="filled"
             />
             <br />
