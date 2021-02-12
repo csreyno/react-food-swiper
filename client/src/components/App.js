@@ -50,9 +50,7 @@ function App() {
                 <Route
                   path="/"
                   exact
-                  component={Login}
-                  children={<Login doLogin={doLogin} />}
-                />
+                  component={Demo}/>                
                 <Route path="/favoriterecipes" exact component={Favorites} />
                 <Route path="/myrecipes" exact component={MyRecipes} />
                 <Route path="/register" exact component={Registration} />
@@ -66,7 +64,11 @@ function App() {
               </Switch>
             </>
           ) : (
-            <Login doLogin={doLogin} />
+            <>
+              <Registration />
+              {/* <br /> */}
+              <Login doLogin={doLogin} />
+            </>
           )}
         </div>
       </Router>
