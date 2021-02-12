@@ -35,7 +35,7 @@ function App() {
   useEffect(() => {
     async function checkLogin() {
       try {
-        const resp = await axios.get("/api/users/login-status");
+        const resp = await axios.get("/api/status");
         console.log("you are already logged in");
         setIsLoggedIn(true);
       } catch (e) {
