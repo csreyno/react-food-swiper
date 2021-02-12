@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
@@ -18,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     "& .MuiTextField-root": {
       background: "white",
       margin: theme.spacing(2),
-      width: 400,
+      width: 300,
     },
   },
   button: {
@@ -27,19 +28,28 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function RecipeForm2() {
+export default function RecipeForm2(props) {
   const [show, setShow] = useState(false);
   const [title, setTitle] = useState("");
-  // const [title, setTitle] = useState("");
-  // const [title, setTitle] = useState("");
+  const [readyInMinutes, setreadyInMinutes] = useState("");
+  const [image, setImage] = useState("");
+  const [preparation, setPreparation] = useState("");
   const classes = useStyles();
   const [inputFields, setInputFields] = useState([
     { id: uuidv4(), Ingredients: "" },
   ]);
+  useEffect(() => {
+    if (props.recipe) {
+      setTitle(props.recipe.title);
+    }
+  }, [props]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(title);
+    const resp = await axios.post("/api/recipes/add", {
+      title, readyInMinutes, image, inputFields, preparation
+    });
+    console.log(resp);
   };
 
   const handleChangeInput = (id, event) => {
@@ -88,6 +98,10 @@ export default function RecipeForm2() {
               id="filled-basic"
               label="Cooking Time in Mins"
               variant="filled"
+              value={readyInMinutes}
+              onChange={(e) => {
+                setreadyInMinutes(e.target.value);
+              }}
             />
             {inputFields.map((inputField) => (
               <div className={classes.root} key={inputField.id}>
@@ -120,6 +134,10 @@ export default function RecipeForm2() {
               rows={6}
               length={10}
               variant="filled"
+              value={preparation}
+              onChange={(e) => {
+                setPreparation(e.target.value);
+              }}
             />
             <br />
             <br />
@@ -128,6 +146,10 @@ export default function RecipeForm2() {
               className={classes.input}
               id="icon-button-file"
               type="file"
+              value={image}
+              onChange={(e) => {
+                setImage(e.target.value);
+              }}
             />
             <label htmlFor="icon-button-file">
               <IconButton

@@ -1,5 +1,6 @@
 import React from "react";
-// import FavCard from "./FavCard";
+import ResCard from "./ResCard";
+
 export default function Favorites() {
   return (
     <div>
@@ -22,7 +23,8 @@ export default function Favorites() {
           ))}
         </ul> */}
         <br />
-        {/* <FavCard /> */}
+        <ResCard />
+
       </div>
     </div>
   );
