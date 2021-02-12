@@ -7,14 +7,6 @@ import Card from "./Card";
 
 import "../App.css";
 
-// const newLike = async (recipeid) => {
-//   const resp = await axios.post('/api/members-only/addlike', { 
-//   recipe_id: {recipeid}
-//   });
-//   console.log(resp.data)
-//   console.log({recipeid})
-// }
-
 const to = (i) => ({
   x: 0,
   y: i * -1,
@@ -33,16 +25,14 @@ function Deck() {
   const [stack, setStack] = useState(0)
   const perStack = 10;
   const [gone] = useState(() => new Set());  
-  // const [likedRecipes, setLikedRecipes] = useState([{}])
   const [newRecipes, setNewRecipes] = useState([{}])
   const [currentRecipes, setCurrentRecipes] = useState([]);
   const [timestamp, setTimestamp] = useState(0);
+  const [likeCount, setLikeCount] = useState();
   const [props, set] = useSprings(perStack, (i) => ({ //data.length first arg
     ...to(i),
     from: from(i),
   }));
-
-  console.log(stack)
   
   const importRecipes = async () => {
     const resp = await axios.get('/api/recipe-card')
@@ -50,10 +40,19 @@ function Deck() {
     setNewRecipes(resp.data);
     console.log("recipes gathered")
   };
+
+  const newLike = async (recipeid) => {
+    const resp = await axios.post('/api/members-only/addlike', { 
+    recipe_id: {recipeid}
+    });
+    console.log(resp.data)
+    console.log({recipeid})
+  }
     
   const createStack = () => {
   const cards = newRecipes.slice(stack*perStack, perStack*(stack+1)).map(r => {
     let cardFormat = {
+      id: r.id,
       title: r.title,
       readyInMinutes: r.readyInMinutes,
       image: r.image
@@ -66,11 +65,15 @@ function Deck() {
   
   const nextStack = (s) => {
     setStack(s+1);
-  }
+  };
 
-  const prevStack = () => {
-    stack <= 0 ? setStack(stack-1) : setStack(stack)// set to not go lower than 0
-  }
+  // const likeCountInc = (like) => {
+  //   setLikeCount(like+1)
+  // }
+
+  // const prevStack = () => {
+  //   stack <= 0 ? setStack(stack-1) : setStack(stack)// set to not go lower than 0
+  // };
 
   useEffect(() => {
     importRecipes();
@@ -78,32 +81,34 @@ function Deck() {
 
   useEffect(() => {
     createStack();
+    
   }, [newRecipes, stack]);
+
+  // useEffect(() => {
+  //   if (currentRecipes && currentRecipes.length) {
+  //     console.log("==================")
+  //     console.log("active")
+  //     let i = 0;
+  //     let id = currentRecipes[i].id
+  //     newLike(id)
+  //     i++
+  //     console.log(id)    
+  // }   
+  // }, [likeCount]);
 
   useEffect(() => {
     if (timestamp !== 0) {
       nextStack(stack);
       console.log("Next stack", stack)
     }
-  }, [timestamp])
+  }, [timestamp]);
 
-  // useEffect(() => {
-    // nextStack();
-  //   createStack();
-  //   console.log("Next stack is loaded")
-  // }, [gone]);
+  
 
-  // for (let i=0; i<perStack; i++) {
-  //   console.log(cards[i].title)
-  //   setLikedRecipes(cards[i].title)
-  //   console.log(likedRecipes)
-//     // setLikedRecipes(oldStack)
-//     // console.log(likedRecipes)
-//  }
 
   const bind = useGesture(
     ({
-      args: [index],
+      args: [index, id], 
       down,
       delta: [xDelta],
       distance,
@@ -113,35 +118,19 @@ function Deck() {
       const trigger = velocity > 0.2;
       
       const dir = xDir < 0 ? -1 : 1;
-      // console.log(down, dir)
-      // if (!down && dir === 1) {
-      //   console.log("swiped right");
-
-      //   // console.log(stackRecipes[i]);
-      // }
-      // if (!down && dir === -1) {
-      //   console.log("swiped left");
-      //   // console.log(stackRecipes[i]);
-      // }
       
       if (!down && trigger) gone.add(index);
       
       set((i) => {
-
-
-
-
-
-
-
+        console.log(id, "=======================")
         if (index !== i) return;
         //swipe left or right fn that identifies direction
-        if (!down && dir === 1) {
+        if (!down && dir === 1 && dir !== 0) {
           // console.log(i);
-          console.log("swiped right");
-          // console.log(cards[i].id);
-          // console.log(stackRecipes[i].id);
-          // const id = stackRecipes[i].id;
+          console.log("====================")
+          console.log("swiped right", id);
+          // likeCountInc(likeCount)
+          // console.log(likeCount)
           // newLike(id)
         }
         if (!down && dir === -1) {
@@ -165,15 +154,6 @@ function Deck() {
           config: { friction: 20, tension: down ? 800 : isGone ? 200 : 500 },
         };
       });
-
-      // function newStackRecipes(){
-      //   for (let i=0; i<perStack; i++) {
-      //     stackRecipes.push(data[stack*perStack+i])
-      //     console.log(stack*perStack+i)}
-      //     console.log(stackRecipes ,"new");
-      //     console.log(stack);
-      //     setCurrentRecipes(stackRecipes);
-      // }
       
       if (!down && gone.size === perStack) {  //=== data.length
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);

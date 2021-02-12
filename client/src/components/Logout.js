@@ -11,9 +11,11 @@ function Logout(props) {
     };
 
     return (
-        <button onClick={onClick}>
+        <div className="logout-div">
+        <button className="logout-button" onClick={onClick}>
             Logout
         </button>
+        </div>
     );
 }
 

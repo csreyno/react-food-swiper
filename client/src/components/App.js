@@ -4,9 +4,6 @@ import Navbar from "./Navbar/Navbar";
 // import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import Favorites from "./pages/Favorites";
-// import Pricing from "./pages/Pricing";
-// import Testimonials from "./pages/Testimonials";
-// import Home from "./pages/Home"
 import Login from "./Login";
 import axios from "axios";
 import "./App.css";
@@ -53,9 +50,7 @@ function App() {
                 <Route
                   path="/"
                   exact
-                  component={Login}
-                  children={<Login doLogin={doLogin} />}
-                />
+                  component={Demo}/>                
                 <Route path="/favoriterecipes" exact component={Favorites} />
                 <Route path="/myrecipes" exact component={MyRecipes} />
                 <Route path="/register" exact component={Registration} />
@@ -69,7 +64,11 @@ function App() {
               </Switch>
             </>
           ) : (
-            <Login doLogin={doLogin} />
+            <>
+              <Registration />
+              {/* <br /> */}
+              <Login doLogin={doLogin} />
+            </>
           )}
         </div>
       </Router>

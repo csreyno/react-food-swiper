@@ -18,15 +18,15 @@ function Register(props){
             });
             console.log(resp);
 
-            setMessage('Logging in...');
+            setMessage('Creating User');
         } catch (e) {
-            setMessage('Invalid username or password');
+            setMessage("Invalid username/password");
         }
     };
 
     return (
-    <div className="login-div">
-        <section className="login-card">
+    <div className="reg-div">
+        <section className="reg-card">
             <h1>Register</h1>
 
             {message && <h2>{message}</h2>}
@@ -66,7 +66,7 @@ function Register(props){
                     <Form.Check type="checkbox" label="Remember Me" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Register
                 </Button>
                 </Form>
         </section>
