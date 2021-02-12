@@ -66,7 +66,7 @@ function App() {
               </Switch>
             </>
           ) : (
-            <newLogin />
+            <Login doLogin={doLogin} />
           )}
         </div>
       </Router>

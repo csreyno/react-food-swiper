@@ -20,7 +20,7 @@ function Register(props){
 
             setMessage('Logging in...');
         } catch (e) {
-            setMessage('Invalid username or password');
+            setMessage(e);
         }
     };
 
@@ -66,7 +66,7 @@ function Register(props){
                     <Form.Check type="checkbox" label="Remember Me" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Register
                 </Button>
                 </Form>
         </section>

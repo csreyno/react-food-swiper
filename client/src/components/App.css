@@ -230,3 +230,14 @@ form {
   margin-top: 1rem;
   background-color: salmon;
 }
+
+.logout-div {
+  top: 15%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.logout-button {
+  display:flex;
+  position: absolute
+}
