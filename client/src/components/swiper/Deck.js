@@ -43,10 +43,10 @@ function Deck() {
 
   const newLike = async (recipeid) => {
     const resp = await axios.post('/api/members-only/addlike', { 
-    recipe_id: {recipeid}
+    recipe_id: recipeid
     });
     console.log(resp.data)
-    console.log({recipeid})
+    console.log(recipeid)
   }
     
   const createStack = () => {
@@ -129,7 +129,7 @@ function Deck() {
           // console.log(i);
           console.log("====================")
           console.log("swiped right", id);
-          // likeCountInc(likeCount)
+          newLike(id)
           // console.log(likeCount)
           // newLike(id)
         }

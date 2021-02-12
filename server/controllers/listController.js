@@ -1,5 +1,5 @@
 const { memberLayout } = require("../utils");
-const { likes } = require('../models')
+const { Like } = require('../models')
 const { recipes } = require('../models')
 
 // const generateList = (req, res) => {
@@ -11,33 +11,35 @@ const { recipes } = require('../models')
 const processForm = async (req, res) => {
   const { id } = req.session.user;
   const { recipeid } = req.body
-  if (id) {
-      const listLike = await likes.create({
-          recipeid
-      });
-      res.redirect(`${req.baseUrl}/`)
-  } else {
-      res.redirect(req.url);
-  }
+  // if (id) {
+  //     const listLike = await Like.create({
+  //         recipeid
+  //     });
+  //     res.redirect(`${req.baseUrl}/`)
+  // } else {
+  //     res.redirect(req.url);
+  // }
   
 };
 
 const generateList = async (req, res) => {
   const { id } = req.session.user;
   if (id) {
-    const myRecipes = await likes.findAll({
+    const myRecipes = await Like.findAll({
       where: {
         user_id: id,
       }
+      
     });
-    res.render('list', {
-      locals: {
-        myRecipes
-      },
-      ...memberLayout
+    console.log(myRecipes)
+    return res.status(200).json({
+      message: "Success",
+      myRecipes
     })
   } else {
-    res.redirect('/')
+    res.status(400).json({
+      message: "You have not liked any recipes yet!"
+  });      
   }
 }
 

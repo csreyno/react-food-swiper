@@ -12,7 +12,13 @@ const FileStore = require("session-file-store")(session);
 
 const { requireLogin } = require("./auth");
 
-const { userRouter, memberRouter, cardRouter, recipeRouter } = require("./routers");
+const { 
+  userRouter, 
+  memberRouter,
+  cardRouter, 
+  recipeRouter,
+  listRouter 
+} = require("./routers");
 
 const {
   memberController,
@@ -60,57 +66,58 @@ app.use("/api/users", userRouter);
 app.use("/api/members-only", memberRouter);
 app.use("/api/recipe-card", cardRouter);
 app.use("/api/recipes", recipeRouter);
+app.use("/api/list", listRouter);
 
 // app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
 // app.post("/members-only/addlike", memberController.addLike)
-app.get("/list", async (req, res) => {
-  const { username } = req.session.user;
-  const { id } = req.session.user;
-  const { recipeid } = req.body;
-  if (id) {
-    const myLikes = await likes.findAll({
-      where: {
-        user_id: id,
-      },
-      include: recipes,
-    });
-    console.log(JSON.stringify(myLikes, null, 4));
-    res.render("list", {
-      locals: {
-        username,
-        myRecipes: myLikes.map((l) => l.recipe),
-      },
-      ...memberLayout,
-    });
-  } else {
-    res.redirect("/");
-  }
-});
+// app.get("/list", async (req, res) => {
+//   const { username } = req.session.user;
+//   const { id } = req.session.user;
+//   const { recipeid } = req.body;
+//   if (id) {
+//     const myLikes = await likes.findAll({
+//       where: {
+//         user_id: id,
+//       },
+//       include: recipes,
+//     });
+//     console.log(JSON.stringify(myLikes, null, 4));
+//     res.render("list", {
+//       locals: {
+//         username,
+//         myRecipes: myLikes.map((l) => l.recipe),
+//       },
+//       ...memberLayout,
+//     });
+//   } else {
+//     res.redirect("/");
+//   }
+// });
 
-app.get("/development", (req, res) => {
-  const { username } = req.session.user;
-  res.render("development", {
-    locals: {
-      username,
-    },
-    ...memberLayout,
-  });
-});
+// app.get("/development", (req, res) => {
+//   const { username } = req.session.user;
+//   res.render("development", {
+//     locals: {
+//       username,
+//     },
+//     ...memberLayout,
+//   });
+// });
 
-app.get("/list/:recipeid", async (req, res) => {
-  const { recipeid } = req.params;
-  const recipeCard = await recipes.findByPk(recipeid);
-  const { username } = req.session.user;
-  res.render("recipe-card", {
-    locals: {
-      recipe: recipeCard,
-      ingredients: recipeCard.ingredients.split(","),
-      preparation: recipeCard.preparation.split("."),
-      username,
-    },
-    ...memberLayout,
-  });
-});
+// app.get("/list/:recipeid", async (req, res) => {
+//   const { recipeid } = req.params;
+//   const recipeCard = await recipes.findByPk(recipeid);
+//   const { username } = req.session.user;
+//   res.render("recipe-card", {
+//     locals: {
+//       recipe: recipeCard,
+//       ingredients: recipeCard.ingredients.split(","),
+//       preparation: recipeCard.preparation.split("."),
+//       username,
+//     },
+//     ...memberLayout,
+//   });
+// });
 
 app.get("/unauthorized", unauthorized.badUser);
 
