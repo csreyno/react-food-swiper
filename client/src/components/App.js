@@ -10,6 +10,7 @@ import "./App.css";
 import Logout from "./Logout";
 import Registration from "./Registration";
 import MyRecipes from "./pages/MyRecipes";
+import RecipeDetails from "./RecipeDetails"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -65,10 +66,9 @@ function App() {
                   path="/"
                   exact
                   component={Demo}/>                
-                <Route path="/favoriterecipes" 
-                  exact component={Favorites} 
-                  children={<Favorites recipes={myRecipes} />}
-                  />
+                <Route path="/favoriterecipes">
+                <Favorites recipes={myRecipes} />  
+                  </Route>
                 <Route path="/myrecipes" exact component={MyRecipes} />
                 <Route path="/register" exact component={Registration} />
                 <Route
