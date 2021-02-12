@@ -1,6 +1,6 @@
 const { Recipe } = require("../models");
 
-const addPost = async (req, res) => {
+const addRecipe = async (req, res) => {
   const { id } = req.session.user;
   const { title, readyInMinutes, image, instructions, inputFields } = req.body;
   const newPost = await Recipe.create({
@@ -15,4 +15,4 @@ const addPost = async (req, res) => {
   });
 };
 
-module.exports = { addPost };
+module.exports = { addRecipe };
