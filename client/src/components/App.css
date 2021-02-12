@@ -128,6 +128,10 @@ h2 {
   text-align: center !important;
 }
 
+.register-here {
+  padding: 10px;
+}
+
 .cardtitle {
   /* display: inline-block; */
   text-align: center;

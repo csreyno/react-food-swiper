@@ -4,11 +4,11 @@ import Navbar from "./Navbar/Navbar";
 // import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import Favorites from "./pages/Favorites";
-import Login from "./Login";
+import Login from "./pages/Login";
 import axios from "axios";
 import "./App.css";
-import Logout from "./Logout";
-import Registration from "./Registration";
+import Logout from "./pages/Logout";
+import Registration from "./pages/Registration";
 import MyRecipes from "./pages/MyRecipes";
 import RecipeDetails from "./RecipeDetails"
 
@@ -64,29 +64,42 @@ function App() {
               <Switch>
                 <Route
                   path="/"
-                  exact
-                  component={Demo}/>                
+                  exact component={Demo}/>                
                 <Route path="/favoriterecipes">
                 <Favorites recipes={myRecipes} />  
                   </Route>
-                <Route path="/myrecipes" exact component={MyRecipes} />
-                <Route path="/register" exact component={Registration} />
+                <Route 
+                  path="/myrecipes" 
+                  exact component={MyRecipes} />
+                <Route 
+                  path="/register" 
+                  exact component={Registration} />
                 <Route
                   path="/logout"
-                  exact
-                  component={Logout}
+                  exact component={Logout}
                   children={<Logout doLogout={doLogout} />}
                 />
-                <Route path="/demo" exact component={Demo} />
+                <Route 
+                  path="/demo" 
+                  exact component={Demo} />
               </Switch>
             </>
           ) : (
             <>
-              <Registration />
+              {/* <Registration /> */}
               {/* <br /> */}
-              <Login doLogin={doLogin} 
+              <Navbar />
 
-              />
+              <Switch>
+              <Route
+                path="/"
+                exact component={Login} />
+                {/* <Login doLogin={doLogin} /> */}
+              <Route 
+                path="/register" 
+                exact component={Registration} />  
+              </Switch>
+              
             </>
           )}
         </div>

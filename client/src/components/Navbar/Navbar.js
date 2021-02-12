@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Navbar.css";
 import { MenuList } from "./MenuList";
 import {NavLink} from "react-router-dom";
+
 const Navbar = () => {
         const [clicked, setClicked] = useState(false);
     const menuList = MenuList.map(({ url, title }, index) => {
