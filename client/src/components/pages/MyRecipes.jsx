@@ -1,6 +1,7 @@
 import React from "react";
-import RecipeForm from "./RecipeForm";
 import RecipeForm2 from "./RecipeForm2";
+import { useState } from "react";
+
 export default function MyRecipes(props) {
   return (
     <div>
@@ -11,7 +12,7 @@ export default function MyRecipes(props) {
         <br />
         <h1 className="PageTitle">My Recipes</h1>
         {/* <ul>
-          {props.recipes.map((recipes) => (
+          {props.recipe.map((recipes) => (
             <li
               onClick={(e) => {
                 props.chooseRecipe(recipes.id);

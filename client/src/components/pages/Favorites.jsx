@@ -1,5 +1,5 @@
 import React from "react";
-import FavCard from "./FavCard";
+import ResCard from "./ResCard";
 export default function Favorites() {
   return (
     <div>
@@ -11,7 +11,7 @@ export default function Favorites() {
         <h1 className="PageTitle">My Favorites</h1>
         <br />
         <br />
-        <FavCard />
+        <ResCard />
       </div>
     </div>
   );
