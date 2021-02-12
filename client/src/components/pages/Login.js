@@ -60,8 +60,13 @@ function Login(props){
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
+                <br/>
+                <div className="register-here">        
+                     <a href="/register">Register Here</a>
+                </div>
                 </Form>
         </div>
+ 
     </div>
     
     );
