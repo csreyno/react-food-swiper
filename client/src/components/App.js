@@ -65,7 +65,10 @@ function App() {
                   path="/"
                   exact
                   component={Demo}/>                
-                <Route path="/favoriterecipes" exact component={Favorites} recipes={myRecipes} />
+                <Route path="/favoriterecipes" 
+                  exact component={Favorites} 
+                  children={<Favorites recipes={myRecipes} />}
+                  />
                 <Route path="/myrecipes" exact component={MyRecipes} />
                 <Route path="/register" exact component={Registration} />
                 <Route

@@ -1,6 +1,6 @@
 const { memberLayout } = require("../utils");
 const { Like } = require('../models')
-const { recipes } = require('../models')
+const { Recipe } = require('../models');
 
 // const generateList = (req, res) => {
 //   res.render("list", {
@@ -28,9 +28,14 @@ const generateList = async (req, res) => {
     const myRecipes = await Like.findAll({
       where: {
         user_id: id,
-      }
-      
+      },
+      include: Recipe
     });
+    // const recipeData = await Recipe.findAll({
+    //   where: {
+    //     recipe_id: myRecipes.recipe_id
+    //   }
+    // })
     console.log(myRecipes)
     return res.status(200).json({
       message: "Success",
