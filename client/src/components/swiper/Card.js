@@ -6,7 +6,7 @@ import Carousel from "nuka-carousel";
 const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
   if (data && data.length && data[i]) {
     console.log(data[i])
-    const { title, readyInMinutes, image } = data[i];
+    const { id, title, readyInMinutes, image } = data[i];
   
     return (
       <animated.div
@@ -19,7 +19,7 @@ const Card = ({ i, x, y, rot, scale, trans, bind, data }) => {
         }}
       >
         <animated.div
-          {...bind(i)}
+          {...bind(i, id)}
           style={{
             transform: interpolate([rot, scale], trans),
           }}
