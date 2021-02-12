@@ -13,7 +13,9 @@ const newUser = (req, res) => {
 };
 
 const processNewUser = async (req, res) => {
-    const {username, password} = req.body
+    // const {username, password} = req.body
+    const username = req.body.usernameReg;
+    const password = req.body.passwordReg;
     if (username === '' || password === '') {
         console.log('username or password is blank!', req.baseUrl)
         res.status(400).json({

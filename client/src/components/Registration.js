@@ -18,15 +18,15 @@ function Register(props){
             });
             console.log(resp);
 
-            setMessage('Logging in...');
+            setMessage('Creating User');
         } catch (e) {
-            setMessage(e);
+            setMessage("Invalid username/password");
         }
     };
 
     return (
-    <div className="login-div">
-        <section className="login-card">
+    <div className="reg-div">
+        <section className="reg-card">
             <h1>Register</h1>
 
             {message && <h2>{message}</h2>}

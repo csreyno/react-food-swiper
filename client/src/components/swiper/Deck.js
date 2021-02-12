@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useSprings } from "react-spring/hooks";
 import { useGesture } from "react-with-gesture";
 import axios from 'axios'
@@ -25,7 +25,6 @@ function Deck() {
   const [stack, setStack] = useState(0)
   const perStack = 10;
   const [gone] = useState(() => new Set());  
-  const [likedRecipes, setLikedRecipes] = useState([{}])
   const [newRecipes, setNewRecipes] = useState([{}])
   const [currentRecipes, setCurrentRecipes] = useState([]);
   const [timestamp, setTimestamp] = useState(0);
@@ -68,13 +67,13 @@ function Deck() {
     setStack(s+1);
   };
 
-  const likeCountInc = (like) => {
-    setLikeCount(like+1)
-  }
+  // const likeCountInc = (like) => {
+  //   setLikeCount(like+1)
+  // }
 
-  const prevStack = () => {
-    stack <= 0 ? setStack(stack-1) : setStack(stack)// set to not go lower than 0
-  };
+  // const prevStack = () => {
+  //   stack <= 0 ? setStack(stack-1) : setStack(stack)// set to not go lower than 0
+  // };
 
   useEffect(() => {
     importRecipes();
@@ -85,17 +84,17 @@ function Deck() {
     
   }, [newRecipes, stack]);
 
-  useEffect(() => {
-    if (currentRecipes && currentRecipes.length) {
-      console.log("==================")
-      console.log("active")
-      let i = 0;
-      let id = currentRecipes[i].id
-      newLike(id)
-      i++
-      console.log(id)    
-  }   
-  }, [likeCount]);
+  // useEffect(() => {
+  //   if (currentRecipes && currentRecipes.length) {
+  //     console.log("==================")
+  //     console.log("active")
+  //     let i = 0;
+  //     let id = currentRecipes[i].id
+  //     newLike(id)
+  //     i++
+  //     console.log(id)    
+  // }   
+  // }, [likeCount]);
 
   useEffect(() => {
     if (timestamp !== 0) {
