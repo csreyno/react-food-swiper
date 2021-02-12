@@ -12,17 +12,17 @@ const FileStore = require("session-file-store")(session);
 
 const { requireLogin } = require("./auth");
 
+const { userRouter, memberRouter, cardRouter, postRouter } = require("./routers");
+
 const {
-  userRouter,
-  memberRouter,
-  cardRouter
-} = require("./routers");
+  memberController,
+  homeController,
+  unauthorized,
+} = require("./controllers");
 
-const { memberController, homeController, unauthorized } = require("./controllers");
+const { recipes, likes } = require("./models");
 
-const { recipes, likes } = require('./models')
-
-const { memberLayout } = require('./utils')
+const { memberLayout } = require("./utils");
 
 const app = express();
 const server = http.createServer(app);
@@ -53,66 +53,67 @@ app.use(logger);
 app.use(express.static("public"));
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json())
+app.use(express.json());
 
 app.get("/", homeController.home);
 app.use("/api/users", userRouter);
 app.use("/api/members-only", memberRouter);
 app.use("/api/recipe-card", cardRouter);
+app.use("/api/new-recipe", postRouter);
 
 // app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
 // app.post("/members-only/addlike", memberController.addLike)
 app.get("/list", async (req, res) => {
-  const { username } = req.session.user
+  const { username } = req.session.user;
   const { id } = req.session.user;
-  const { recipeid } = req.body
+  const { recipeid } = req.body;
   if (id) {
     const myLikes = await likes.findAll({
       where: {
-        user_id: id
+        user_id: id,
       },
-      include: recipes
+      include: recipes,
     });
     console.log(JSON.stringify(myLikes, null, 4));
-    res.render('list', {
+    res.render("list", {
       locals: {
         username,
-        myRecipes: myLikes.map(l => l.recipe)
+        myRecipes: myLikes.map((l) => l.recipe),
       },
-      ...memberLayout
-    })
+      ...memberLayout,
+    });
   } else {
-    res.redirect('/')
+    res.redirect("/");
   }
-})
+});
 
 app.get("/development", (req, res) => {
-  const { username } = req.session.user
-  res.render('development', {
+  const { username } = req.session.user;
+  res.render("development", {
     locals: {
-      username
+      username,
     },
-    ...memberLayout
-  })
-})
+    ...memberLayout,
+  });
+});
 
-app.get('/list/:recipeid', async (req, res) => {
-  const {recipeid} = req.params
-  const recipeCard = await recipes.findByPk(recipeid)
-  const {username} = req.session.user
-  res.render('recipe-card', {
+app.get("/list/:recipeid", async (req, res) => {
+  const { recipeid } = req.params;
+  const recipeCard = await recipes.findByPk(recipeid);
+  const { username } = req.session.user;
+  res.render("recipe-card", {
     locals: {
       recipe: recipeCard,
       ingredients: recipeCard.ingredients.split(","),
       preparation: recipeCard.preparation.split("."),
-      username
+      username,
     },
-    ...memberLayout
-  })
-})
+    ...memberLayout,
+  });
+});
 
-app.get("/unauthorized", unauthorized.badUser)
+app.get("/unauthorized", unauthorized.badUser);
 
 server.listen(PORT, HOST, () => {
   console.log(`Listening at port ${PORT}`);
-})
+});
