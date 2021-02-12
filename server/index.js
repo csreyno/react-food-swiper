@@ -67,6 +67,13 @@ app.use("/api/members-only", memberRouter);
 app.use("/api/recipe-card", cardRouter);
 app.use("/api/recipes", recipeRouter);
 app.use("/api/list", listRouter);
+app.get("/api/status", (req, res) => {
+  if (req.session.user) {
+    res.status(200).send("ok")
+  } else {
+    res.status(400).send("not ok")
+  }
+})
 
 // app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
 // app.post("/members-only/addlike", memberController.addLike)

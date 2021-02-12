@@ -5,7 +5,9 @@ import RecipeDetails from "../RecipeDetails"
 export default function Favorites(props) {
   const [show, setShow] = useState("");  
   console.log(props)
+  console.log(props.recipes)
   return (
+    props.recipes.length === 0 ? null :
     <div>
       <br />
       <br />
@@ -16,6 +18,7 @@ export default function Favorites(props) {
         <br />
           <ul>
             {props.recipes.map(r => (
+              r.Recipe ?
               <>
               <li
                 onClick={(e) => setShow(r.Recipe.title)}             
@@ -39,7 +42,7 @@ export default function Favorites(props) {
                  />
                  </li>
                 }
-            </>    
+            </> : null   
             ))}
           </ul>
         <br />
