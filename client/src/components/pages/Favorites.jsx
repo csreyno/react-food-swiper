@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import ResCard from "./ResCard";
+import RecipeDetails from "../RecipeDetails"
 
 export default function Favorites(props) {
-  const [show, setShow] = useState(false)
-  console.log(props.recipes)
+  const [show, setShow] = useState("");  
+  console.log(props)
   return (
     <div>
       <br />
@@ -13,36 +14,34 @@ export default function Favorites(props) {
         <br />
         <h1 className="PageTitle">My Favorites</h1>
         <br />
-                <ul>
-          {props.recipes.map((r) => (
-            <li
-              onClick={(e) => setShow(!show)} variant="contained"              
-            >
-              {r.Recipe.title}
-            </li>
+          <ul>
+            {props.recipes.map(r => (
+              <>
+              <li
+                onClick={(e) => setShow(r.Recipe.title)}             
+              >
+                {r.Recipe.title}
+              </li>
             
-          ))}
-          {show ? (
-            <div>
-              {props.recipes.map((r) => (
-                <div>
-                <h3>{r.Recipe.title}</h3>
-                <div className="fav-image-div">
-                  <img className="fav-image" src={r.Recipe.image}></img>
-                </div>
-                <label>Ingredients</label>
-                <li>
-                  {r.Recipe.ingredients}
-                </li>
-                <li>
-                  {r.Recipe.preparation}
-                </li>
-
-                </div>
-          ))}
-            </div>
-          ) : null}
-        </ul>
+              {r.Recipe && r.Recipe.title === show &&
+              <li>
+              <RecipeDetails
+                hide = {() => {
+                setShow("") 
+                  
+                  }
+                
+                } 
+                title = {r.Recipe.title}
+                image = {r.Recipe.image}
+                ingredients = {r.Recipe.ingredients}
+                preparation = {r.Recipe.preparation}
+                 />
+                 </li>
+                }
+            </>    
+            ))}
+          </ul>
         <br />
         <ResCard />
 
