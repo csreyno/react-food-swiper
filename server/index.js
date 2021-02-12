@@ -12,7 +12,7 @@ const FileStore = require("session-file-store")(session);
 
 const { requireLogin } = require("./auth");
 
-const { userRouter, memberRouter, cardRouter, postRouter } = require("./routers");
+const { userRouter, memberRouter, cardRouter, recipeRouter } = require("./routers");
 
 const {
   memberController,
@@ -59,7 +59,7 @@ app.get("/", homeController.home);
 app.use("/api/users", userRouter);
 app.use("/api/members-only", memberRouter);
 app.use("/api/recipe-card", cardRouter);
-app.use("/api/new-recipe", postRouter);
+app.use("/api/recipes", recipeRouter);
 
 // app.get("/members-only", requireLogin, memberController.membersOnly); // requirelogin must be before function
 // app.post("/members-only/addlike", memberController.addLike)
