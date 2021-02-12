@@ -13,6 +13,7 @@ import MyRecipes from "./pages/MyRecipes";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [myRecipes, setMyRecipes] = useState([{}])
 
   const doLogin = () => {
     console.log("You are now logged in");
@@ -23,6 +24,12 @@ function App() {
     console.log("Logging out...");
     setIsLoggedIn(false);
   };
+
+  const retrieveList = async () => {
+    const resp = await axios.get('/api/list/retrieveList')
+    console.log(resp.data)
+    setMyRecipes(resp.data.myRecipes)
+  }
 
   useEffect(() => {
     async function checkLogin() {
@@ -38,6 +45,13 @@ function App() {
     checkLogin();
   }, []);
 
+  useEffect(() => {
+    console.log(`Value of isLoggedIn: ${isLoggedIn}`);
+    if (isLoggedIn) {
+      retrieveList();
+    }
+  }, [isLoggedIn]);
+
   return (
     <div className="app1">
       <Router>
@@ -51,7 +65,7 @@ function App() {
                   path="/"
                   exact
                   component={Demo}/>                
-                <Route path="/favoriterecipes" exact component={Favorites} />
+                <Route path="/favoriterecipes" exact component={Favorites} recipes={myRecipes} />
                 <Route path="/myrecipes" exact component={MyRecipes} />
                 <Route path="/register" exact component={Registration} />
                 <Route
@@ -67,7 +81,9 @@ function App() {
             <>
               <Registration />
               {/* <br /> */}
-              <Login doLogin={doLogin} />
+              <Login doLogin={doLogin} 
+
+              />
             </>
           )}
         </div>

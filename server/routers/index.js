@@ -3,4 +3,5 @@ module.exports = {
   memberRouter: require("./memberRouter"),
   cardRouter: require("./cardRouter"),
   recipeRouter: require("./recipeRouter.js"),
+  listRouter: require("./listRouter")
 };

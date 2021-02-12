@@ -1,17 +1,18 @@
 import React from "react";
 import ResCard from "./ResCard";
 
-export default function Favorites() {
+export default function Favorites(props) {
+  console.log(props)
   return (
     <div>
       <br />
       <br />
 
-      <div className="myrecipes">
+      <div className="recipes">
         <br />
         <h1 className="PageTitle">My Favorites</h1>
         <br />
-                {/* <ul>
+                <ul>
           {props.recipes.map((recipes) => (
             <li
               onClick={(e) => {
@@ -21,7 +22,7 @@ export default function Favorites() {
               {recipes.title}
             </li>
           ))}
-        </ul> */}
+        </ul>
         <br />
         <ResCard />
 
