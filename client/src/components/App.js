@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar/Navbar";
+import Navbar2 from "./Navbar/Navbar2";
 // import Home from "./pages/Home";
 import Demo from "./pages/Demo";
 import Favorites from "./pages/Favorites";
@@ -88,7 +89,7 @@ function App() {
             <>
               {/* <Registration /> */}
               {/* <br /> */}
-              <Navbar />
+              <Navbar2 />
 
               <Switch>
               <Route
