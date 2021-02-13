@@ -1,13 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-const userController = require("../controllers/usercontroller");
+const userController = require("../controllers/userController");
 
 router
-  .get("/new", userController.newUser)
   .post("/new", userController.processNewUser);
 router
-  .get("/login", userController.login)
   .post("/login", userController.processLogin);
 
 router.get('/login-status', userController.loginStatus)

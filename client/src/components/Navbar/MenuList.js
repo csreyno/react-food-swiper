@@ -1,9 +1,5 @@
 export const MenuList = [
   {
-    title: "Login",
-    url: "/",
-  },
-  {
     title: "Favorites",
     url: "/favoriterecipes",
   },
@@ -12,15 +8,11 @@ export const MenuList = [
     url: "/myrecipes",
   },
   {
-    title: "Register",
-    url: "/register",
-  },
-  {
     title: "Log out",
     url: "/logout",
   },
   {
-    title: "Try It",
+    title: "Swipe",
     url: "/demo",
   },
 ];

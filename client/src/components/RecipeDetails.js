@@ -2,24 +2,23 @@ import React, { useState } from 'react'
 
 const RecipeList = (props) => {
   return (
-        <div>
-              <div>
-                  <div>
-                  <h3>{props.title}</h3>
-                  <button onClick={props.hide}>X</button>
-                  <div className="fav-image-div">
+        <div className="fav-div">
+                  <div className="selected-fav">
+                  <h3 className="fav-title">{props.title}</h3>
+                  <button className="fav-close" onClick={props.hide}>X</button>
                     <img className="fav-image" src={props.image}></img>
-                  </div>
-                  <label>Ingredients</label>
+          
+                  <label className="fav-label">Ingredients
                   <li>
                     {props.ingredients}
                   </li>
-                  <li>
-                    {props.preparation}
-                  </li>
-
+                  </label>
+                  <label className="fav-label">Preparation
+                  <ul>
+                    {props.preparation.split(".").map(p=> {return <li>{p}</li>}).join("")}
+                  </ul>
+                  </label>
                   </div>
-              </div>
         </div>
     )
 }

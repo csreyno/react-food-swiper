@@ -67,14 +67,6 @@ function Deck() {
     setStack(s+1);
   };
 
-  // const likeCountInc = (like) => {
-  //   setLikeCount(like+1)
-  // }
-
-  // const prevStack = () => {
-  //   stack <= 0 ? setStack(stack-1) : setStack(stack)// set to not go lower than 0
-  // };
-
   useEffect(() => {
     importRecipes();
   }, []);
@@ -84,26 +76,12 @@ function Deck() {
     
   }, [newRecipes, stack]);
 
-  // useEffect(() => {
-  //   if (currentRecipes && currentRecipes.length) {
-  //     console.log("==================")
-  //     console.log("active")
-  //     let i = 0;
-  //     let id = currentRecipes[i].id
-  //     newLike(id)
-  //     i++
-  //     console.log(id)    
-  // }   
-  // }, [likeCount]);
-
   useEffect(() => {
     if (timestamp !== 0) {
       nextStack(stack);
       console.log("Next stack", stack)
     }
   }, [timestamp]);
-
-  
 
 
   const bind = useGesture(
@@ -122,16 +100,11 @@ function Deck() {
       if (!down && trigger) gone.add(index);
       
       set((i) => {
-        console.log(id, "=======================")
         if (index !== i) return;
         //swipe left or right fn that identifies direction
         if (!down && dir === 1 && dir !== 0) {
-          // console.log(i);
-          console.log("====================")
-          console.log("swiped right", id);
           newLike(id)
-          // console.log(likeCount)
-          // newLike(id)
+
         }
         if (!down && dir === -1) {
           console.log(i);

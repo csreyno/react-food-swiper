@@ -44,6 +44,16 @@ nav {
    color: #fff 
 }
 
+.logo a:hover,
+.logo a.active {
+    background-color: tomato;
+    border-radius: 2px;
+    color: #fff;
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+}
+
+
 .menu-list {
     list-style-type: none;
     display:flex;

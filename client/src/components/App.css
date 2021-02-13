@@ -258,3 +258,8 @@ form {
     position: relative;
     display: inline-block;
 }
+
+.selected-fav {
+  display:flex;
+  flex-wrap: wrap;
+}

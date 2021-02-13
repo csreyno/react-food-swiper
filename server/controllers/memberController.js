@@ -1,19 +1,4 @@
-const {memberLayout} = require('../utils')
 const {Like} = require('../models/')
-const {recipe} = require('../models')
-
-const membersOnly = async (req, res) => {
-    const { username } = req.session.user;
-    const allRecipes = await recipes.findAll()
-
-    res.render('members-only', {
-        locals: {
-            username,
-            allRecipes
-        },
-        ...memberLayout
-    })
-};
 
 const addLike = async (req, res) => {
     const { id } = req.session.user
@@ -46,6 +31,5 @@ const addLike = async (req, res) => {
 }
 
 module.exports = {
-    membersOnly,
     addLike
 };
