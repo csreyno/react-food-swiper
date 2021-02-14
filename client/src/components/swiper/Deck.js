@@ -28,7 +28,6 @@ function Deck() {
   const [newRecipes, setNewRecipes] = useState([{}])
   const [currentRecipes, setCurrentRecipes] = useState([]);
   const [timestamp, setTimestamp] = useState(0);
-  const [likeCount, setLikeCount] = useState();
   const [props, set] = useSprings(perStack, (i) => ({ //data.length first arg
     ...to(i),
     from: from(i),
@@ -128,7 +127,7 @@ function Deck() {
         };
       });
       
-      if (!down && gone.size === perStack) {  //=== data.length
+      if (!down && gone.size === perStack) {
         setTimeout(() => gone.clear() || set((i) => to(i)), 600);
         setTimestamp((new Date()).getTime());
         

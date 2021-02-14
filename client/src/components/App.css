@@ -124,7 +124,7 @@ button[aria-label="next"] {
 
 h2 {
   display: inline-block;
-  margin-right: 10px !important;
+  /* margin-right: 10px !important; */
   text-align: center !important;
 }
 
@@ -211,8 +211,16 @@ circle {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
-  opacity: 75%;
+  opacity: 85%;
   position: relative;
+}
+
+.login-message {
+  margin: 0;
+}
+
+.form-control {
+  margin: 0;
 }
 
 .PageTitle {
