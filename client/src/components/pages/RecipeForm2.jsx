@@ -82,7 +82,7 @@ export default function RecipeForm2(props) {
   };
 
   return (
-    <Container>
+    <div className="newform">
       <form className={classes.root} onSubmit={handleSubmit} action="/profile" method="post" enctype="multipart/form-data">
         <Button onClick={() => setShow(!show)} variant="contained">
           Create New Recipe
@@ -175,6 +175,6 @@ export default function RecipeForm2(props) {
           </div>
         ) : null}
       </form>
-    </Container>
+    </div>
   );
 }
