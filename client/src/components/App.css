@@ -127,7 +127,7 @@ h1{
 }
 h2 {
   display: inline-block;
-  margin-right: 10px !important;
+  /* margin-right: 10px !important; */
   text-align: center !important;
 }
 
@@ -213,8 +213,16 @@ circle {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
-  opacity: 75%;
+  opacity: 85%;
   position: relative;
+}
+
+.login-message {
+  margin: 0;
+}
+
+.form-control {
+  margin: 0;
 }
 
 .PageTitle {
@@ -272,18 +280,26 @@ padding: 3em;
     position: relative;
     display: inline-block;
 }
+
+.selected-fav {
+  display:flex;
+  flex-wrap: wrap;
+
 .Favline{
 display: inline-block !important;
 border-spacing: 4em;
 }
+  
 .favbutton{
  align-content: flex-end;
 }
+  
 .favcontainer{
   border: solid lightgray;
   border-radius: 5%;
   background-color: ivory;
 }
+  
 .myform{
   border: solid light gray;
   background-color: salmon;

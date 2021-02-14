@@ -1,19 +1,7 @@
-// need to npm i bcryptjs
 const bcrypt = require('bcryptjs')
-const {layout} = require('../utils')
 const {User} = require('../models')
 
-const newUser = (req, res) => {
-    res.render('login-form', {
-        locals: {
-            title: 'Sign up'
-        },
-        ...layout
-    });
-};
-
 const processNewUser = async (req, res) => {
-    // const {username, password} = req.body
     const username = req.body.usernameReg;
     const password = req.body.passwordReg;
     if (username === '' || password === '') {
@@ -44,22 +32,13 @@ const processNewUser = async (req, res) => {
     }
 };
 
-const login = (req, res) => {
-    res.render('login-form', {
-        locals: {
-            title: 'Log in'
-        },
-        ...layout
-    });
-};
-
 const processLogin = async (req, res) => {
     const {username, password} = req.body
     const user = await User.findOne({
         where: {
             username
         }
-    })
+    });
     if (user) {
         const isValid = bcrypt.compareSync(password, user.hash)
         if (isValid) {
@@ -119,9 +98,7 @@ const loginStatus = (req, res) => {
   };
 
 module.exports = {
-    newUser,
     processNewUser,
-    login,
     processLogin,
     logout,
     loginStatus

@@ -11,11 +11,12 @@ function Logout(props) {
     };
 
     return (
-        <div className="logout-div">
-        <button className="logout-button" onClick={onClick}>
-            Logout
-        </button>
-        </div>
+        props.doLogout()
+        // <div className="logout-div">
+        // <button className="logout-button" onClick={onClick}>
+        //     Logout
+        // </button>
+        // </div>
     );
 }
 

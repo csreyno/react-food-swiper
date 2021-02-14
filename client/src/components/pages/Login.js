@@ -30,7 +30,7 @@ function Login(props){
         <div className="login-card">
             <h1>Login</h1>
 
-            {message && <h2>{message}</h2>}
+            {message && <h2 className="login-message">{message}</h2>}
 
             <Form onSubmit={onSubmit}>
                 <Form.Group controlId="formBasicEmail">
