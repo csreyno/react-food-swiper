@@ -46,11 +46,17 @@ export default function RecipeForm2(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const resp = await axios.post("/api/recipes/add", {
-      title, readyInMinutes, image, inputFields, preparation
-    });
+    //gets text data to db
+    const addRecipeData = { inputFields, title, readyInMinutes, preparation }
+    console.log(addRecipeData);
+    const resp = await axios.post("/api/recipes/add", addRecipeData)
+    //this recibes db entry id to return image link
+    const data = new FormData()
+    data.append("file", image);
+    const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
     console.log(resp);
-  };
+  }
+
 
   const handleChangeInput = (id, event) => {
     const newInputFields = inputFields.map((i) => {
@@ -77,7 +83,7 @@ export default function RecipeForm2(props) {
 
   return (
     <Container>
-      <form className={classes.root} onSubmit={handleSubmit}>
+      <form className={classes.root} onSubmit={handleSubmit} action="/profile" method="post" enctype="multipart/form-data">
         <Button onClick={() => setShow(!show)} variant="contained">
           Create New Recipe
         </Button>
@@ -146,9 +152,10 @@ export default function RecipeForm2(props) {
               className={classes.input}
               id="icon-button-file"
               type="file"
-              value={image}
+              // value={image}
+              name="image"
               onChange={(e) => {
-                setImage(e.target.value);
+                setImage(e.target.files[0]);
               }}
             />
             <label htmlFor="icon-button-file">

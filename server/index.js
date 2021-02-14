@@ -4,7 +4,7 @@ const http = require("http");
 const express = require("express");
 const morgan = require("morgan");
 const helmet = require("helmet");
-
+const multer = require('multer');
 const es6Renderer = require("express-es6-template-engine");
 // need to npm i express-session session-file-store
 const session = require("express-session");
@@ -12,12 +12,12 @@ const FileStore = require("session-file-store")(session);
 
 const { requireLogin } = require("./auth");
 
-const { 
-  userRouter, 
+const {
+  userRouter,
   memberRouter,
-  cardRouter, 
+  cardRouter,
   recipeRouter,
-  listRouter 
+  listRouter
 } = require("./routers");
 
 const {
