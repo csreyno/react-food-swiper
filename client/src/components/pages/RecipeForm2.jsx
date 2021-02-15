@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Container from "@material-ui/core/Container";
+// import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import RemoveIcon from "@material-ui/icons/Remove";
 import AddIcon from "@material-ui/icons/Add";
-import Icon from "@material-ui/core/Icon";
+// import Icon from "@material-ui/core/Icon";
 import { v4 as uuidv4 } from "uuid";
 import { makeStyles } from "@material-ui/core/styles";
 import PhotoCamera from "@material-ui/icons/PhotoCamera";
@@ -35,30 +35,45 @@ export default function RecipeForm2(props) {
   const [image, setImage] = useState("");
   const [preparation, setPreparation] = useState("");
   const classes = useStyles();
+  const [id, setId] = useState(0)
   const [inputFields, setInputFields] = useState([
     { id: uuidv4(), Ingredients: "" },
   ]);
   useEffect(() => {
     if (props.recipe) {
-      setTitle(props.recipe.title);
+      setTitle(props.recipe.title)
     }
+
   }, [props]);
 
+  const newList = async (recipeid) => {
+    const resp = await axios.post('/api/members-only/addlike', {
+      recipe_id: recipeid
+    });
+    console.log(resp.data)
+    console.log(recipeid)
+
+  }
   const handleSubmit = async (e) => {
     e.preventDefault();
     //gets text data to db
-    const addRecipeData = { inputFields, title, readyInMinutes, preparation }
+    const addRecipeData = { inputFields: inputFields.map((obj => obj.Ingredients)), title, readyInMinutes, preparation }
     console.log(addRecipeData);
     const resp = await axios.post("/api/recipes/add", addRecipeData)
     //this recibes db entry id to return image link
     const data = new FormData()
     data.append("file", image);
-    const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
+    // const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
     console.log(resp);
+    //---------------------
+    newList(resp.data.id)
+    console.log(resp.data.id);
+
   }
 
 
   const handleChangeInput = (id, event) => {
+    console.log(event.target.value)
     const newInputFields = inputFields.map((i) => {
       if (id === i.id) {
         i[event.target.name] = event.target.value;

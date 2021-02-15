@@ -249,7 +249,7 @@ form {
   margin: 1.5em;
 }
 .favcontinner{
-padding: 3em;
+padding: 2em;
 }
 .logout-div {
   top: 15%;
@@ -284,6 +284,7 @@ padding: 3em;
 
 .fav-list {
   cursor: pointer;
+  font-size: 1.8rem;
 }
 
 .title-div {
@@ -312,6 +313,7 @@ padding: 3em;
 .ingredient-list {
   margin-left: 25px;
   list-style-type: disc !important;
+  font-size: 1.5rem;
 }
 
 .prep-div {

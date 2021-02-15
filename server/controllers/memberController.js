@@ -1,4 +1,4 @@
-const {Like} = require('../models/')
+const { Like } = require('../models/')
 
 const addLike = async (req, res) => {
     const { id } = req.session.user
@@ -7,7 +7,7 @@ const addLike = async (req, res) => {
 
     const oldLike = await Like.findOne({
         where: {
-            user_id:id,
+            user_id: id,
             recipe_id
         },
         recipe_id,
@@ -18,14 +18,15 @@ const addLike = async (req, res) => {
         oldLike.like_count++
         await oldLike.save()
     } else {
-    const newLike = await Like.create({
-        recipe_id: recipe_id,
-        user_id: id,
-        like_count: 1
-    })
+        const newLike = await Like.create({
+            recipe_id: recipe_id,
+            user_id: id,
+            like_count: 1
+        })
         console.log(newLike)
-    } 
-        return res.status(200).json({
+    }
+
+    return res.status(200).json({
         message: "Success"
     });
 }
