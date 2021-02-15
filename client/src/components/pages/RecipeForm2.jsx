@@ -105,7 +105,7 @@ export default function RecipeForm2(props) {
         </Button>
         </div>
         {show ? (
-          <div>
+          <div className="form1">
             <TextField
               id="filled-basic"
               value={title}
@@ -175,6 +175,7 @@ export default function RecipeForm2(props) {
               onChange={(e) => {
                 setImage(e.target.files[0]);
               }}/>
+              <label htmlFor="icon-button-file">Choose File</label>
             </div>
             
             <label htmlFor="icon-button-file">
