@@ -88,9 +88,13 @@ function App() {
                     exact component={Login}
                     children={<Login doLogin={doLogin} />}
                   />
+                  </Switch>
+                  <Switch>
                   <Route 
                     path="/register" 
-                    exact component={Registration} />  
+                    exact component={Registration} 
+                    children={<Registration doLogin={doLogin} />}  
+                    />  
                 </Switch>
             </>
           )};
