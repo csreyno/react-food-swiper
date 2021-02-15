@@ -96,7 +96,7 @@ export default function RecipeForm2(props) {
 
   return (
     <div className="newform">
-      <form className={classes.root} onSubmit={handleSubmit} action="/profile" method="post" enctype="multipart/form-data">
+      <form className={classes.root} onSubmit={handleSubmit} action="/profile" method="post" encType="multipart/form-data">
       <div className="create-recipe-button">
         <Button onClick={() => setShow(!show)} variant="contained">
           Create New Recipe

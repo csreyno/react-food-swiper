@@ -12,12 +12,24 @@ export default function Favorites(props) {
         <br />
 
         <div className="myrecipes">
-          {/* <br /> */}
           <h1 className="PageTitle">My Favorites</h1>
-          {/* <br /> */}
           <ul>
             {props.recipes.map(r => (
               r.Recipe ?
+
+              <>
+              <li key={r.Recipe.id}
+                onClick={(e) => setShow(r.Recipe.title)}
+                className="fav-list"             
+              >
+                {r.Recipe.title}
+              </li>
+            
+              {r.Recipe && r.Recipe.title === show &&
+              <li key={(new Date()).getTime()}>
+              <RecipeDetails
+                hide = {() => {
+                setShow("") 
                 <>
                   <li
                     onClick={(e) => setShow(r.Recipe.title)}
