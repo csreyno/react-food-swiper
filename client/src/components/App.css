@@ -284,7 +284,9 @@ form {
 }
 
 .favcontinner{
+
 padding: 1.6em;
+
 }
 
 .logout-div {
@@ -336,7 +338,7 @@ padding: 1.6em;
 .fav-list {
   cursor: pointer;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 2rem;
   list-style-type: none;
   text-decoration: underline;
   padding: 5px;
