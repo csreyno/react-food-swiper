@@ -3,7 +3,16 @@ const router = express.Router();
 const multer = require("multer")
 const UPLOAD_URL = "/images";
 const recipeController = require("../controllers/recipeController");
-const upload = multer({ dest: "public" + UPLOAD_URL });
+// const upload = multer({ dest: "public" + UPLOAD_URL });
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public' + UPLOAD_URL)
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname)
+  }
+})
+const upload = multer({ storage: storage })
 
 router.post("/add", recipeController.addRecipe);
 
