@@ -25,8 +25,11 @@ const RecipeList = (props) => {
         <ol >
               {prep.map(p => <li className="prep-list">{p}</li>)}
           </ol>
-        <br /><br />
-        <Button color="secondary" variant="contained" className="favbutton" onClick={props.hide}>Close</Button>
+        <br />
+        <br />
+        <div className="close-button-recipe-card">
+                  <Button color="secondary" variant="contained" className="favbutton" onClick={props.hide}>Close</Button>
+        </div>
       </div>
     </div>
     </div>
