@@ -70,9 +70,10 @@ function App() {
               <Route path="/myrecipes">
                 <MyRecipes recipes={myRecipes} />
               </Route>
-              <Route>
-               <Logout doLogout={doLogout} />
-              </Route>
+              <Route
+                path="/logout"
+                children={<Logout doLogout={doLogout} />}
+               />             
               <Route
                 path="/demo"
                 exact component={Demo} />
