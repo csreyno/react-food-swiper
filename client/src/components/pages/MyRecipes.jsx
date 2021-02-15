@@ -17,7 +17,7 @@ export default function MyRecipes(props) {
             {props.recipes.map(r => (
               r.Recipe && r.Recipe.id > 187 ?
               <>
-              <li
+              <li key={r.Recipe.id}
                 onClick={(e) => setShow(r.Recipe.title)}
                 className="fav-list"             
               >
@@ -25,7 +25,7 @@ export default function MyRecipes(props) {
               </li>
             
               {r.Recipe && r.Recipe.title === show &&
-              <li>
+              <li key={(new Date()).getTime()}>
               <RecipeDetails
                 hide = {() => {
                 setShow("") 
