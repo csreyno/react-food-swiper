@@ -77,7 +77,7 @@ function Deck() {
       nextStack(stack);
       console.log("Next stack", stack)
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timestamp]);
 
 

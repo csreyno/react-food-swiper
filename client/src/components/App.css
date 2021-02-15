@@ -241,15 +241,34 @@ form {
   background-color: salmon;
 }
 
+.choose-file {
+  /* background-color: aqua; */
+  display: flex;
+  /* align-content: center !important; */
+  justify-content: center !important;
+  /* text-align: center; */
+}
+
+#icon-button-style {
+  display: flex;
+  /* align-content: center !important; */
+  justify-content: center !important;
+  text-align: center !important;
+  padding-left: 30px !important;
+  margin-left: 30px !important;
+}
+
 .favrecipes {
   align-content: center;
   margin-top: 1rem, 1rem;
   background-color: salmon;
 }
+
 .favcontainer{
   flex: inherit;
   margin: 1.5em;
 }
+
 .favcontinner{
 padding: 1em;
 }
@@ -262,7 +281,13 @@ padding: 1em;
 }
 .logout-button {
   display:flex;
-  position: absolute
+  position: absolute;
+  font-weight: 300;
+  background-color:tomato;
+  border-radius: 6px;
+  padding: 6px;
+  /* border: 2px;
+  border-style: solid 1px black; */
 }
 
 .reg-div {
@@ -284,6 +309,10 @@ padding: 1em;
     display: inline-block;
 }
 
+.create-recipe-button {
+  padding: 15px;
+}
+
 .close-button-recipe-card {
   display: flex;
   justify-content: center;
@@ -292,8 +321,11 @@ padding: 1em;
 
 .fav-list {
   cursor: pointer;
-  padding-left: 27px;
+  text-align: center;
   font-size: 1.4rem;
+  list-style-type: none;
+  text-decoration: underline;
+  padding: 5px;
 }
 
 .title-div {
@@ -355,13 +387,16 @@ border-spacing: 4em;
   background-color: salmon;
   
 }
+
 .newform{
   align-content: center;
   max-width: 350px !important;
   place-content: center;
   background-color: white;
-  border-radius: 5%;
+  border-radius: 20px;
   border: solid gray;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }

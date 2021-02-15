@@ -860,7 +860,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "lacto ovo vegetarian", "vegan"],
     occasions: ["father's day", "4th of july", "summer"],
     instructions:
-      "Lightly brush the avocado flesh, corn, onion, and jalapeno peppers with olive oil.Place all but the avocado in a grill basket and on the grill over medium-high heat.Place the avocados, cut side up, directly on the grill and cook for 2 minutes, then flip and cook, cut side down, for another 2 minutes. When finished, remove and set aside.Allow the other vegetables to cook, turning, until they are tender and lightly charred (10-12 minutes). The corn may take a few minutes longer than the other vegetables. If needed, remove the other vegetables and allow the corn to continue to cook.When the vegetables have cooled enough to touch, cut the corn off the cob, and dice the other vegetables.In a large bowl, combine the tomatoes, corn, onion, peppers, garlic, and cilantro, and toss to mix.Add the avocado to the mixture, lightly tossing and mashing it.Add the lime juice and seasoning. Mix together and adjust as needed.Add the pistachios, toss the mixture again and serve.",
+      "Lightly brush the avocado flesh, corn, onion, and jalapeno peppers with olive oil.Place all but the avocado in a grill basket and on the grill over medium-high heat.Place the avocados, cut side up, directly on the grill and cook for 2 minutes, then flip and cook, cut side down, for another 2 minutes. When finished, remove and set aside.Allow the other vegetables to cook, turning, until they are tender and lightly charred (10-12 minutes). The corn may take a few minutes longer than the other vegetables. If needed, remove the other vegetables and allow the corn to continue to cook.When the vegetables have cooled enough to touch, cut the corn off the cob, and dice the other vegetables.In a large bowl, combine the tomatoes, corn, onion, peppers, garlic, and cilantro, and toss to mix.Add the avocado to the mixture, lightly tossing and mashing it.Add the lime juice and seasoning. Mix together and adjust as needed.Add the pistachios, toss the mixture again and serve",
     analyzedInstructions: [
       {
         name: "",
@@ -1310,7 +1310,7 @@ const recipes = [
     diets: ["gluten free", "primal"],
     occasions: [],
     instructions:
-      "Take and rinse your meat, and then mix all of your marinade ingredients together. Once you have everything mixed well, go ahead and rub all over your cuts of meat. Cover with Saran Wrap and place in the fridge to marinade anywhere from 1 to 3 hours.When you are ready to grill, take a cast iron skillet and start sauteing your veggies you want to eat on your fajitas. I chose a red onion thinly sliced, and a red and orange bell pepper, also thinly sliced with a Tbsp of Olive Oil to saute them in. (Have your grill set at 350 degrees.)When your onions start becoming translucent and you have everything close to ready, it's time to grab those marinating skirt steaks and put them on the grillOnce the steaks are on, close the lid and set your timer for 5 minutes. Open the lid, and flip your steaks. This is the part that is fast! After 10 minutes and the steaks are done, remove them from the grill and cover them in foil.Let cool for a few minutes before slicing and serving.",
+      "Take and rinse your meat, and then mix all of your marinade ingredients together. Once you have everything mixed well, go ahead and rub all over your cuts of meat. Cover with Saran Wrap and place in the fridge to marinade anywhere from 1 to 3 hours.When you are ready to grill, take a cast iron skillet and start sauteing your veggies you want to eat on your fajitas. I chose a red onion thinly sliced, and a red and orange bell pepper, also thinly sliced with a Tbsp of Olive Oil to saute them in. (Have your grill set at 350 degrees.)When your onions start becoming translucent and you have everything close to ready, it's time to grab those marinating skirt steaks and put them on the grillOnce the steaks are on, close the lid and set your timer for 5 minutes. Open the lid, and flip your steaks. This is the part that is fast! After 10 minutes and the steaks are done, remove them from the grill and cover them in foil.Let cool for a few minutes before slicing and serving",
     analyzedInstructions: [
       {
         name: "",
@@ -1765,7 +1765,7 @@ const recipes = [
     diets: [],
     occasions: [],
     instructions:
-      "Position a rack in the middle of your oven and preheat to 425F.  If you will be baking on a pizza stone, put it in the oven to preheat as well.  If you will be using a cookie sheet, line it with parchment paper and set it aside.Whisk together the flours, baking powder, 3 TB of the sugar, and salt in a medium bowl.Cut in the butter using a pastry blender, two knives, or your fingers, until the largest chunks of butter are the size of small peas.Pour in the cream and milk (or just use all cream, if you have it) and mix it around with a fork until an evenly hydrated, extremely sticky dough forms.Add the fruits and mix again until evenly distributed (you may have to work a bit to break up the ginger pieces).Dump the sticky mass out onto a well-floured board.  Sprinkle a little flour on top as well, then pat the dough out into a circle about 1-inch thick.  Try not to add too much flour, lest they become dense and tough.  Dip a pizza cutter or other thin, sharp knife into flour, then cut the circle into 8 equal sized pieces.  You may need to scrape off and re-flour your slicing instrument between slices.Using a bench scraper, a thin spatula, or (if you are brave) your hands, relocate your 8 scones to your prepared baking vessel, spacing them a half inch or so apart (they will puff and rise a little bit, but not tremendously).  Sprinkle the tops with the remaining 1 TB of sugar.Bake for 13-15 minutes, or until lightly golden on top and cooked through.Cool at least 10 minutes before removing to a wire rack.  Eat warm or cool.",
+      "Position a rack in the middle of your oven and preheat to 425F.  If you will be baking on a pizza stone, put it in the oven to preheat as well.  If you will be using a cookie sheet, line it with parchment paper and set it aside.Whisk together the flours, baking powder, 3 TB of the sugar, and salt in a medium bowl.Cut in the butter using a pastry blender, two knives, or your fingers, until the largest chunks of butter are the size of small peas.Pour in the cream and milk (or just use all cream, if you have it) and mix it around with a fork until an evenly hydrated, extremely sticky dough forms.Add the fruits and mix again until evenly distributed (you may have to work a bit to break up the ginger pieces).Dump the sticky mass out onto a well-floured board.  Sprinkle a little flour on top as well, then pat the dough out into a circle about 1-inch thick.  Try not to add too much flour, lest they become dense and tough.  Dip a pizza cutter or other thin, sharp knife into flour, then cut the circle into 8 equal sized pieces.  You may need to scrape off and re-flour your slicing instrument between slices.Using a bench scraper, a thin spatula, or (if you are brave) your hands, relocate your 8 scones to your prepared baking vessel, spacing them a half inch or so apart (they will puff and rise a little bit, but not tremendously).  Sprinkle the tops with the remaining 1 TB of sugar.Bake for 13-15 minutes, or until lightly golden on top and cooked through.Cool at least 10 minutes before removing to a wire rack.  Eat warm or cool",
     analyzedInstructions: [
       {
         name: "",
@@ -2296,7 +2296,7 @@ const recipes = [
     diets: [],
     occasions: [],
     instructions:
-      "Beat butter and sugar until light and fluffy.In a bowl combine wholemeal flour and plain flour together, then mix in the butter mixture with a rubber spatula and knead gently to a soft dough.Turn out the dough on to a flour surface or line with a plastic sheet below and with another plastic sheet on top. Then roll to a square. Chill for at least 1 hour.Transfer the dough on a non grease paper and cover with a plastic sheet on top, then roll to dough to about 3mm thick.Prick the dough with a fork and bake for about 15-18 minutes until brown at preheated oven 180C and leave biscuit to cool.Spread the apricot jam over the top of the biscuit, set aside.Mix topping ingredients and spread evenly on the biscuit with a palette knife.Bake for 15 minutes until golden.Remove cooked biscuit from the oven and leave to cool completely, then cut into bars.",
+      "Beat butter and sugar until light and fluffy.In a bowl combine wholemeal flour and plain flour together, then mix in the butter mixture with a rubber spatula and knead gently to a soft dough.Turn out the dough on to a flour surface or line with a plastic sheet below and with another plastic sheet on top. Then roll to a square. Chill for at least 1 hour.Transfer the dough on a non grease paper and cover with a plastic sheet on top, then roll to dough to about 3mm thick.Prick the dough with a fork and bake for about 15-18 minutes until brown at preheated oven 180C and leave biscuit to cool.Spread the apricot jam over the top of the biscuit, set aside.Mix topping ingredients and spread evenly on the biscuit with a palette knife.Bake for 15 minutes until golden.Remove cooked biscuit from the oven and leave to cool completely, then cut into bars",
     analyzedInstructions: [
       {
         name: "",
@@ -2803,7 +2803,7 @@ const recipes = [
     diets: ["gluten free", "dairy free"],
     occasions: [],
     instructions:
-      "Cooking Method:\nSeason the chicken with salt and pepper and heat the olive oil in a large saut pan. Brown the chicken pieces (in batches if necessary) over a high heat with the garlic and thyme for 23 minutes on each side until golden brown. Return all the chicken to the pan, add the vinegar and bubble until reduced by half. Drizzle over the soy sauce and honey and shake the pan to mix.\nPour in a 1/2 cup of hot water and add the lemon slices. Let the liquid bubble and reduce down until syrupy, which will take about 10 minutes or so. By now the chicken should be cooked through.\nTransfer the chicken to a platter and sprinkle over the chopped parsley.\nServe with mashed potato (boil potatoes, add milk and butter and mash together, add cooked peas and carrots and some thyme).",
+      "Cooking Method: Season the chicken with salt and pepper and heat the olive oil in a large saut pan. Brown the chicken pieces (in batches if necessary) over a high heat with the garlic and thyme for 23 minutes on each side until golden brown. Return all the chicken to the pan, add the vinegar and bubble until reduced by half. Drizzle over the soy sauce and honey and shake the pan to mix. Pour in a 1/2 cup of hot water and add the lemon slices. Let the liquid bubble and reduce down until syrupy, which will take about 10 minutes or so. By now the chicken should be cooked through. Transfer the chicken to a platter and sprinkle over the chopped parsley. Serve with mashed potato (boil potatoes, add milk and butter and mash together, add cooked peas and carrots and some thyme)",
     analyzedInstructions: [
       {
         name: "Cooking Method",
@@ -3202,7 +3202,7 @@ const recipes = [
     ],
     occasions: [],
     instructions:
-      "Heat your oven up to 250 degrees.In a small bowl add the egg white and water and whisk until frothy.Pour in pecans and stir to coat them all evenly.In a separate bowl add sugar, cinnamon, and salt. Mix well.Pour sugar mixture into pecan mixture and mix well until pecans are coated.Place on a non stick sheet or prepare a cookie sheet and then spread out the pecans evenly.Place in the oven for 1 hour, turning the pecans every 15 minutes.",
+      "Heat your oven up to 250 degrees.In a small bowl add the egg white and water and whisk until frothy.Pour in pecans and stir to coat them all evenly.In a separate bowl add sugar, cinnamon, and salt. Mix well.Pour sugar mixture into pecan mixture and mix well until pecans are coated.Place on a non stick sheet or prepare a cookie sheet and then spread out the pecans evenly.Place in the oven for 1 hour, turning the pecans every 15 minutes",
     analyzedInstructions: [
       {
         name: "",
@@ -4509,7 +4509,7 @@ const recipes = [
     diets: ["lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      "Preheat oven to 400 degrees F.Cream 1/2 cup butter and sugar together in a large mixing bowl until light in color, about 1-2 minutes. Add egg and 1/4 cup milk; stir to combine. Add remaining dry ingredients (except apple) and stir just until combined. Gently fold in the apples.  Drop by heaping tablespoons onto a greased baking sheet.Bake at 400 for about 10-12 min or until tops don't look wet anymore.To make the glaze, whisk together 1 tablespoon melted butter, 1 cup powdered sugar, 1/4 tsp maple flavoring, and 3 tablespoons milk in a small bowl. When the cookies have cooled for a few minutes, drizzle each cookie with glaze.",
+      "Preheat oven to 400 degrees F.Cream 1/2 cup butter and sugar together in a large mixing bowl until light in color, about 1-2 minutes. Add egg and 1/4 cup milk; stir to combine. Add remaining dry ingredients (except apple) and stir just until combined. Gently fold in the apples.  Drop by heaping tablespoons onto a greased baking sheet.Bake at 400 for about 10-12 min or until tops don't look wet anymore.To make the glaze, whisk together 1 tablespoon melted butter, 1 cup powdered sugar, 1/4 tsp maple flavoring, and 3 tablespoons milk in a small bowl. When the cookies have cooled for a few minutes, drizzle each cookie with glaze",
     analyzedInstructions: [
       {
         name: "",
@@ -4604,7 +4604,7 @@ const recipes = [
           {
             number: 4,
             step:
-              "Bake at 400 for about 10-12 min or until tops don't look wet anymore.To make the glaze, whisk together 1 tablespoon melted butter, 1 cup powdered sugar, 1/4 tsp maple flavoring, and 3 tablespoons milk in a small bowl. When the cookies have cooled for a few minutes, drizzle each cookie with glaze.",
+              "Bake at 400 for about 10-12 min or until tops don't look wet anymore.To make the glaze, whisk together 1 tablespoon melted butter, 1 cup powdered sugar, 1/4 tsp maple flavoring, and 3 tablespoons milk in a small bowl. When the cookies have cooled for a few minutes, drizzle each cookie with glaze",
             ingredients: [
               {
                 id: 11111111,
@@ -4893,7 +4893,7 @@ const recipes = [
     diets: ["gluten free", "lacto ovo vegetarian", "primal"],
     occasions: ["super bowl"],
     instructions:
-      "<p>Place the garlic in the bowl of your food processor and pulse a couple of times, until the garlic is minced. Then add the feta, lemon zest, lemon juice, and Greek yogurt. Process until everything is fully combined and smooth. Taste. If it's too salty, add a bit more yogurt or lemon juice.<br><br>Spoon into a serving bowl and top with a pinch of red pepper flakes, lemon zest, and a drizzle of extra virgin olive oil.</p>",
+      "Place the garlic in the bowl of your food processor and pulse a couple of times, until the garlic is minced. Then add the feta, lemon zest, lemon juice, and Greek yogurt. Process until everything is fully combined and smooth. Taste. If it's too salty, add a bit more yogurt or lemon juice.<br><br>Spoon into a serving bowl and top with a pinch of red pepper flakes, lemon zest, and a drizzle of extra virgin olive oil",
     analyzedInstructions: [
       {
         name: "",
@@ -5295,7 +5295,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "lacto ovo vegetarian", "vegan"],
     occasions: ["fall", "winter"],
     instructions:
-      "1. Heat the oil in a large pan, add the potato, onion and garlic and saut, covered, for 10 minutes.\n2. Add the carrots, leek  and celery and saut for 5 minutes.\n3. Add broad beans and vegetable stock. Cover and simmer gently for 10 minutes, until the potatoes and broad beans are soft.\n4. Add parsley and salt  and pepper if needed.\nServe with crusty bread.",
+      "Heat the oil in a large pan, add the potato, onion and garlic and saut, covered, for 10 minutes. Add the carrots, leek  and celery and saut for 5 minutes. Add broad beans and vegetable stock. Cover and simmer gently for 10 minutes, until the potatoes and broad beans are soft. Add parsley and salt and pepper if needed. Serve with crusty bread",
     analyzedInstructions: [
       {
         name: "",
@@ -5767,7 +5767,7 @@ const recipes = [
     diets: ["dairy free", "lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      "In stand mixer, cream together lard and sugar on medium speed until fluffy. With mixer running on low, add egg, vanilla extract, brandy, and anise seeds and mix until homogeneous. Add flour, salt, and baking powder and mix just until dough forms into cohesive ball.\nForm dough into two cylinders about 1 1/2 to 2 inches in diameter. Chill for 2 hours or wrap tightly in plastic wrap and store in refrigerator for up to 3 days. For longer storage, freeze logs tightly wrapped for several months. Defrost in refrigerator for 1 day before using.\nAdjust oven rack to middle position and preheat oven to 350F. Combine sugar and cinnamon in small bowl and set aside. Cut cylinders into 1/4 inch disks and on ungreased cookie sheets leaving 1/2-inch gap between cookies. Bake until golden brown, about 12 minutes.\nDip rim of each cookie into cinnamon sugar mixture. Let cool on racks and store at room temperature in air-tight container for up to 5 days.",
+      "In stand mixer, cream together lard and sugar on medium speed until fluffy. With mixer running on low, add egg, vanilla extract, brandy, and anise seeds and mix until homogeneous. Add flour, salt, and baking powder and mix just until dough forms into cohesive ball. Form dough into two cylinders about 1 1/2 to 2 inches in diameter. Chill for 2 hours or wrap tightly in plastic wrap and store in refrigerator for up to 3 days. For longer storage, freeze logs tightly wrapped for several months. Defrost in refrigerator for 1 day before using. Adjust oven rack to middle position and preheat oven to 350F. Combine sugar and cinnamon in small bowl and set aside. Cut cylinders into 1/4 inch disks and on ungreased cookie sheets leaving 1/2-inch gap between cookies. Bake until golden brown, about 12 minutes. Dip rim of each cookie into cinnamon sugar mixture. Let cool on racks and store at room temperature in air-tight container for up to 5 days",
     analyzedInstructions: [
       {
         name: "",
@@ -6264,7 +6264,7 @@ const recipes = [
     dishTypes: ["lunch", "main course", "main dish", "dinner"],
     diets: ["gluten free"],
     occasions: [],
-    instructions: "",
+    instructions: "Preheat oven to 450 degrees and place rack in middle position. Place chicken in a large roasting pan; I line the pan with parchment paper to make for an easier clean-up. Mix softened ghee with dried herbs and a generous amount of salt and pepper. Using your fingers, spread this mixture all over the skin and under the skin of the breasts. Place the vegetables in a large bowl. Pour the melted ghee over the onions and carrots, tossing gently to ensure they are evenly coated. Place the vegetables around the chicken in the roasting pan. Sprinkle additional salt and pepper over everything. Roast chicken for 30 minutes, then stir the carrots a bit and rotate the pan 180 degrees. Continue to roast about 25 more minutes. The chicken should be golden and crispy and a food thermometer should read 160°F (70°C) when inserted into the breast's thickest part. Remove the pan from the oven, tent the chicken with foil to keep it warm, and let it rest for about 15 minutes before carving",
     analyzedInstructions: [],
     originalId: null,
     spoonacularSourceUrl:
@@ -6505,7 +6505,7 @@ const recipes = [
     diets: ["gluten free", "lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      "<p>-In a small bowl, add oatmeal, yogurt, milk and combine. Let it sit for few minutes or several hours in the refrigerator.  Then add apples, banana, dried fruits and stir until well combined. Top with nuts before serving.</p><p>Note: it tastes best when allowed to sit overnight. Add fruits right before serving to prevent browning and being mushy.</p>",
+      "In a small bowl, add oatmeal, yogurt, milk and combine. Let it sit for few minutes or several hours in the refrigerator.  Then add apples, banana, dried fruits and stir until well combined. Top with nuts before serving. Note: it tastes best when allowed to sit overnight. Add fruits right before serving to prevent browning and being mushy",
     analyzedInstructions: [
       {
         name: "",
@@ -6978,7 +6978,7 @@ const recipes = [
     diets: ["lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      "Oil a 9-inch spring form pan, and line the bottom with a 10-inch circle of parchment paper.Combine butter, brown sugar, and cinnamon in a medium saucepan. Melt the butter over medium heat for about 1 minute.Pour the mixture into the prepared spring form pan, completely coating the parchment paper.Place the quartered pears on top of the butter-sugar mixture, lining the pieces up tightly in a decorative circle.In a large mixing bowl cream butter (cut into smaller pieces) and brown sugar for 3-5 minutes, until smooth.Add the grated ginger, and beat 1 minute more.Add the eggs one at a time,making sure that each egg is fully incorporated before adding another.Add in the maple syrup or honey and beat to fully mix. The mixture will look as though it is breaking or curdling, but it will come together when the dry ingredients are added.In a separate bowl, sift together the flour, baking powder, baking soda, and salt. Whisk to fully combine.Alternately add small amounts of flour and buttermilk to the batter, stirring and folding with a rubber spatula until the dry ingredients are just absorbed. Do not overmix the batter.Pour and scrape the batter into the pear-lined pan, smoothing the top with a rubber spatula.Bake the cake at 325F for about 1 hour and 45 minutes, until a skewer inserted in the cakes centre comes out clean.Let the cake cool in the pan for 10 minutes on a wire rack.Cover the pan with a serving plate; then carefully invert them together. Release the sides of the pan, and lift it away. Gently lift the pans base off the cake, and peel away the parchment paper.Allow the cake to cool, and serve warm.",
+      "Oil a 9-inch spring form pan, and line the bottom with a 10-inch circle of parchment paper.Combine butter, brown sugar, and cinnamon in a medium saucepan. Melt the butter over medium heat for about 1 minute.Pour the mixture into the prepared spring form pan, completely coating the parchment paper.Place the quartered pears on top of the butter-sugar mixture, lining the pieces up tightly in a decorative circle.In a large mixing bowl cream butter (cut into smaller pieces) and brown sugar for 3-5 minutes, until smooth.Add the grated ginger, and beat 1 minute more.Add the eggs one at a time,making sure that each egg is fully incorporated before adding another.Add in the maple syrup or honey and beat to fully mix. The mixture will look as though it is breaking or curdling, but it will come together when the dry ingredients are added.In a separate bowl, sift together the flour, baking powder, baking soda, and salt. Whisk to fully combine.Alternately add small amounts of flour and buttermilk to the batter, stirring and folding with a rubber spatula until the dry ingredients are just absorbed. Do not overmix the batter.Pour and scrape the batter into the pear-lined pan, smoothing the top with a rubber spatula.Bake the cake at 325F for about 1 hour and 45 minutes, until a skewer inserted in the cakes centre comes out clean.Let the cake cool in the pan for 10 minutes on a wire rack.Cover the pan with a serving plate; then carefully invert them together. Release the sides of the pan, and lift it away. Gently lift the pans base off the cake, and peel away the parchment paper.Allow the cake to cool, and serve warm",
     analyzedInstructions: [
       {
         name: "",
@@ -7738,7 +7738,7 @@ const recipes = [
     diets: ["pescatarian"],
     occasions: [],
     instructions:
-      "Heat a deep pot over medium heat. Add oil and butter. When butter is melted, add potatoes, celery, onion, bay leaves and chipotle peppers to the pot. Season vegetables with salt and pepper, mix well and saute until tender, about 10 minutes.Sprinkle in flour and cook about 2 minutes, stirring constantly. Stir in clam juice and half and half and mix well.Bring soup up to a simmer and continue to simmer for about 20 minutes, or until potatoes are soft.Stir in corn, crab and sherry and simmer for another 5 minutes, until heated through.Adjust the soup seasonings and remove the bay leaf.  Ladle soup into bowls and top with a few dashes of hot sauce, if desired.Serve with some crackers, crusty bread or cornbread.",
+      "Heat a deep pot over medium heat. Add oil and butter. When butter is melted, add potatoes, celery, onion, bay leaves and chipotle peppers to the pot. Season vegetables with salt and pepper, mix well and saute until tender, about 10 minutes.Sprinkle in flour and cook about 2 minutes, stirring constantly. Stir in clam juice and half and half and mix well.Bring soup up to a simmer and continue to simmer for about 20 minutes, or until potatoes are soft.Stir in corn, crab and sherry and simmer for another 5 minutes, until heated through.Adjust the soup seasonings and remove the bay leaf.  Ladle soup into bowls and top with a few dashes of hot sauce, if desired.Serve with some crackers, crusty bread or cornbread",
     analyzedInstructions: [
       {
         name: "",
@@ -8221,7 +8221,7 @@ const recipes = [
     diets: ["gluten free", "dairy free"],
     occasions: [],
     instructions:
-      "<p>Combine all of the ingredients in a blender. Blend on high until smooth. Serve immediately.</p>",
+      "Combine all of the ingredients in a blender. Blend on high until smooth. Serve immediately",
     analyzedInstructions: [
       {
         name: "",
@@ -8432,7 +8432,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      "1.Heat the oven the to 400F. Place the plums on a rimmed cookie sheet (lined with parchment paper for easier cleanup) and sprinkle with 2 tablespoons of the sugar. Roast until the plums are browning and tender but not falling apart, about 15 minutes.\n2.Bring about 2 inches of water to a bare simmer in a saucepan over medium-high heat. Reduce the heat to maintain a bare simmer. Combine the egg yolks, the remaining 4 tablespoons sugar, the plum brandy mixture, and a pinch of salt in a round-bottomed metal mixing bowl; whisk thoroughly.\n3.Set the bowl over the simmering waterthe base of the bowl should not touch the waterand whisk continuously. The egg yolks will begin to froth, lighten, and grow greatly in volume. If you sense that the yolks are at risk of scrambling, quickly remove the bowl from the heat and whisk to cool slightly, then continue. When soft peaks form, after 5 to10 minutes, the zabaglione is done. Transfer to a clean bowl, cover, and refrigerate.\n4.To serve, place 6 plum halves in the bottom of each of 4 glasses. Give the zabaglione a quick whisk and spoon it on top of the plums. Serve immediately.",
+      "Heat the oven the to 400F. Place the plums on a rimmed cookie sheet (lined with parchment paper for easier cleanup) and sprinkle with 2 tablespoons of the sugar. Roast until the plums are browning and tender but not falling apart, about 15 minutes. Bring about 2 inches of water to a bare simmer in a saucepan over medium-high heat. Reduce the heat to maintain a bare simmer. Combine the egg yolks, the remaining 4 tablespoons sugar, the plum brandy mixture, and a pinch of salt in a round-bottomed metal mixing bowl; whisk thoroughly. Set the bowl over the simmering waterthe base of the bowl should not touch the waterand whisk continuously. The egg yolks will begin to froth, lighten, and grow greatly in volume. If you sense that the yolks are at risk of scrambling, quickly remove the bowl from the heat and whisk to cool slightly, then continue. When soft peaks form, after 5 to 10 minutes, the zabaglione is done. Transfer to a clean bowl, cover, and refrigerate. To serve, place 6 plum halves in the bottom of each of 4 glasses. Give the zabaglione a quick whisk and spoon it on top of the plums. Serve immediately",
     analyzedInstructions: [
       {
         name: "",
@@ -9078,7 +9078,7 @@ const recipes = [
     diets: ["dairy free", "lacto ovo vegetarian", "vegan"],
     occasions: [],
     instructions:
-      "Combine the chickpeas, onion, garlic, parsley, flour, spices, and salt, and pulse until the mixture is well combined. Form the mixture into 4 large patties.Heat the oil in a large, nonstick skillet set over medium-high heat. Cook for about 3 minutes per side.Make the tahini sauce: Whisk the tahini paste with the water, lemon juice and zest, salt, and freshly ground black pepper in a mixing bowl.Serve the burgers in pita pockets or on a bun. Top them with tahini sauce, lettuce, and tomato.",
+      "Combine the chickpeas, onion, garlic, parsley, flour, spices, and salt, and pulse until the mixture is well combined. Form the mixture into 4 large patties.Heat the oil in a large, nonstick skillet set over medium-high heat. Cook for about 3 minutes per side.Make the tahini sauce: Whisk the tahini paste with the water, lemon juice and zest, salt, and freshly ground black pepper in a mixing bowl.Serve the burgers in pita pockets or on a bun. Top them with tahini sauce, lettuce, and tomato",
     analyzedInstructions: [
       {
         name: "",
@@ -9536,7 +9536,7 @@ const recipes = [
     diets: ["gluten free"],
     occasions: [],
     instructions:
-      "Warm stock in small saucepan, keep warm.\nIn small saut pan warm olive oil with sage leaves until fragrant.  Be careful not to burn leaves.  Cook 5-6 minutes and let cool.\nIn a medium saucepan melt butter over medium heat.  Add shallots and pancetta.  Saut until  shallots are translucent.\nAdd rice and stir until coated in butter.\nAdd wine and cook 2-3 minutes.\nSlowly begin adding in stock, 1-2 ladles at a time.  Allow rice to absorb liquid before adding another ladle-full..   Continue to cook until rice is al dente (has a little bite).\nAdd parmesan and squash puree and mix until smooth and creamy.\nTop with a drizzle of sage oil.",
+      "Warm stock in small saucepan, keep warm. In small saut pan warm olive oil with sage leaves until fragrant.  Be careful not to burn leaves.  Cook 5-6 minutes and let cool. In a medium saucepan melt butter over medium heat.  Add shallots and pancetta.  Saut until  shallots are translucent. Add rice and stir until coated in butter. Add wine and cook 2-3 minutes. Slowly begin adding in stock, 1-2 ladles at a time.  Allow rice to absorb liquid before adding another ladle-full..   Continue to cook until rice is al dente (has a little bite). Add parmesan and squash puree and mix until smooth and creamy. Top with a drizzle of sage oil",
     analyzedInstructions: [
       {
         name: "",
@@ -10278,7 +10278,7 @@ const recipes = [
     diets: [],
     occasions: [],
     instructions:
-      "Spread pineapple in bottom of a 9X13 pan\nCover with pie filling\nCover with cake mix\nCut butter into small pieces and place evenly over cake mix\nBake 350 for 1 hour\nServe Old School with Cool Whip, or fresh whipped cream",
+      "Spread pineapple in bottom of a 9X13 pan. Cover with pie filling. Cover with cake mix. Cut butter into small pieces and place evenly over cake mix. Bake 350 for 1 hour. Serve Old School with Cool Whip, or fresh whipped cream",
     analyzedInstructions: [
       {
         name: "",
@@ -10700,7 +10700,7 @@ const recipes = [
     diets: ["pescatarian"],
     occasions: [],
     instructions:
-      "Thaw frozen shrimp according to package directions if using frozen, and then peel, devein and rinse shrimp in a colander.While shrimp are draining, fill a medium size saucepan with cold water and cook tortellini according to package directions.  Do NOT overcook your tortellini, no more than 2-3 mins once tortellini are added to boiling water.Drain pasta and set aside.Using the same saucepan combine diced tomatoes, crushed bullion, parsley and thyme and bring to a low simmer.While tomatoes are simmering bring a large skillet to medium heat and add olive oil.  Heat olive oil and add minced garlic, cooking just until slightly opaque (approx. 1 min).  Add garlic and olive oil to tomatoes, stir.  Taking a fork crush tomatoes, breaking up the pieces until you have a chunky sauce.Add cream to skillet that you used for garlic and bring to a low simmer.  Add tomato sauce, Parmesan cheese and salt and pepper to taste to cream and bring to slow simmerAdd cream to skillet that you used for garlic and bring to a slow simmer.Add tomato sauce, Parmesan cheese and salt and pepper to taste to cream and bring back up to a slow simmer.Reduce heat on cream sauce to low to keep warm and continue to stir occasionally.At this point you can butterfly your shrimp, which helps to make the amount of shrimp seem more substantial, but this is not a necessary step.To butterfly your shrimp, place on cutting board and with a very sharp knife, open up shrimp along the back but not cutting all the way through.Add shrimp to cream sauce and cover, allowing shrimp to cook for approximately 4-5 minutes.Add tortellini to pan coating  with cream sauce and seasoning if necessary with additional salt and pepper.  Remove from heat.Plate and top with a sprinkle of shredded parmesan cheese.",
+      "Thaw frozen shrimp according to package directions if using frozen, and then peel, devein and rinse shrimp in a colander.While shrimp are draining, fill a medium size saucepan with cold water and cook tortellini according to package directions.  Do NOT overcook your tortellini, no more than 2-3 mins once tortellini are added to boiling water.Drain pasta and set aside.Using the same saucepan combine diced tomatoes, crushed bullion, parsley and thyme and bring to a low simmer.While tomatoes are simmering bring a large skillet to medium heat and add olive oil.  Heat olive oil and add minced garlic, cooking just until slightly opaque (approx. 1 min).  Add garlic and olive oil to tomatoes, stir.  Taking a fork crush tomatoes, breaking up the pieces until you have a chunky sauce.Add cream to skillet that you used for garlic and bring to a low simmer.  Add tomato sauce, Parmesan cheese and salt and pepper to taste to cream and bring to slow simmerAdd cream to skillet that you used for garlic and bring to a slow simmer.Add tomato sauce, Parmesan cheese and salt and pepper to taste to cream and bring back up to a slow simmer.Reduce heat on cream sauce to low to keep warm and continue to stir occasionally.At this point you can butterfly your shrimp, which helps to make the amount of shrimp seem more substantial, but this is not a necessary step.To butterfly your shrimp, place on cutting board and with a very sharp knife, open up shrimp along the back but not cutting all the way through.Add shrimp to cream sauce and cover, allowing shrimp to cook for approximately 4-5 minutes.Add tortellini to pan coating  with cream sauce and seasoning if necessary with additional salt and pepper. Remove from heat.Plate and top with a sprinkle of shredded parmesan cheese",
     analyzedInstructions: [
       {
         name: "",
@@ -11593,7 +11593,7 @@ const recipes = [
     diets: ["gluten free", "dairy free"],
     occasions: [],
     instructions:
-      "Adjust oven rack to lower middle position and heat oven to 350. In a med bowl, toss shrimp with 1 t. minced garlic, 1 T. olive oil, 1/4 t. salt & 1/4 t. pepper. Refrigerate until needed. Season chicken with salt & pepper, set aside.\nHeat 2 t. oil in a large Dutch oven over med-high heat until oil shimmers, add bell pepper and cook, stirring occasionally until skins blister and brown about 3-4 minutes. Remove to a plate and set aside. Add 1 T. more oil to the pot, add chicken thighs and brown well, flipping once, about 3 minutes per side. Remove chicken to a bowl, reduce heat to medium, add sausage and cook 4-5 minutes, stirring frequently, until browned and fat starts to render. Add to bowl with the browned chicken.\n3. At medium heat, add enough oil to the pot to equal 2 T., add onion and cook, stirring frequently, until tender, about 3 minutes, add remaining garlic, cook for 1 minute, add tomatoes, cook and stir until tomatoes thicken and darken slightly about 3 minutes. Add rice, cook and stir for about 2 minutes, making sure everything is evenly mixed. Add broth, wine, saffron, bay leaf and 1/2 t. salt. Add the browned chicken and sausage. Increase heat to med-high, bring to a boil, stirring often. Cover pot and place in the oven. Bake for 15 minutes (liquid should be mostly absorbed). Remove pot from the oven (keep oven door closed to retain heat), remove the lid, nestle the artichoke hearts down in the rice a bit. Sprinkle the shrimp over the top of the rice, then, sprinkle with the peas and bell pepper strips. Replace the led, add back to the oven for another 10 minutes or until the shrimp are opaque.\nTurn stove burner to med-high heat. Remove the pot from the oven, place on the stove cook for 5 minutes to get the browned portion on the bottom of the rice (called Soccarat), rotating the pot 180 degrees halfway through to ensure even browning. Remove pot from heat and let the paella rest, covered, for 5 minutes. Sprinkle with fresh chopped parsley and lemon wedges.",
+      "Adjust oven rack to lower middle position and heat oven to 350. In a med bowl, toss shrimp with 1 t. minced garlic, 1 T. olive oil, 1/4 t. salt & 1/4 t. pepper. Refrigerate until needed. Season chicken with salt & pepper, set aside. Heat 2 t. oil in a large Dutch oven over med-high heat until oil shimmers, add bell pepper and cook, stirring occasionally until skins blister and brown about 3-4 minutes. Remove to a plate and set aside. Add 1 T. more oil to the pot, add chicken thighs and brown well, flipping once, about 3 minutes per side. Remove chicken to a bowl, reduce heat to medium, add sausage and cook 4-5 minutes, stirring frequently, until browned and fat starts to render. Add to bowl with the browned chicken. 3. At medium heat, add enough oil to the pot to equal 2 T., add onion and cook, stirring frequently, until tender, about 3 minutes, add remaining garlic, cook for 1 minute, add tomatoes, cook and stir until tomatoes thicken and darken slightly about 3 minutes. Add rice, cook and stir for about 2 minutes, making sure everything is evenly mixed. Add broth, wine, saffron, bay leaf and 1/2 t. salt. Add the browned chicken and sausage. Increase heat to med-high, bring to a boil, stirring often. Cover pot and place in the oven. Bake for 15 minutes (liquid should be mostly absorbed). Remove pot from the oven (keep oven door closed to retain heat), remove the lid, nestle the artichoke hearts down in the rice a bit. Sprinkle the shrimp over the top of the rice, then, sprinkle with the peas and bell pepper strips. Replace the led, add back to the oven for another 10 minutes or until the shrimp are opaque. Turn stove burner to med-high heat. Remove the pot from the oven, place on the stove cook for 5 minutes to get the browned portion on the bottom of the rice (called Soccarat), rotating the pot 180 degrees halfway through to ensure even browning. Remove pot from heat and let the paella rest, covered, for 5 minutes. Sprinkle with fresh chopped parsley and lemon wedges",
     analyzedInstructions: [
       {
         name: "",
@@ -12349,7 +12349,7 @@ const recipes = [
     diets: ["gluten free", "lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      "Place first five items into a blender and pulse a few times. Add the next berry and pulse 2-3 times. Repeat until all berries have been added, then blend on high until smooth.",
+      "Place first five items into a blender and pulse a few times. Add the next berry and pulse 2-3 times. Repeat until all berries have been added, then blend on high until smooth",
     analyzedInstructions: [
       {
         name: "",
@@ -12687,7 +12687,7 @@ const recipes = [
     diets: ["dairy free"],
     occasions: [],
     instructions:
-      "Fry chicken (a pre-bought roaster will work too) and shred it with your hands...no chopping.\nPour out chicken fat (leave some chunks) from pan and add olive oil, capers, chili flakes, garlic and cook 3-5 min on medium heat.\nAdd chicken plus lemon zest, then squeeze in juice from lemon for good measure.\nCook spaghettini and then mix everything together and finish with basil, fresh parm and pepper and sea salt.",
+      "Fry chicken (a pre-bought roaster will work too) and shred it with your hands, no chopping. Pour out chicken fat (leave some chunks) from pan and add olive oil, capers, chili flakes, garlic and cook 3-5 min on medium heat. Add chicken plus lemon zest, then squeeze in juice from lemon for good measure. Cook spaghettini and then mix everything together and finish with basil, fresh parm and pepper and sea salt",
     analyzedInstructions: [
       {
         name: "",
@@ -13207,7 +13207,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "fodmap friendly"],
     occasions: ["spring", "easter"],
     instructions:
-      "Julienne red and yellow bell pepper, carrots, jicama and Thai basil into 1/8in thin and 2 inch long strips.Fill a round pie pan or shallow plate with warm water. Dip one rice paper, making sure both sides are soaked. Lay on a flat flour towel cloth. Wait ten seconds for the paper to soft before using.Peel rice paper off of cloth.Place half of one butter leaf lettuce on top. Make sure to discard the ribbing.Add a thin layer of each vegetable and finish with a few pieces of Thai Basil.Starting at one end, fold the edge towards the middle. Repeat with parallel side. Rotate the spring roll by 90 degrees and roll form one end to the next.Cut each roll diagonally and place facing up on a serving platter.Garlic Lime Hoisin Sauce: Using a mortar and pestle crush garlic and ginger. Whisk in lime and Saracha. Add hoisin sauce and whisk to combine.",
+      "Julienne red and yellow bell pepper, carrots, jicama and Thai basil into 1/8in thin and 2 inch long strips.Fill a round pie pan or shallow plate with warm water. Dip one rice paper, making sure both sides are soaked. Lay on a flat flour towel cloth. Wait ten seconds for the paper to soft before using.Peel rice paper off of cloth.Place half of one butter leaf lettuce on top. Make sure to discard the ribbing.Add a thin layer of each vegetable and finish with a few pieces of Thai Basil.Starting at one end, fold the edge towards the middle. Repeat with parallel side. Rotate the spring roll by 90 degrees and roll form one end to the next.Cut each roll diagonally and place facing up on a serving platter.Garlic Lime Hoisin Sauce: Using a mortar and pestle crush garlic and ginger. Whisk in lime and Saracha. Add hoisin sauce and whisk to combine",
     analyzedInstructions: [
       {
         name: "",
@@ -13821,7 +13821,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "lacto ovo vegetarian", "vegan"],
     occasions: [],
     instructions:
-      "*Wash rice by rubbing the rice between your palms in a bowl of water and draining the water till clear.Blend tomatoes, pepper and garlic and bring to boil till the excess water dries up.Chop OnionsHeat up vegetable oil and pour in chopped onions and fry. Pour in the can of tomato puree and fry.Pour in blended tomato and pepper mix into the pot and stir in. Pour in salt, dry pepper, curry, thyme, bay leaves and maggi cubes.Allow it to simmer on low heat for 3 minutes.Reduce the heat to the lowest level and pour in the washed rice. Pour in the water and stir and leave on low heat for 20 minutes or till the rice is soft.Tip: To get the party rice flavor, increase the heat on the rice and burn the bottom of the pot with the pot covered and stir the rice after 3 minutes of burning.Stir the rice and serve with any protein of your choice.  // <![CDATA[(adsbygoogle = window.adsbygoogle || []).push({});// ]]&gt;A video I shared on Instagram recently",
+      "Wash rice by rubbing the rice between your palms in a bowl of water and draining the water till clear.Blend tomatoes, pepper and garlic and bring to boil till the excess water dries up.Chop OnionsHeat up vegetable oil and pour in chopped onions and fry. Pour in the can of tomato puree and fry.Pour in blended tomato and pepper mix into the pot and stir in. Pour in salt, dry pepper, curry, thyme, bay leaves and maggi cubes.Allow it to simmer on low heat for 3 minutes.Reduce the heat to the lowest level and pour in the washed rice. Pour in the water and stir and leave on low heat for 20 minutes or till the rice is soft.Tip: To get the party rice flavor, increase the heat on the rice and burn the bottom of the pot with the pot covered and stir the rice after 3 minutes of burning.Stir the rice and serve with any protein of your choice",
     analyzedInstructions: [
       {
         name: "",
@@ -14319,7 +14319,7 @@ const recipes = [
     diets: ["gluten free", "dairy free"],
     occasions: ["fall", "winter"],
     instructions:
-      "<p>To get started, heat your slow cooker to low. Pour in the cream of mushroom soup, Dale's seasoning, water, and beef broth and stir until mixed well. Add in your stew meat, potatoes, onions, carrots, celery, and green onions. Stir well until covered and cook on low for 8 hours. You can add salt and pepper as desired, but the flavors and the Dale's marry together so well that you probably won’t need them.</p>",
+      "To get started, heat your slow cooker to low. Pour in the cream of mushroom soup, Dale's seasoning, water, and beef broth and stir until mixed well. Add in your stew meat, potatoes, onions, carrots, celery, and green onions. Stir well until covered and cook on low for 8 hours. You can add salt and pepper as desired, but the flavors and the Dale's marry together so well that you probably won’t need them",
     analyzedInstructions: [
       {
         name: "",
@@ -14759,7 +14759,7 @@ const recipes = [
     diets: ["dairy free"],
     occasions: [],
     instructions:
-      "Preheat the oven to 350 degrees F.  Spray a 9 by 13 inch baking dish with cooking spray.In the bowl of an electric mixer, thoroughly combine the oil, eggs, and sugar.  Sift the flour, baking powder, salt, soda, and spices together in a bowl, then add to the oil mixture in the mixer, beating until thoroughly mixed.  The batter will be thick.Use a sturdy spoon to stir in the apple pieces.  Scrape the mixture into the prepared pan, spreading it out evenly.  Sprinkle the butterscotch chips over the top, pressing them into the batter lightly.Bake for 45 minutes to 1 hour, until golden and pulling away from the sides of the pan slightly.Cool thoroughly and cut into squares.",
+      "Preheat the oven to 350 degrees F.  Spray a 9 by 13 inch baking dish with cooking spray.In the bowl of an electric mixer, thoroughly combine the oil, eggs, and sugar.  Sift the flour, baking powder, salt, soda, and spices together in a bowl, then add to the oil mixture in the mixer, beating until thoroughly mixed.  The batter will be thick.Use a sturdy spoon to stir in the apple pieces.  Scrape the mixture into the prepared pan, spreading it out evenly.  Sprinkle the butterscotch chips over the top, pressing them into the batter lightly.Bake for 45 minutes to 1 hour, until golden and pulling away from the sides of the pan slightly.Cool thoroughly and cut into squares",
     analyzedInstructions: [
       {
         name: "",
@@ -15414,7 +15414,7 @@ const recipes = [
     diets: ["gluten free"],
     occasions: [],
     instructions:
-      "Pull out your slow cooker and add everything into the pot with the exception of the yogurt.Now turn on your pot, setting it on low for the next 4-6 hours or high for the next 3-5.When the time is up, open up your slow cooker, grab your yogurt and stir it into the curry.Serve over rice.",
+      "Pull out your slow cooker and add everything into the pot with the exception of the yogurt.Now turn on your pot, setting it on low for the next 4-6 hours or high for the next 3-5.When the time is up, open up your slow cooker, grab your yogurt and stir it into the curry.Serve over rice",
     analyzedInstructions: [
       {
         name: "",
@@ -15830,7 +15830,7 @@ const recipes = [
     diets: ["dairy free"],
     occasions: [],
     instructions:
-      "In a large bowl, combine first 8 ingredients (pork through salt, and scallions, if desired). Mix well.\nOn a plate, place one wonton wrapper and wet the edges with warm water.\nPlace one spoonful of the pork mixture in the center of the wonton.\nFold wonton wrapper in half, over the mixture (use more warm water if nec.)\nPick up the dumpling and using water, pinch the ends together (make a seal)\nPlace on a plate that has been dusted with cornstarch.\nRepeat until mixture is completely distributed.\nDust cornstarch on each layer of dumplings so they don't stick together.\nTo cook: Bring the salted water to boil in a large pot.\nPlace dumplings in boiling water, being careful not to overcrowd.\nBoil for 2-3 minutes. The dumpling centers will turn slightly opaque.\nRemove dumplings with slotted spoon.\nServe immediately with soy sauce or see recommended sauce.",
+      "In a large bowl, combine first 8 ingredients (pork through salt, and scallions, if desired) Mix well. On a plate, place one wonton wrapper and wet the edges with warm water. Place one spoonful of the pork mixture in the center of the wonton. Fold wonton wrapper in half, over the mixture (use more warm water if nec). Pick up the dumpling and using water, pinch the ends together (make a seal). Place on a plate that has been dusted with cornstarch. Repeat until mixture is completely distributed. Dust cornstarch on each layer of dumplings so they don't stick together. To cook: Bring the salted water to boil in a large pot. Place dumplings in boiling water, being careful not to overcrowd. Boil for 2-3 minutes. The dumpling centers will turn slightly opaque. Remove dumplings with slotted spoon. Serve immediately with soy sauce or see recommended sauce",
     analyzedInstructions: [
       {
         name: "",
@@ -16368,7 +16368,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "fodmap friendly", "pescatarian"],
     occasions: ["father's day", "4th of july", "summer"],
     instructions:
-      "Pre-heat the oven to 200 deg Celsius.Lay a sheet of baking paper on a baking tray and grease it lightly with olive oil. Lay the whole fish fillet on the baking sheet and rub the fish generously with the rest of the olive oil.Season with salt and pepper. I like to use Masterfoods Garlic Pepper whenever a recipe calls for salt and pepper.Place the fish in an oven pre-heated to 200 deg Celsius for 15-20 minutes until fish is cooked. Do not overcook the fish. The standard, fan-forced or grill functions of the oven may be used.While the fish is cooking, lightly peel a piece of cucumber. About 150g large. Leave some skin on for a prettier appearance. Cut the cucumber into strips and trim off the seeds. Retain the crunchy parts. Dice the cucumber strips. Set aside the cucumber dices in a bowl.Use only sun-dried tomatoes that are soaked in oil. Remove the tomatoes from the jar and drain the excess oil. Cut the tomatoes into small pieces. Add the tomatoes to the cucumber.Stack 5 leaves of mint or basil together. Roll up the stack of leaves. Using a pair of kitchen scissors, cut the herbs into fine strips. Add them to the tomato mixture.Add salt and pepper to taste, 1/2 teaspoon of sugar, 1 teaspoon of extra virgin olive oil, 1/2 teaspoon of balsamic vinegar and 1 teaspoon of toasted sesame seeds. Stir the tomato relish mixture well to combine.Remove the fish from the oven. Cut into servicing portions and place the relish on the top of the each fish fillet.Garnish with sprigs of mint or basil.",
+      "Pre-heat the oven to 200 deg Celsius.Lay a sheet of baking paper on a baking tray and grease it lightly with olive oil. Lay the whole fish fillet on the baking sheet and rub the fish generously with the rest of the olive oil.Season with salt and pepper. I like to use Masterfoods Garlic Pepper whenever a recipe calls for salt and pepper.Place the fish in an oven pre-heated to 200 deg Celsius for 15-20 minutes until fish is cooked. Do not overcook the fish. The standard, fan-forced or grill functions of the oven may be used.While the fish is cooking, lightly peel a piece of cucumber. About 150g large. Leave some skin on for a prettier appearance. Cut the cucumber into strips and trim off the seeds. Retain the crunchy parts. Dice the cucumber strips. Set aside the cucumber dices in a bowl.Use only sun-dried tomatoes that are soaked in oil. Remove the tomatoes from the jar and drain the excess oil. Cut the tomatoes into small pieces. Add the tomatoes to the cucumber.Stack 5 leaves of mint or basil together. Roll up the stack of leaves. Using a pair of kitchen scissors, cut the herbs into fine strips. Add them to the tomato mixture.Add salt and pepper to taste, 1/2 teaspoon of sugar, 1 teaspoon of extra virgin olive oil, 1/2 teaspoon of balsamic vinegar and 1 teaspoon of toasted sesame seeds. Stir the tomato relish mixture well to combine.Remove the fish from the oven. Cut into servicing portions and place the relish on the top of the each fish fillet.Garnish with sprigs of mint or basil",
     analyzedInstructions: [
       {
         name: "",
@@ -17056,7 +17056,7 @@ const recipes = [
     diets: ["gluten free", "lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      'Peel and thinly slice the eggplant. Place in a drainer or bowl and toss with sea salt. Let it sit for one hour for the bitter juices to be drawn out. Rinse under running water to remove the salt and squeeze tightly with your hands to remove excess water. Place in a mixing bowl.In a medium bowl, beat eggs with flour to make a thick paste. If paste is thin, add extra flour. Mix well till the mixture is smooth. Stir in eggplant &amp; artichoke hearts and mix till they are well coated.Add rosemary, chili flakes, garlic and season to taste with sea salt and pepper (be careful not to add too much salt) . Add goat cheese and mix carefully so not to cream it - you want them to be chunky.Heat a large oiled pan. When hot, pour about 2 spoonfuls of mixture into the pan and they should form into galettes or "cakes". Cook until both sides are golden brown.Makes 6 galettes/cakes. Serving size is 3 cakes per person.',
+      'Peel and thinly slice the eggplant. Place in a drainer or bowl and toss with sea salt. Let it sit for one hour for the bitter juices to be drawn out. Rinse under running water to remove the salt and squeeze tightly with your hands to remove excess water. Place in a mixing bowl.In a medium bowl, beat eggs with flour to make a thick paste. If paste is thin, add extra flour. Mix well till the mixture is smooth. Stir in eggplant &amp; artichoke hearts and mix till they are well coated.Add rosemary, chili flakes, garlic and season to taste with sea salt and pepper (be careful not to add too much salt) . Add goat cheese and mix carefully so not to cream it - you want them to be chunky.Heat a large oiled pan. When hot, pour about 2 spoonfuls of mixture into the pan and they should form into galettes or "cakes". Cook until both sides are golden brown.Makes 6 galettes/cakes. Serving size is 3 cakes per person',
     analyzedInstructions: [
       {
         name: "",
@@ -17476,7 +17476,7 @@ const recipes = [
     ],
     occasions: ["easter"],
     instructions:
-      "In a food processor, blend all the snack bite ingredients together.Scoop out tablespoons full of the batter and roll it into a ball.Roll the balls in sesame seeds, coconut, or chopped almonds for additional crunch, if desired.Store refrigerated.",
+      "In a food processor, blend all the snack bite ingredients together.Scoop out tablespoons full of the batter and roll it into a ball.Roll the balls in sesame seeds, coconut, or chopped almonds for additional crunch, if desired.Store refrigerated",
     analyzedInstructions: [
       {
         name: "",
@@ -17864,7 +17864,7 @@ const recipes = [
     diets: ["gluten free", "dairy free"],
     occasions: [],
     instructions:
-      "Line a 9 x 9 pan with foil and spray with non stick spray. Now sift confectioners sugar heavily to coat the surface of the foil.\nIn the bowl of an electric mixer, sprinkle gelatin over 1/2 cup cold water. Soak for 10 minutes to bloom.\nMeanwhile, combine sugar, corn syrup, and 1/4 cup water in a small saucepan. Bring to a boil and boil hard until the thermometer reached 240F. Slowly pour boiling syrup into gelatin with the mixer on low. Turn up the speed and add the vanilla & salt and beat for 8 minutes. Now add the toasted pecans and pineapple. Beat for an additional 4 minutes. Scrape into prepared pan. Using an oiled spatula smooth the surface of the marshmallows.\nSet in a draft free area overnight.\nTo remove, invert the pan over a cutting board dusted generously with confectioners sugar. Slowly peel the foil away from the marshmallow slab.\nUsing a sharp knife cut the slab into marshmallows.\nRoll each marshmallow in the toasted coconut.\nDevour...",
+      "Line a 9 x 9 pan with foil and spray with non stick spray. Now sift confectioners sugar heavily to coat the surface of the foil. In the bowl of an electric mixer, sprinkle gelatin over 1/2 cup cold water. Soak for 10 minutes to bloom. Meanwhile, combine sugar, corn syrup, and 1/4 cup water in a small saucepan. Bring to a boil and boil hard until the thermometer reached 240F. Slowly pour boiling syrup into gelatin with the mixer on low. Turn up the speed and add the vanilla & salt and beat for 8 minutes. Now add the toasted pecans and pineapple. Beat for an additional 4 minutes. Scrape into prepared pan. Using an oiled spatula smooth the surface of the marshmallows. Set in a draft free area overnight. To remove, invert the pan over a cutting board dusted generously with confectioners sugar. Slowly peel the foil away from the marshmallow slab. Using a sharp knife cut the slab into marshmallows. Roll each marshmallow in the toasted coconut. Devour",
     analyzedInstructions: [
       {
         name: "",
@@ -18417,7 +18417,7 @@ const recipes = [
     diets: ["gluten free", "lacto ovo vegetarian", "primal"],
     occasions: [],
     instructions:
-      "Salt lightly the cucumbers, mix and set aside for 5 minutes to release the water. To remove as much water as possible from the grated cucumber, squeeze it in small quantities with hands.\nMix and combine yogurt, sour cream, olive oil, vinegar, garlic and white pepper until smooth.\nAdd cucumbers and dill, mix and combine.Adjust the seasoning.\nChill for at least two hours before serving.",
+      "Salt lightly the cucumbers, mix and set aside for 5 minutes to release the water. To remove as much water as possible from the grated cucumber, squeeze it in small quantities with hands. Mix and combine yogurt, sour cream, olive oil, vinegar, garlic and white pepper until smooth. Add cucumbers and dill, mix and combine.Adjust the seasoning. Chill for at least two hours before serving",
     analyzedInstructions: [
       {
         name: "",
@@ -18860,7 +18860,7 @@ const recipes = [
     diets: ["gluten free"],
     occasions: ["fall", "winter"],
     instructions:
-      "Preheat oven to 350 degrees.\nIn a large skillet, heat olive oil.\nSprinkle both sides of chicken breasts with seasoning to taste.\nBrown chicken in olive oil.  Cook 10 minutes. (chicken will cook more later)\nCut/Shred cooked chicken into small pieces, set aside in small bowl.\nCombine shredded cheeses into a small bowl, set aside.\nEmpty enchilada sauce into large bowl, set aside.\nWrap tortillas in a moist paper towel and microwave for 1 minute to steam.\nDip one warm corn tortilla into the enchilada sauce, coat both sides.\nCover the bottom of a 13 x 9 baking dish with dipped tortillas (approx 4).\nLayer in the shredded/diced chicken on top of the tortillas.\nLayer in the cheeses on top of the chicken.\nRepeat layering dipped tortillas, chicken and cheese until baking dish is full.\nFinish with a layer of dipped tortillas topped with a layer of cheese.\nBake at 350 degrees for 30-40 minutes or until cheese is melted.\nTop with your choice of sour cream, guacamole, diced tomatoes and/or chopped green onions.",
+      "Preheat oven to 350 degrees. In a large skillet, heat olive oil. Sprinkle both sides of chicken breasts with seasoning to taste. Brown chicken in olive oil.  Cook 10 minutes. (chicken will cook more later) Cut/Shred cooked chicken into small pieces, set aside in small bowl. Combine shredded cheeses into a small bowl, set aside. Empty enchilada sauce into large bowl, set aside. Wrap tortillas in a moist paper towel and microwave for 1 minute to steam. Dip one warm corn tortilla into the enchilada sauce, coat both sides. Cover the bottom of a 13 x 9 baking dish with dipped tortillas (approx 4). Layer in the shredded/diced chicken on top of the tortillas. Layer in the cheeses on top of the chicken. Repeat layering dipped tortillas, chicken and cheese until baking dish is full. Finish with a layer of dipped tortillas topped with a layer of cheese. Bake at 350 degrees for 30-40 minutes or until cheese is melted. Top with your choice of sour cream, guacamole, diced tomatoes and/or chopped green onions",
     analyzedInstructions: [
       {
         name: "",
@@ -19656,7 +19656,7 @@ const recipes = [
     diets: [],
     occasions: [],
     instructions:
-      "Cut the pumpkin, clean out the innards and place cut face down in a baking dish with a 1/4 inch of water.Bake in a 400 degree oven for 45 minutes until the insides are soft and cooked.Scoop out the cooked flesh and puree with the tiniest bit of milk to make a smooth puree.Saute the onions and garlic in butter until translucent.Add in the barley and toast for a couple of minutes.Season with salt, pepper, cumin, thyme and oregano.Add two cups of stock and cook until the liquid is almost absorbed.Stir in the pumpkin puree.Add the rest of the stock in half cup measures and stirring until it is fully absorbed.Slowly, the barley will become creamy as the starch releases.When you are done with all the stock, remove from heat and stir in the sour cream.Serve immediately garnished with mint leaves and a drop of pumkiny-sour cream.",
+      "Cut the pumpkin, clean out the innards and place cut face down in a baking dish with a 1/4 inch of water.Bake in a 400 degree oven for 45 minutes until the insides are soft and cooked.Scoop out the cooked flesh and puree with the tiniest bit of milk to make a smooth puree.Saute the onions and garlic in butter until translucent.Add in the barley and toast for a couple of minutes.Season with salt, pepper, cumin, thyme and oregano.Add two cups of stock and cook until the liquid is almost absorbed.Stir in the pumpkin puree.Add the rest of the stock in half cup measures and stirring until it is fully absorbed.Slowly, the barley will become creamy as the starch releases.When you are done with all the stock, remove from heat and stir in the sour cream.Serve immediately garnished with mint leaves and a drop of pumkiny-sour cream",
     analyzedInstructions: [
       {
         name: "",
@@ -20247,7 +20247,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "pescatarian"],
     occasions: [],
     instructions:
-      "Mix the sauce ingredients together in a bowl, taste it to check if you like the balance of flavour and adjust if you wish.  Set this aside.Heat the oil on a very high heat in a wok. Get the oil as hot as you can, just below smoking point.  Check the heat by dropping a piece of spring onion (scallion) and if it sizzles immediately, the oil is hot enough.Add the chili, garlic and ginger, stir and cook for about 30 seconds.  Add the spring onions (scallions) and cook for a further minute.Add the shrimp (prawns) cook for about 2 minutes or until they turn pink.Add the sauce, keeping the heat high so that as soon as it hits your pan or wok, it sizzles and reduces.When the sauce has thickened a little, add the pak choi, mix through and cover it, cooking only for a minute.Serve with simply boiled white rice and sprinkle with some fresh coriander (cilantro).",
+      "Mix the sauce ingredients together in a bowl, taste it to check if you like the balance of flavour and adjust if you wish.  Set this aside.Heat the oil on a very high heat in a wok. Get the oil as hot as you can, just below smoking point.  Check the heat by dropping a piece of spring onion (scallion) and if it sizzles immediately, the oil is hot enough.Add the chili, garlic and ginger, stir and cook for about 30 seconds.  Add the spring onions (scallions) and cook for a further minute.Add the shrimp (prawns) cook for about 2 minutes or until they turn pink.Add the sauce, keeping the heat high so that as soon as it hits your pan or wok, it sizzles and reduces.When the sauce has thickened a little, add the pak choi, mix through and cover it, cooking only for a minute.Serve with simply boiled white rice and sprinkle with some fresh coriander (cilantro)",
     analyzedInstructions: [
       {
         name: "",
@@ -20712,7 +20712,7 @@ const recipes = [
     diets: [],
     occasions: [],
     instructions:
-      "Split cake in half to a thickness of about 3cm and cut 1 half into 4 rounds, roughly the size of a peach half.\nDice half the peaches.\nPlace a round of sponge cake in each glass dish and soak with brandy. Place a peach half on sponge, hollow side up, and place a scoop of ice cream on each peach.\nPour raspberry syrup over ice cream, decorate with whipped cream and chopped nuts and scatter round diced peach and extra fresh raspberries.\nRaspberry syrup:Place ingredients in blender and puree until smooth. Place in a small saucepan, bring to the boil and simmer 2 minutes. Cool before using.",
+      "Split cake in half to a thickness of about 3cm and cut 1 half into 4 rounds, roughly the size of a peach half. Dice half the peaches. Place a round of sponge cake in each glass dish and soak with brandy. Place a peach half on sponge, hollow side up, and place a scoop of ice cream on each peach. Pour raspberry syrup over ice cream, decorate with whipped cream and chopped nuts and scatter round diced peach and extra fresh raspberries. Raspberry syrup:Place ingredients in blender and puree until smooth. Place in a small saucepan, bring to the boil and simmer 2 minutes. Cool before using",
     analyzedInstructions: [
       {
         name: "",
@@ -21218,7 +21218,7 @@ const recipes = [
     diets: ["dairy free"],
     occasions: [],
     instructions:
-      "Prepare rice according to package instructions. (I either cook the rice in chicken stock, or this time I used water and added 1 tablespoon vegeta seasoning to the water to add flavor to the rice as it cooks.)\nMeanwhile preheat oven to 375 degrees. Cut squash in half and drizzle with olive oil, salt and pepper. Roast skin side down for 30 minutes.\nHeat 1 tablespoon olive oil in large skilled. Add diced onions. Cook until translucent. Add garlic and cook for 1 minute longer. Add turkey, 1 tablespoon vegeta, red pepper, salt and pepper. Cook until turkey is browned and almost cooked through. Rough chop the mushrooms and add to the pan. Cook until mushrooms are softened. Add rice and spinach and stir until spinach is just wilted.\nStuff the squash with the meat and rice mixture and top with bread crumbs. (Either toss bread crumbs with 2 teaspoons olive oil, or I just spray them with spray olive oil to make sure that they brown in the oven.\nBake stuffed squash in oven until bread crumbs are browned.",
+      "Prepare rice according to package instructions. (I either cook the rice in chicken stock, or this time I used water and added 1 tablespoon vegeta seasoning to the water to add flavor to the rice as it cooks). Meanwhile preheat oven to 375 degrees. Cut squash in half and drizzle with olive oil, salt and pepper. Roast skin side down for 30 minutes. Heat 1 tablespoon olive oil in large skilled. Add diced onions. Cook until translucent. Add garlic and cook for 1 minute longer. Add turkey, 1 tablespoon vegeta, red pepper, salt and pepper. Cook until turkey is browned and almost cooked through. Rough chop the mushrooms and add to the pan. Cook until mushrooms are softened. Add rice and spinach and stir until spinach is just wilted. Stuff the squash with the meat and rice mixture and top with bread crumbs. (Either toss bread crumbs with 2 teaspoons olive oil, or I just spray them with spray olive oil to make sure that they brown in the oven. Bake stuffed squash in oven until bread crumbs are browned",
     analyzedInstructions: [
       {
         name: "",
@@ -21753,7 +21753,7 @@ const recipes = [
     diets: ["gluten free", "dairy free", "lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      "In  a small bowl, beat the egg and molasses.In another small bowl, add the flour, almond meal, ground flax seed, baking powder, and cocoa powder. Make sure it is thoroughly mixed so you do not end up with little balls of cocoa or bitter baking soda.Add the eggs to the dry ingredients, stir until smooth.Oil a 10 oz Pyrex custard cup and sprinkle sesame seeds on the bottom and sides.Pour the batter into the cup. Top with more sesame seeds.Microwave for 90 seconds.That is it! A ready to eat, tasty bun. A wonder bun!",
+      "In a small bowl, beat the egg and molasses.In another small bowl, add the flour, almond meal, ground flax seed, baking powder, and cocoa powder. Make sure it is thoroughly mixed so you do not end up with little balls of cocoa or bitter baking soda.Add the eggs to the dry ingredients, stir until smooth.Oil a 10 oz Pyrex custard cup and sprinkle sesame seeds on the bottom and sides.Pour the batter into the cup. Top with more sesame seeds.Microwave for 90 seconds.That is it! A ready to eat, tasty bun. A wonder bun!",
     analyzedInstructions: [
       {
         name: "",
@@ -22104,7 +22104,7 @@ const recipes = [
     dishTypes: ["lunch", "main course", "main dish", "dinner"],
     diets: ["gluten free", "lacto ovo vegetarian"],
     occasions: [],
-    instructions: "",
+    instructions: "Trim the top and bottoms of the strawberries, so that they are level and can stand. Cut or scoop out the tops of the berries (I used my little 1/4 teaspoon measure). Put the ricotta, cream cheese, sugar, honey, vanilla, and lemon zest into a food processor. Process for about three or four minutes, until the mixture is thick and smooth. Pipe or spoon the cannoli cream into the berries; I used a baggie and a star tip to make 'em look fancy. Garnish with shaved dark chocolate (Or with lemon zest)",
     analyzedInstructions: [],
     originalId: null,
     spoonacularSourceUrl:
@@ -22380,7 +22380,7 @@ const recipes = [
     diets: ["dairy free", "lacto ovo vegetarian", "vegan"],
     occasions: [],
     instructions:
-      "Saute sliced onions and tomatoes with olive oil over medium high heat for 5-8 minutes. Season with salt and pepper. Set aside.\nToast two slices of bread in a toaster.\nEvenly smear avocado onto each slice of toast. Sprinkle with salt and pepper.\nTop toast with onions and tomatoes.\nGarnish with fresh chives and chive blossoms.",
+      "Saute sliced onions and tomatoes with olive oil over medium high heat for 5-8 minutes. Season with salt and pepper. Set aside. Toast two slices of bread in a toaster. Evenly smear avocado onto each slice of toast. Sprinkle with salt and pepper. Top toast with onions and tomatoes. Garnish with fresh chives and chive blossoms",
     analyzedInstructions: [
       {
         name: "",
@@ -22775,7 +22775,7 @@ const recipes = [
     diets: ["dairy free"],
     occasions: [],
     instructions:
-      "In a small bowl, combine flour, broth, sugar, and soy sauce. Stir until sugar and flour are dissolved.In a large skillet or wok over high heat, cook and stir beef 2 to 4 minutes, or until browned. Stir in broth mixture, ginger, garlic, and broccoli. Bring to a boil, then reduce heat. Simmer 5 to 10 minutes, or until sauce thickens.Excellent served over rice.",
+      "In a small bowl, combine flour, broth, sugar, and soy sauce. Stir until sugar and flour are dissolved.In a large skillet or wok over high heat, cook and stir beef 2 to 4 minutes, or until browned. Stir in broth mixture, ginger, garlic, and broccoli. Bring to a boil, then reduce heat. Simmer 5 to 10 minutes, or until sauce thickens.Excellent served over rice",
     analyzedInstructions: [
       {
         name: "",
@@ -23200,7 +23200,7 @@ const recipes = [
     diets: ["lacto ovo vegetarian"],
     occasions: ["christmas"],
     instructions:
-      "Beat (A) butter and brown sugar till light and fluffy.\nAdd (B) salt, honey and fresh milk till creamy.\nPour in (C) flour mixture, scrap bowl and mixture till a soft dough.\nPlace dough it in a plastic sheet and chill for 60 minutes.\nRoll chilled dough between two plastic sheets to 0.5 cm thick.\nUse different shape of star cookies cutter to cut out dough and place on baking tray.\nBake at preheated oven 180C for 15 minutes and leave to cool.\nDust some icing sugar on cookies and stack them into tree shape. Attach tree topper with some royal icing.",
+      "Beat (A) butter and brown sugar till light and fluffy. Add (B) salt, honey and fresh milk till creamy. Pour in (C) flour mixture, scrap bowl and mixture till a soft dough. Place dough it in a plastic sheet and chill for 60 minutes. Roll chilled dough between two plastic sheets to 0.5 cm thick. Use different shape of star cookies cutter to cut out dough and place on baking tray. Bake at preheated oven 180C for 15 minutes and leave to cool. Dust some icing sugar on cookies and stack them into tree shape. Attach tree topper with some royal icing",
     analyzedInstructions: [
       {
         name: "",
@@ -23723,7 +23723,7 @@ const recipes = [
     diets: ["lacto ovo vegetarian"],
     occasions: [],
     instructions:
-      'Cream together the butter and brown sugar.Add in the egg and vanilla and combine well.Mix in the cinnamon, allspice, and salt.Finally, add in the baking powder, oats, flour, and optional cocoa powder. Cocoa powder should be subbed for flour. Simply add the powder to your measuring cup and then fill the rest of the way up with flour.Mix it up good and form into a ball. Store in the fridge for a minimum of one hour and up to overnight.When ready, pull dough from fridge, grab off a hunk and roll it out to 1/4" thick.Cut out crackers and place on a cookie sheet lined with parchment.Bake for 5-7 minutes in an oven preheated to 350 degrees.',
+      'Cream together the butter and brown sugar.Add in the egg and vanilla and combine well.Mix in the cinnamon, allspice, and salt.Finally, add in the baking powder, oats, flour, and optional cocoa powder. Cocoa powder should be subbed for flour. Simply add the powder to your measuring cup and then fill the rest of the way up with flour.Mix it up good and form into a ball. Store in the fridge for a minimum of one hour and up to overnight.When ready, pull dough from fridge, grab off a hunk and roll it out to 1/4" thick.Cut out crackers and place on a cookie sheet lined with parchment.Bake for 5-7 minutes in an oven preheated to 350 degrees',
     analyzedInstructions: [
       {
         name: "",
@@ -24203,7 +24203,7 @@ const recipes = [
     diets: [],
     occasions: [],
     instructions:
-      "Oven: 350F.\nGrease a standard muffin pan (we like jumbo but not mini, they'll get to crispy).\nFry the bacon, remove and pat dry. The bacon should be crispy but without char- any chunks of fat that are still white should be discarded.\nMelt the unsweetened chocolate and butter in a double broiler.\nCool slightly, then whisk in the sugar and salt. Add the eggs, one at a time.\nSift the flour and cocoa together, then combine with the chocolate.\nStir in the pieces of bacon and chocolate.\nBake ~30 min., making sure to allow brownie cupcakes to cool before removing.",
+      "Oven: 350F. Grease a standard muffin pan (we like jumbo but not mini, they'll get to crispy). Fry the bacon, remove and pat dry. The bacon should be crispy but without char- any chunks of fat that are still white should be discarded. Melt the unsweetened chocolate and butter in a double broiler. Cool slightly, then whisk in the sugar and salt. Add the eggs, one at a time. Sift the flour and cocoa together, then combine with the chocolate. Stir in the pieces of bacon and chocolate. Bake ~30 min., making sure to allow brownie cupcakes to cool before removing",
     analyzedInstructions: [
       {
         name: "",

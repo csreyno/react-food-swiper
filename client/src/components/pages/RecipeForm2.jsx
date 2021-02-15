@@ -33,7 +33,7 @@ export default function RecipeForm2(props) {
   const [image, setImage] = useState("");
   const [preparation, setPreparation] = useState("");
   const classes = useStyles();
-  const [id] = useState(0);
+
   const [inputFields, setInputFields] = useState([
     { id: uuidv4(), Ingredients: "" },
   ]);
@@ -61,7 +61,7 @@ export default function RecipeForm2(props) {
     //this recibes db entry id to return image link
     const data = new FormData()
     data.append("file", image);
-    const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
+    // const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
     console.log(resp);
     // adds list to my favorites page
     newList(resp.data.id)
@@ -97,9 +97,11 @@ export default function RecipeForm2(props) {
   return (
     <div className="newform">
       <form className={classes.root} onSubmit={handleSubmit} action="/profile" method="post" enctype="multipart/form-data">
+      <div className="create-recipe-button">
         <Button onClick={() => setShow(!show)} variant="contained">
           Create New Recipe
         </Button>
+        </div>
         {show ? (
           <div>
             <TextField
@@ -160,7 +162,8 @@ export default function RecipeForm2(props) {
             />
             <br />
             <br />
-            <input
+            <div className="choose-file">
+              <input
               accept="image/*"
               className={classes.input}
               id="icon-button-file"
@@ -169,8 +172,9 @@ export default function RecipeForm2(props) {
               name="image"
               onChange={(e) => {
                 setImage(e.target.files[0]);
-              }}
-            />
+              }}/>
+            </div>
+            
             <label htmlFor="icon-button-file">
               <IconButton
                 color="black"
@@ -181,7 +185,7 @@ export default function RecipeForm2(props) {
               </IconButton>
             </label>
             <br />
-            <br />
+            {/* <br /> */}
             <Button variant="contained" onClick={handleSubmit}>
               Create
             </Button>

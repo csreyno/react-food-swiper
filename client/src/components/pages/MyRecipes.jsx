@@ -15,8 +15,9 @@ export default function MyRecipes(props) {
         <br />
         <h1 className="PageTitle">My Recipes</h1>
         <ul>
-          {props.recipes.map(r => (
-            r.Recipe && r.Recipe.id > 121 ?
+            {props.recipes.map(r => (
+              r.Recipe && r.Recipe.id > 187 ?
+
               <>
                 <li
                   onClick={(e) => setShow(r.Recipe.title)}
