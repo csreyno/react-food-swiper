@@ -9,7 +9,7 @@ export const MenuList = [
   },
   {
     title: "Log out",
-    url: "/",
+    url: "/logout",
   },
   {
     title: "Swipe",

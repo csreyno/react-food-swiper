@@ -296,7 +296,6 @@ padding: 2em;
 .fav-title {
   margin-bottom: 2%;
   border-bottom: solid thin;
-  padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
   cursor: pointer;
@@ -319,10 +318,6 @@ padding: 2em;
 
 .prep-div {
   padding-top: 10px;
-}
-
-.prep-list {
-  margin-left: 25px
 }
 
 @media screen and (max-width:612px) {
