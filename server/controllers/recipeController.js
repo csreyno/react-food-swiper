@@ -25,7 +25,7 @@ const addRecipe = async (req, res) => {
     title,
     readyInMinutes,
     preparation: preparation,
-    ingredients: inputFields.ingredients,
+    ingredients: inputFields,
   });
 
   return res.status(200).json({

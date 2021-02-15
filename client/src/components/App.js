@@ -67,14 +67,12 @@ function App() {
               <Route path="/favoriterecipes">
                 <Favorites recipes={myRecipes} />
               </Route>
-              <Route
-                path="/myrecipes"
-                exact component={MyRecipes} />
-              <Route
-                path="/logout"
-                exact component={Logout}
-                children={<Logout doLogout={doLogout} />}
-              />
+              <Route path="/myrecipes">
+                <MyRecipes recipes={myRecipes} />
+              </Route>
+              <Route>
+               <Logout doLogout={doLogout} />
+              </Route>
               <Route
                 path="/demo"
                 exact component={Demo} />

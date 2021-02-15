@@ -57,7 +57,7 @@ export default function RecipeForm2(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     //gets text data to db
-    const addRecipeData = { id, inputFields, title, readyInMinutes, preparation }
+    const addRecipeData = { inputFields: inputFields.map((obj => obj.Ingredients)), title, readyInMinutes, preparation }
     console.log(addRecipeData);
     const resp = await axios.post("/api/recipes/add", addRecipeData)
     //this recibes db entry id to return image link
@@ -73,6 +73,7 @@ export default function RecipeForm2(props) {
 
 
   const handleChangeInput = (id, event) => {
+    console.log(event.target.value)
     const newInputFields = inputFields.map((i) => {
       if (id === i.id) {
         i[event.target.name] = event.target.value;

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from "@material-ui/core/Button";
 const RecipeList = (props) => {
   const prep = props.preparation.split(".");
-  const ingredients = props.ingredients
+  const ingredients = props.ingredients;
 
   return (
   <div className="fav-div">
