@@ -12,9 +12,9 @@ export default function Favorites(props) {
         <br />
 
         <div className="myrecipes">
-          <br />
+          {/* <br /> */}
           <h1 className="PageTitle">My Favorites</h1>
-          <br />
+          {/* <br /> */}
           <ul>
             {props.recipes.map(r => (
               r.Recipe ?

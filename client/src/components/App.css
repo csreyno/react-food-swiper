@@ -226,11 +226,12 @@ circle {
 }
 
 .PageTitle {
-  text-align: center !important;
+  text-align: center;
+  padding: 20px;
 }
+
 form {
   flex: auto;
-  
   background: none !important;
   text-align: center !important;
 }
@@ -239,6 +240,7 @@ form {
   margin-top: 1rem;
   background-color: salmon;
 }
+
 .favrecipes {
   align-content: center;
   margin-top: 1rem, 1rem;
@@ -249,7 +251,7 @@ form {
   margin: 1.5em;
 }
 .favcontinner{
-padding: 3em;
+padding: 1em;
 }
 .logout-div {
   top: 15%;
@@ -281,9 +283,15 @@ padding: 3em;
     display: inline-block;
 }
 
+.close-button-recipe-card {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
 .fav-list {
   cursor: pointer;
+  padding-left: 1.5em;
 }
 
 .title-div {
