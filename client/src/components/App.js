@@ -97,11 +97,11 @@ function App() {
                     />  
                 </Switch>
             </>
-          )};
+          )}
         </div>
       </Router>
     </div>
-  );
+  )
 };
 
 export default App;
