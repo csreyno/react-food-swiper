@@ -310,24 +310,9 @@ padding: 3em;
   border-radius: 20px;
 }
 
-.fav-close {
-  display: inline-block;
-  text-align: right;
-  cursor: pointer;
-  border-radius: .25rem;
-}
-
-.ing-div {
-  padding-top: 10px;
-}
-
 .ingredient-list {
   margin-left: 25px;
   list-style-type: disc !important;
-}
-
-.fav-label {
-  text-align: center;
 }
 
 .prep-div {
@@ -338,11 +323,10 @@ padding: 3em;
   margin-left: 25px
 }
 
-
 @media screen and (max-width:612px) {
   .fav-image {
-    width: 75%;
-    height: 75%;
+    width: 105%;
+    height: 105%;
   }
 }
 
@@ -356,7 +340,7 @@ border-spacing: 4em;
   
 .favcontainer{
   border: solid lightgray;
-  border-radius: 5%;
+  border-radius: 2rem;
   background-color: ivory;
 }
   
