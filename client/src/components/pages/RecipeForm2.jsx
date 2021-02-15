@@ -35,7 +35,6 @@ export default function RecipeForm2(props) {
   const [image, setImage] = useState("");
   const [preparation, setPreparation] = useState("");
   const classes = useStyles();
-  const [id, setId] = useState(0)
   const [inputFields, setInputFields] = useState([
     { id: uuidv4(), Ingredients: "" },
   ]);
