@@ -1,21 +1,20 @@
-import React, {useState} from "react";
-import ResCard from "./ResCard";
+import React, { useState } from "react";
 import RecipeDetails from "../RecipeDetails"
 
 export default function Favorites(props) {
-  const [show, setShow] = useState("");  
+  const [show, setShow] = useState("");
   console.log(props)
   console.log(props.recipes)
   return (
     props.recipes.length === 0 ? null :
-    <div>
-      <br />
-      <br />
+      <div>
+        <br />
+        <br />
 
-      <div className="myrecipes">
-        <br />
-        <h1 className="PageTitle">My Favorites</h1>
-        <br />
+        <div className="myrecipes">
+          <br />
+          <h1 className="PageTitle">My Favorites</h1>
+          <br />
           <ul>
             {props.recipes.map(r => (
               r.Recipe ?
@@ -44,10 +43,8 @@ export default function Favorites(props) {
             </> : null   
             ))}
           </ul>
-        <br />
-        <ResCard />
-
+          <br />
+        </div>
       </div>
-    </div>
   );
 }

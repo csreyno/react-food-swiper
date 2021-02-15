@@ -63,6 +63,7 @@ body {
 
 .container1 {
   background: url("./images/spread.jpg");
+  background-color: salmon;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -121,7 +122,9 @@ button[aria-label="next"] {
   padding: 0px 20px;
   border-radius: 2px;
 }
-
+h1{
+  font-weight: bold;
+}
 h2 {
   display: inline-block;
   /* margin-right: 10px !important; */
@@ -143,7 +146,9 @@ h2:nth-of-type(2) {
   font-size: 1.35rem;
   text-align: center !important;
 }
-
+h4{
+  font-weight: bold;
+}
 h5 {
   margin-top: -15px !important;
   margin-left: 2px !important;
@@ -161,9 +166,6 @@ h5:last-of-type {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  /* cursor: url("https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png")
-      30 30,
-    auto; */
 }
 
 #deckroot > div {
@@ -228,6 +230,7 @@ circle {
 }
 form {
   flex: auto;
+  
   background: none !important;
   text-align: center !important;
 }
@@ -236,7 +239,18 @@ form {
   margin-top: 1rem;
   background-color: salmon;
 }
-
+.favrecipes {
+  align-content: center;
+  margin-top: 1rem, 1rem;
+  background-color: salmon;
+}
+.favcontainer{
+  flex: inherit;
+  margin: 1.5em;
+}
+.favcontinner{
+padding: 3em;
+}
 .logout-div {
   top: 15%;
   display: flex;
@@ -267,18 +281,20 @@ form {
     display: inline-block;
 }
 
-.fav-div {
-  /* display:flex; */
-}
 
 .fav-list {
   cursor: pointer;
 }
 
-
+.title-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
 .fav-title {
-  border-top: solid thin;
+  margin-bottom: 2%;
+  border-bottom: solid thin;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -306,7 +322,7 @@ form {
 }
 
 .ingredient-list {
-  margin-left: 28%;
+  margin-left: 25px;
   list-style-type: disc !important;
 }
 
@@ -322,9 +338,40 @@ form {
   margin-left: 25px
 }
 
+
 @media screen and (max-width:612px) {
   .fav-image {
     width: 75%;
     height: 75%;
   }
+}
+
+.Favline{
+border-spacing: 4em;
+}
+  
+.favbutton{
+ align-content: flex-end;
+}
+  
+.favcontainer{
+  border: solid lightgray;
+  border-radius: 5%;
+  background-color: ivory;
+}
+  
+.myform{
+  border: solid light gray;
+  background-color: salmon;
+  
+}
+.newform{
+  align-content: center;
+  max-width: 350px !important;
+  place-content: center;
+  background-color: white;
+  border-radius: 5%;
+  border: solid gray;
+  margin-left: auto;
+  margin-right: auto;
 }
