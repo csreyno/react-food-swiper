@@ -35,19 +35,29 @@ export default function RecipeForm2(props) {
   const [image, setImage] = useState("");
   const [preparation, setPreparation] = useState("");
   const classes = useStyles();
+  const [id, setId] = useState(0)
   const [inputFields, setInputFields] = useState([
     { id: uuidv4(), Ingredients: "" },
   ]);
   useEffect(() => {
     if (props.recipe) {
-      setTitle(props.recipe.title);
+      setTitle(props.recipe.title)
     }
+
   }, [props]);
 
+  const newList = async (recipeid) => {
+    const resp = await axios.post('/api/members-only/addlike', {
+      recipe_id: recipeid
+    });
+    console.log(resp.data)
+    console.log(recipeid)
+
+  }
   const handleSubmit = async (e) => {
     e.preventDefault();
     //gets text data to db
-    const addRecipeData = { inputFields, title, readyInMinutes, preparation }
+    const addRecipeData = { id, inputFields, title, readyInMinutes, preparation }
     console.log(addRecipeData);
     const resp = await axios.post("/api/recipes/add", addRecipeData)
     //this recibes db entry id to return image link
@@ -55,6 +65,10 @@ export default function RecipeForm2(props) {
     data.append("file", image);
     const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
     console.log(resp);
+    //---------------------
+    newList(resp.data.id)
+    console.log(resp.data.id);
+
   }
 
 

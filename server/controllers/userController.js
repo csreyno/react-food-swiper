@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs')
-const {User} = require('../models')
+const { User } = require('../models')
 
 const processNewUser = async (req, res) => {
     const username = req.body.usernameReg;
@@ -17,8 +17,17 @@ const processNewUser = async (req, res) => {
                 username,
                 hash
             });
-            res.status(200).json({
-                message: "Success"
+            req.session.user = {
+                username,
+                id: newUser.id
+            };
+            req.session.save(() => {
+                console.log("API: login successful");
+                res.status(200).json({
+                    message: "Login successful",
+                    id: newUser.id,
+                });
+                return;
             });
         } catch (e) {
             if (e.name === "SequelizeUniqueConstraintError") {
@@ -27,13 +36,13 @@ const processNewUser = async (req, res) => {
             console.log("API: username already taken");
             res.status(400).json({
                 message: "Username is already taken"
-            });      
+            });
         }
     }
 };
 
 const processLogin = async (req, res) => {
-    const {username, password} = req.body
+    const { username, password } = req.body
     const user = await User.findOne({
         where: {
             username
@@ -54,13 +63,13 @@ const processLogin = async (req, res) => {
                     id: user.id,
                 });
                 return;
-            });    
+            });
         } else {
             console.log('password is incorrect');
             res.status(400).json({
                 message: "Invalid username or password",
-              });
-              return;
+            });
+            return;
         }
     } else {
         console.log('not a valid user')
@@ -86,16 +95,16 @@ const logout = (req, res) => {
 const loginStatus = (req, res) => {
     console.log("API: checking login status");
     if (req.session.user) {
-      res.status(200).json({
-        status: "OK"
-      });
+        res.status(200).json({
+            status: "OK"
+        });
     } else {
-      res.status(400).json({
-        status: "no active session"
-      });
+        res.status(400).json({
+            status: "no active session"
+        });
     }
-  
-  };
+
+};
 
 module.exports = {
     processNewUser,
