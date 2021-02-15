@@ -370,11 +370,16 @@ padding: 1.6em;
 .ingredient-list {
   margin-left: 25px;
   list-style-type: disc !important;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .prep-div {
   padding-top: 10px;
+}
+
+.prep-list {
+  font-size: 1.1rem;
+  
 }
 
 @media screen and (max-width:612px) {
