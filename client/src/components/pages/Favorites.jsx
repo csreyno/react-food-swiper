@@ -13,10 +13,10 @@ export default function Favorites(props) {
 
         <div className="myrecipes">
           <h1 className="PageTitle">My Favorites</h1>
-
           <ul>
             {props.recipes.map(r => (
               r.Recipe ?
+
               <>
               <li key={r.Recipe.id}
                 onClick={(e) => setShow(r.Recipe.title)}
@@ -30,16 +30,29 @@ export default function Favorites(props) {
               <RecipeDetails
                 hide = {() => {
                 setShow("") 
+                <>
+                  <li
+                    onClick={(e) => setShow(r.Recipe.title)}
+                    className="fav-list"
+                  >
+                    {r.Recipe.title}
+                  </li>
+
+                  {r.Recipe && r.Recipe.title === show &&
+                    <li>
+                      <RecipeDetails
+                        hide={() => {
+                          setShow("")
+                        }
+                        }
+                        title={r.Recipe.title}
+                        image={r.Recipe.image}
+                        ingredients={r.Recipe.ingredients}
+                        preparation={r.Recipe.preparation}
+                      />
+                    </li>
                   }
-                } 
-                title = {r.Recipe.title}
-                image = {r.Recipe.image}
-                ingredients = {r.Recipe.ingredients}
-                preparation = {r.Recipe.preparation}
-                 />
-                 </li>
-                }
-            </> : null   
+                </> : null
             ))}
           </ul>
           <br />
