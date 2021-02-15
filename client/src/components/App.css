@@ -241,22 +241,36 @@ form {
   background-color: salmon;
 }
 
+/* .form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
 .choose-file {
   /* background-color: aqua; */
   display: flex;
   /* align-content: center !important; */
   justify-content: center !important;
+  width: 100%;
+  /* background-color: black; */
   /* text-align: center; */
 }
 
-#icon-button-style {
-  display: flex;
-  /* align-content: center !important; */
-  justify-content: center !important;
-  text-align: center !important;
-  padding-left: 30px !important;
-  margin-left: 30px !important;
+.choose-file > input {
+  /* background-color: red; */
+  display: none;
 }
+
+.choose-file > label {
+  /* background-color: red; */
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #dedede;
+}
+
 
 .favrecipes {
   align-content: center;
