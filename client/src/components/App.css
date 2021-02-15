@@ -354,7 +354,7 @@ padding: 1.6em;
 .fav-title {
   margin-bottom: 2%;
   border-bottom: solid thin;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   text-align: center;
   cursor: pointer;
 }
@@ -362,10 +362,17 @@ padding: 1.6em;
 .img-div {
   display:flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .fav-image {
   border-radius: 20px;
+}
+
+.ingredient-title {
+  border-top: thin solid !important;
+  padding-top:10px;
+  text-align: center;
 }
 
 .ingredient-list {
@@ -378,8 +385,15 @@ padding: 1.6em;
   padding-top: 10px;
 }
 
+.prep-title {
+  border-top: thin solid !important;
+  padding-top:10px;
+  text-align: center;
+}
+
 .prep-list {
   font-size: 1.1rem;
+  margin-left: 10px;
 }
 
 @media screen and (max-width:612px) {

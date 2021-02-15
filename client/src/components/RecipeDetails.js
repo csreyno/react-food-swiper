@@ -16,12 +16,12 @@ const RecipeList = (props) => {
         <div className="img-div" id="favimgdiv">
           <img className="fav-image" src={props.image} alt={props.title}></img>
         </div><br />
-        <h3 >Ingredients</h3>
+        <h3 className="ingredient-title">Ingredients</h3>
           <ul>
             {ingredients.map(i => <li className="ingredient-list">{i}</li>)}
           </ul>
         <br />
-        <h3>Preparation</h3>
+        <h3 className="prep-title">Preparation</h3>
         <ol >
               {prep.map(p => <li className="prep-list">{p}</li>)}
           </ol>
