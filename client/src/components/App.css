@@ -292,8 +292,11 @@ padding: 1em;
 
 .fav-list {
   cursor: pointer;
-  padding-left: 27px;
+  text-align: center;
   font-size: 1.4rem;
+  list-style-type: none;
+  text-decoration: underline;
+  padding: 5px;
 }
 
 .title-div {
