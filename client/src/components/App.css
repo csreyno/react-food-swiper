@@ -267,7 +267,64 @@ form {
     display: inline-block;
 }
 
-.selected-fav {
+.fav-div {
+  /* display:flex; */
+}
+
+.fav-list {
+  cursor: pointer;
+}
+
+
+
+.fav-title {
+  border-top: solid thin;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.img-div {
   display:flex;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fav-image {
+  border-radius: 20px;
+}
+
+.fav-close {
+  display: inline-block;
+  text-align: right;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+.ing-div {
+  padding-top: 10px;
+}
+
+.ingredient-list {
+  margin-left: 28%;
+  list-style-type: disc !important;
+}
+
+.fav-label {
+  text-align: center;
+}
+
+.prep-div {
+  padding-top: 10px;
+}
+
+.prep-list {
+  margin-left: 25px
+}
+
+@media screen and (max-width:612px) {
+  .fav-image {
+    width: 75%;
+    height: 75%;
+  }
 }

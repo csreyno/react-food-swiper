@@ -21,7 +21,8 @@ export default function Favorites(props) {
               r.Recipe ?
               <>
               <li
-                onClick={(e) => setShow(r.Recipe.title)}             
+                onClick={(e) => setShow(r.Recipe.title)}
+                className="fav-list"             
               >
                 {r.Recipe.title}
               </li>
@@ -31,9 +32,7 @@ export default function Favorites(props) {
               <RecipeDetails
                 hide = {() => {
                 setShow("") 
-                  
                   }
-                
                 } 
                 title = {r.Recipe.title}
                 image = {r.Recipe.image}

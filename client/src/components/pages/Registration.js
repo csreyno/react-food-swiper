@@ -6,12 +6,13 @@ import Button from 'react-bootstrap/Button'
 function Register(props){
     const [usernameReg, setUsernameReg] = useState('');
     const [passwordReg, setPasswordReg] = useState('');
+    const [confirmPass, setConfirmPass] = useState('');
 
     const [message, setMessage] = useState('');
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        try {
+        if (passwordReg === confirmPass) {
             const resp = await axios.post('/api/users/new', {
                 usernameReg,
                 passwordReg
@@ -19,10 +20,11 @@ function Register(props){
             console.log(resp);
 
             setMessage('Creating User');
-        } catch (e) {
-            setMessage("Invalid username/password");
-        }
-    };
+            props.doLogin();
+    } else {
+        setMessage("Passwords don't match")
+    }
+};
 
     return (
     <div className="reg-div">
@@ -57,9 +59,9 @@ function Register(props){
                     <Form.Label>Re-enter Password</Form.Label>
                     <Form.Control
                         type="password" 
-                        value={passwordReg} 
                         placeholder="Password" 
-                        // onChange={e => setPasswordReg(e.target.value)}
+                        value={confirmPass} 
+                        onChange={e => setConfirmPass(e.target.value)}
                         />
                 </Form.Group>
                 <Form.Group controlId="formBasicCheckbox">
