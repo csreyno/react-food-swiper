@@ -63,7 +63,7 @@ export default function RecipeForm2(props) {
     //this recibes db entry id to return image link
     const data = new FormData()
     data.append("file", image);
-    // const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
+    const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
     console.log(resp);
     //---------------------
     newList(resp.data.id)
