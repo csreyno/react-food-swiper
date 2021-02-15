@@ -18,29 +18,29 @@ export default function Favorites(props) {
           <ul>
             {props.recipes.map(r => (
               r.Recipe ?
-              <>
-              <li
-                onClick={(e) => setShow(r.Recipe.title)}
-                className="fav-list"             
-              >
-                {r.Recipe.title}
-              </li>
-            
-              {r.Recipe && r.Recipe.title === show &&
-              <li>
-              <RecipeDetails
-                hide = {() => {
-                setShow("") 
+                <>
+                  <li
+                    onClick={(e) => setShow(r.Recipe.title)}
+                    className="fav-list"
+                  >
+                    {r.Recipe.title}
+                  </li>
+
+                  {r.Recipe && r.Recipe.title === show &&
+                    <li>
+                      <RecipeDetails
+                        hide={() => {
+                          setShow("")
+                        }
+                        }
+                        title={r.Recipe.title}
+                        image={r.Recipe.image}
+                        ingredients={r.Recipe.ingredients}
+                        preparation={r.Recipe.preparation}
+                      />
+                    </li>
                   }
-                } 
-                title = {r.Recipe.title}
-                image = {r.Recipe.image}
-                ingredients = {r.Recipe.ingredients}
-                preparation = {r.Recipe.preparation}
-                 />
-                 </li>
-                }
-            </> : null   
+                </> : null
             ))}
           </ul>
           <br />

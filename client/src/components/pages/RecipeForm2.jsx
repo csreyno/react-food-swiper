@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import Container from "@material-ui/core/Container";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import RemoveIcon from "@material-ui/icons/Remove";
 import AddIcon from "@material-ui/icons/Add";
-// import Icon from "@material-ui/core/Icon";
 import { v4 as uuidv4 } from "uuid";
 import { makeStyles } from "@material-ui/core/styles";
 import PhotoCamera from "@material-ui/icons/PhotoCamera";
@@ -35,7 +33,7 @@ export default function RecipeForm2(props) {
   const [image, setImage] = useState("");
   const [preparation, setPreparation] = useState("");
   const classes = useStyles();
-  const [id] = useState(0);  // unused var setId;  const [id, setId] = useState(0);
+  const [id] = useState(0);
   const [inputFields, setInputFields] = useState([
     { id: uuidv4(), Ingredients: "" },
   ]);
@@ -65,7 +63,7 @@ export default function RecipeForm2(props) {
     data.append("file", image);
     const responseImg = await axios.post(`/api/recipes/image/${resp.data.id}`, data);
     console.log(resp);
-    //---------------------
+    // adds list to my favorites page
     newList(resp.data.id)
     console.log(resp.data.id);
 
