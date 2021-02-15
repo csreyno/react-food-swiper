@@ -253,6 +253,7 @@ form {
 .favcontinner{
 padding: 1em;
 }
+
 .logout-div {
   top: 15%;
   display: flex;
@@ -292,6 +293,7 @@ padding: 1em;
 .fav-list {
   cursor: pointer;
   padding-left: 1.5em;
+  font-size: 1.8rem;
 }
 
 .title-div {
@@ -321,6 +323,7 @@ padding: 1em;
 .ingredient-list {
   margin-left: 25px;
   list-style-type: disc !important;
+  font-size: 1.5rem;
 }
 
 .prep-div {
