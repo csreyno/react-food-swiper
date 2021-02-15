@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function MyRecipes(props) {
   const [show, setShow] = useState("")
+
   return (
     <div>
       <br />
@@ -16,31 +17,32 @@ export default function MyRecipes(props) {
         <ul>
             {props.recipes.map(r => (
               r.Recipe && r.Recipe.id > 187 ?
+
               <>
-              <li
-                onClick={(e) => setShow(r.Recipe.title)}
-                className="fav-list"             
-              >
-                {r.Recipe.title}
-              </li>
-            
-              {r.Recipe && r.Recipe.title === show &&
-              <li>
-              <RecipeDetails
-                hide = {() => {
-                setShow("") 
-                  }
-                } 
-                title = {r.Recipe.title}
-                image = {r.Recipe.image}
-                ingredients = {r.Recipe.ingredients}
-                preparation = {r.Recipe.preparation}
-                 />
-                 </li>
+                <li
+                  onClick={(e) => setShow(r.Recipe.title)}
+                  className="fav-list"
+                >
+                  {r.Recipe.title}
+                </li>
+
+                {r.Recipe && r.Recipe.title === show &&
+                  <li>
+                    <RecipeDetails
+                      hide={() => {
+                        setShow("")
+                      }
+                      }
+                      title={r.Recipe.title}
+                      image={r.Recipe.image}
+                      ingredients={r.Recipe.ingredients}
+                      preparation={r.Recipe.preparation}
+                    />
+                  </li>
                 }
-            </> : null   
-            ))}
-            </ul>
+              </> : null
+          ))}
+        </ul>
         <br />
         <br />
       </div>
