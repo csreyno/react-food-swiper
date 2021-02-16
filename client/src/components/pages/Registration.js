@@ -55,7 +55,7 @@ function Register(props){
                         onChange={e => setPasswordReg(e.target.value)}
                         />
                 </Form.Group>
-                <Form.Group controlId="formBasicPassword">
+                <Form.Group controlId="formBasicPassword2">
                     <Form.Label>Re-enter Password</Form.Label>
                     <Form.Control
                         type="password" 
