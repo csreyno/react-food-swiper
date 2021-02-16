@@ -72,9 +72,6 @@ body {
   /* overflow: hidden; */
   margin: 0px;
 }
-.container1 background {
-  opacity: 1;
-}
 
 .page-heading {
   display: flex;
@@ -213,7 +210,7 @@ circle {
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
-  opacity: 85%;
+  opacity: .85;
   position: relative;
 }
 
@@ -321,7 +318,7 @@ padding: 1.6em;
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
-    opacity: 75%;
+    opacity: .75;
     position: relative;
     display: inline-block;
 }
