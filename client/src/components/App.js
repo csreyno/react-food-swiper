@@ -36,7 +36,7 @@ function App() {
   useEffect(() => {
     async function checkLogin() {
       try {
-        // const resp = await axios.get("/api/status");
+        const resp = await axios.get("/api/status");
         console.log("you are already logged in");
         setIsLoggedIn(true);
       } catch (e) {
@@ -73,7 +73,7 @@ function App() {
               <Route
                 path="/logout"
                 children={<Logout doLogout={doLogout} />}
-               />             
+              />
               <Route
                 path="/demo"
                 exact component={Demo} />
