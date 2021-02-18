@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const session = require("express-session");
 const FileStore = require("session-file-store")(session);
 const multer = require('multer');
+const path = require('path');
 
 const {
   userRouter,
@@ -20,7 +21,6 @@ const server = http.createServer(app);
 
 const PORT = process.env.PORT || 4000;
 const HOST = "0.0.0.0";
-
 const logger = morgan("tiny");
 
 app.use(
@@ -53,7 +53,10 @@ app.get("/api/status", (req, res) => {
     res.status(400).send("not ok")
   }
 })
-
+// Handles any requests that don't match the ones above
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/public/index.html'));
+});
 server.listen(PORT, HOST, () => {
   console.log(`Listening at port ${PORT}`);
 });
